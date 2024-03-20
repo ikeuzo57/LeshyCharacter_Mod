@@ -1,0 +1,541 @@
+[
+  {
+    "NAMES": [
+      "Creature",
+      "creature",
+      "Creatures",
+      "creatures"
+    ],
+    "DESCRIPTION": "A card that summons a creature into an empty orb slot. Will enter discard pile when sacrificed."
+  },
+  {
+    "NAMES": [
+      "Blood",
+      "blood"
+    ],
+    "DESCRIPTION": "Cost that is paid by sacrificing a number of creatures."
+  },
+  {
+    "NAMES": [
+      "Bones",
+      "bones",
+      "Bone",
+      "bone"
+    ],
+    "DESCRIPTION": "Cost that is paid with Bones. 1 Bone is obtained when a creature is sacrificed or exhausted."
+  },
+  {
+    "NAMES": [
+      "Tribe",
+      "tribe"
+    ],
+    "DESCRIPTION": "A subtype of creature. Certain cards can provide effects for specific Tribes."
+  },
+  {
+    "NAMES": [
+      "Ant",
+      "ant"
+    ],
+    "DESCRIPTION": "Gains 50% Attack for each other Ant."
+  },
+  {
+    "NAMES": [
+      "Amalgam",
+      "amalgam"
+    ],
+    "DESCRIPTION": "Counts as all creature Tribes."
+  },
+  {
+    "NAMES": [
+      "Airborne",
+      "airborne"
+    ],
+    "DESCRIPTION": "Attacks inflict loss of life instead."
+  },
+  {
+    "NAMES": [
+      "Bifurcated",
+      "bifurcated"
+    ],
+    "DESCRIPTION": "Attacks two enemies."
+  },
+  {
+    "NAMES": [
+      "Trifurcated",
+      "trifurcated"
+    ],
+    "DESCRIPTION": "Attacks three enemies."
+  },
+  {
+    "NAMES": [
+      "Fledgling",
+      "fledgling"
+    ],
+    "DESCRIPTION": "At the start of turn, this become a better form or gain 20% stats."
+  },
+  {
+    "PROPER_NAME": "Many Lives",
+    "NAMES": [
+      "Many Lives",
+      "many lives",
+      "Many_Lives",
+      "many_lives"
+    ],
+    "DESCRIPTION": "Can pay blood costs 9 times before being sacrificed."
+  },
+  {
+    "PROPER_NAME": "Worthy Sacrifice",
+    "NAMES": [
+      "Worthy Sacrifice",
+      "worthy sacrifice",
+      "Worthy_Sacrifice",
+      "worthy_sacrifice"
+    ],
+    "DESCRIPTION": "When sacrificed to pay Blood costs, this pays for 3 Blood."
+  },
+  {
+    "PROPER_NAME": "Bone King",
+    "NAMES": [
+      "Bone King",
+      "bone king",
+      "Bone_King",
+      "bone_king"
+    ],
+    "DESCRIPTION": "When sacrificed, gain an additional 3 Bones."
+  },
+  {
+    "PROPER_NAME": "Bone Digger",
+    "NAMES": [
+      "Bone Digger",
+      "bone digger",
+      "Bone_Digger",
+      "bone_digger"
+    ],
+    "DESCRIPTION": "At the end of the turn, gain 1 Bone."
+  },
+  {
+    "PROPER_NAME": "Rabbit Hole",
+    "NAMES": [
+      "Rabbit Hole",
+      "rabbit hole",
+      "Rabbit_Hole",
+      "rabbit_hole"
+    ],
+    "DESCRIPTION": "When summoned, add a Rabbit to hand."
+  },
+  {
+    "NAMES": [
+      "Hoarder",
+      "hoarder"
+    ],
+    "DESCRIPTION": "When summoned, put a card in your draw pile into your hand."
+  },
+  {
+    "NAMES": [
+      "Stinky",
+      "stinky"
+    ],
+    "DESCRIPTION": "While this is in play, decrease enemy attack damage by 1."
+  },
+  {
+    "NAMES": [
+      "Unkillable",
+      "unkillable"
+    ],
+    "DESCRIPTION": "When sacrificed, this is put into your hand instead of your discard pile. No longer gives Bones. Overrides Transient."
+  },
+  {
+    "NAMES": [
+      "Fecundity",
+      "fecundity"
+    ],
+    "DESCRIPTION": "When summoned, add a copy of this into your hand with Transient and without Fecundity."
+  },
+  {
+    "NAMES": [
+      "Transient",
+      "transient"
+    ],
+    "DESCRIPTION": "When killed, this is exhausted instead of being put into your discard pile. Overridden by Unkillable."
+  },
+  {
+    "NAMES": [
+      "Added",
+      "added"
+    ],
+    "DESCRIPTION": "Sigils added to a creature card through outside sources."
+  },
+  {
+    "NAMES": [
+      "Summon",
+      "summon"
+    ],
+    "DESCRIPTION": "Non sigil effects that trigger on summon."
+  },
+  {
+    "NAMES": [
+      "Sacrifice",
+      "sacrifice",
+      "Sacrifices",
+      "sacrifices"
+    ],
+    "DESCRIPTION": "Non sigil effects that trigger on sacrifice."
+  },
+  {
+    "NAMES": [
+      "Passive",
+      "passive"
+    ],
+    "DESCRIPTION": "Non sigil effects that trigger at end of turn."
+  },
+  {
+    "NAMES": [
+      "Guardian",
+      "guardian"
+    ],
+    "DESCRIPTION": "Summoned in the front."
+  },
+  {
+    "PROPER_NAME": "Waterborne",
+    "NAMES": [
+      "Waterborne",
+      "waterborne"
+    ],
+    "DESCRIPTION": "No longer prevents damage."
+  },
+  {
+    "NAMES": [
+      "Bloodless",
+      "bloodless"
+    ],
+    "DESCRIPTION": "Cannot be sacrificed for Blood costs or participate in Mycologist events."
+  },
+  {
+    "NAMES": [
+      "Target",
+      "target"
+    ],
+    "DESCRIPTION": "Creatures prioritize targeted Monsters."
+  },
+  {
+    "NAMES": [
+      "Totem",
+      "totem"
+    ],
+    "DESCRIPTION": "Totems give a given Sigil to creatures of a given tribe. New totem heads or bases overwrite the previous."
+  },
+  {
+    "PROPER_NAME": "Sharp Quills",
+    "NAMES": [
+      "Sharp Quills",
+      "sharp quills",
+      "Sharp_Quills",
+      "sharp_quills"
+    ],
+    "DESCRIPTION": "While this is on the field, gain 3 Thorns."
+  },
+  {
+    "PROPER_NAME": "Touch of Death",
+    "NAMES": [
+      "Touch of Death",
+      "touch of death",
+      "Touch_of_Death",
+      "touch_of_death"
+    ],
+    "DESCRIPTION": "Attacks apply 1 Vulnerable."
+  },
+  {
+    "NAMES": [
+      "Pelt",
+      "pelt"
+    ],
+    "DESCRIPTION": "While in a shop, you may right click to sell for gold."
+  },
+  {
+    "NAMES": [
+      "Splice",
+      "splice"
+    ],
+    "DESCRIPTION": "Combine two creature cards by adding their stats and sigils onto one card."
+  },
+  {
+    "NAMES": [
+      "Transform",
+      "transform"
+    ],
+    "DESCRIPTION": "Replace a creature with the second gaining the sigils of the first."
+  },
+  {
+    "NAMES": [
+      "Prevent",
+      "prevent"
+    ],
+    "DESCRIPTION": "Prevent a certain amount of life loss. After the amount is prevented sacrifice this creature."
+  },
+  {
+    "PROPER_NAME": "Full Set",
+    "NAMES": [
+      "Full Set",
+      "full set",
+      "Full_Set",
+      "full_set",
+      "Full Sets",
+      "full sets",
+      "Full_Sets",
+      "full_sets"
+    ],
+    "DESCRIPTION": "One creature of each tribe in your master deck. Each creature can only count towards a single Full Set. Amalgams can take the place of a single creature."
+  },
+  {
+    "NAMES": [
+      "Powerful",
+      "powerful"
+    ],
+    "DESCRIPTION": "Random creature with 2 random Sigils upgraded based on total Blood cost of revealed cards."
+  },
+  {
+    "PROPER_NAME": "Bees Within",
+    "NAMES": [
+      "Bees Within",
+      "bees within",
+      "Bees_Within",
+      "bees_within"
+    ],
+    "DESCRIPTION": "When damaged and you don't have a full hand, add a Bee to your hand."
+  },
+  {
+    "PROPER_NAME": "Brood Parasite",
+    "NAMES": [
+      "Brood Parasite",
+      "brood parasite",
+      "Brood_Parasite",
+      "brood_parasite"
+    ],
+    "DESCRIPTION": "When summoned, apply Broken Egg to a random enemy. They deal 20% less damage and prevent the next attack they take."
+  },
+  {
+    "PROPER_NAME": "Loose Tail",
+    "NAMES": [
+      "Loose Tail",
+      "loose tail",
+      "Loose_Tail",
+      "loose_tail"
+    ],
+    "DESCRIPTION": "The first time this dies, restore up to 6 Health and move to the back."
+  },
+  {
+    "PROPER_NAME": "Ant Spawner",
+    "NAMES": [
+      "Ant Spawner",
+      "ant spawner",
+      "Ant_Spawner",
+      "ant_spawner"
+    ],
+    "DESCRIPTION": "When summoned, add a Worker Ant with Transient to your hand."
+  },
+  {
+    "PROPER_NAME": "Trinket Bearer",
+    "NAMES": [
+      "Trinket Bearer",
+      "trinket bearer",
+      "Trinket_Bearer",
+      "trinket_bearer"
+    ],
+    "DESCRIPTION": "The first time this is summoned each combat, gain a random potion."
+  },
+  {
+    "NAMES": [
+      "Rampager",
+      "rampager"
+    ],
+    "DESCRIPTION": "At end of turn, moves in a direction."
+  },
+  {
+    "PROPER_NAME": "Double Strike",
+    "NAMES": [
+      "Double Strike",
+      "double strike",
+      "Double_Strike",
+      "double_strike"
+    ],
+    "DESCRIPTION": "Attacks the enemy an additional time. Attacks a different enemy if Bifurcated."
+  },
+  {
+    "NAMES": [
+      "Armored",
+      "armored"
+    ],
+    "DESCRIPTION": "Prevents the first time this takes damage."
+  },
+  {
+    "NAMES": [
+      "Brittle",
+      "brittle"
+    ],
+    "DESCRIPTION": "Dies at the end of turn."
+  },
+  {
+    "PROPER_NAME": "Bell Ringer",
+    "NAMES": [
+      "Bell Ringer",
+      "bell ringer",
+      "Bell_Ringer",
+      "bell_ringer"
+    ],
+    "DESCRIPTION": "Gains 12 Attack per space away from the right side."
+  },
+  {
+    "PROPER_NAME": "Card Counter",
+    "NAMES": [
+      "Card Counter",
+      "card counter",
+      "Card_Counter",
+      "card_counter"
+    ],
+    "DESCRIPTION": "Gains 3 Attack per card in your hand."
+  },
+  {
+    "PROPER_NAME": "M!rror r0rriM",
+    "NAMES": [
+      "M!rror r0rriM",
+      "m!rror r0rrim",
+      "M!rror_r0rriM",
+      "m!rror_r0rrim"
+    ],
+    "DESCRIPTION": "Has Attack equal to that of the creature before this."
+  },
+  {
+    "PROPER_NAME": "Finical Hatchling",
+    "NAMES": [
+      "Finical Hatchling",
+      "finical hatchling",
+      "Finical_Hatchling",
+      "finical_hatchling"
+    ],
+    "DESCRIPTION": "When drawn, if you have 2 sets of each tribe in your master deck, hatch."
+  },
+  {
+    "NAMES": [
+      "Hydra",
+      "hydra"
+    ],
+    "DESCRIPTION": "Gains 3 Attack and Heath for each set of each tribe in your master deck."
+  },
+  {
+    "PROPER_NAME": "Double Bones",
+    "NAMES": [
+      "Double Bones",
+      "double bones",
+      "Double_Bones",
+      "double_bones"
+    ],
+    "DESCRIPTION": "Gains Attack equal to double your bones."
+  },
+  {
+    "PROPER_NAME": "Spilled Blood",
+    "NAMES": [
+      "Spilled Blood",
+      "spilled blood",
+      "Spilled_Blood",
+      "spilled_blood"
+    ],
+    "DESCRIPTION": "Gains 8 Attack for each creature sacrificed for Blood costs this turn."
+  },
+  {
+    "NAMES": [
+      "Ouroboros",
+      "ouroboros"
+    ],
+    "DESCRIPTION": "On death, gain 10% Attack and Health."
+  },
+  {
+    "PROPER_NAME": "Kills Survivors",
+    "NAMES": [
+      "Kills Survivors",
+      "kills survivors",
+      "Kills_Survivors",
+      "kills_survivors"
+    ],
+    "DESCRIPTION": "When Smithed, remove this from your deck and gain Dead Survivors, a relic that double upgrade stat gain."
+  },
+  {
+    "NAMES": [
+      "Deaths",
+      "deaths"
+    ],
+    "DESCRIPTION": "Each time a creature dies, its Attack and Defense are reduced by 20%."
+  },
+  {
+    "PROPER_NAME": "Mighty Leap",
+    "NAMES": [
+      "Mighty Leap",
+      "mighty leap",
+      "Mighty_Leap",
+      "mighty_leap"
+    ],
+    "DESCRIPTION": "While this creature is in play, gain 1 Artifact."
+  },
+  {
+    "NAMES": [
+      "Pack",
+      "pack"
+    ],
+    "DESCRIPTION": "Contains a Squirrel, a 1 Blood cost, a 2 Blood cost, and a Bone cost."
+  },
+  {
+    "NAMES": [
+      "Amorphous",
+      "amorphous"
+    ],
+    "DESCRIPTION": "When drawn, replace this Sigil with a random new Sigil."
+  },
+  {
+    "NAMES": [
+      "Leader",
+      "leader"
+    ],
+    "DESCRIPTION": "Other creatures with the same tribe as this one gain 4 Attack."
+  },
+  {
+    "PROPER_NAME": "Magic Eye",
+    "NAMES": [
+      "Magic Eye",
+      "magic eye",
+      "Magic_Eye",
+      "magic_eye"
+    ],
+    "DESCRIPTION": "A relic that grants the Stunted Wolf and the Film Roll"
+  },
+  {
+    "PROPER_NAME": "Dam Builder",
+    "NAMES": [
+      "Dam Builder",
+      "dam builder",
+      "Dam_Builder",
+      "dam_builder"
+    ],
+    "DESCRIPTION": "When summoned, summon 2 Dams."
+  },
+  {
+    "NAMES": [
+      "Glitch",
+      "glitch",
+      "Glitched",
+      "glitched"
+    ],
+    "DESCRIPTION": "Hides the details of the card, showing only when it is playable."
+  }
+]
+
+
+
+
+
+
+
+
+
+
+
+
+

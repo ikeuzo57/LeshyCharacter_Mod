@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <copy file="target/Leshy.jar" tofile="C:/Users/seben/Documents/Steam/steamapps/common/SlayTheSpire/mods/Leshy.jar"/>
+</target>
+</project>

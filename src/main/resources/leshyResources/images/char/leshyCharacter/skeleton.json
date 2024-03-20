@@ -1,0 +1,1 @@
+{"skeleton":{"width":352,"height":453,"fps":24,"hash":" ","name":"Armature"},"bones":[{"name":"root"}],"slots":[{"name":"Capture","bone":"root","attachment":"Capture"}],"skins":{"default":{"Capture":{"Capture":{"name":"Capture","width":319,"height":433,"x":1.56,"y":128.13,"scaleX":0.6749,"scaleY":0.6749}}}}}

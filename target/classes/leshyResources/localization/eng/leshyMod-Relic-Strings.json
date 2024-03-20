@@ -1,0 +1,510 @@
+{
+  "leshy:WoodcarverRelic": {
+    "NAME": "Woodcarver Mask",
+    "FLAVOR": "Carves Totems of Creature and Sigil.",
+    "DESCRIPTIONS": [
+      "On right click during combat, choose and gain a basic Totem head you do not have."
+    ]
+  },"leshy:SquirrelDeckRelic": {
+  "NAME": "Squirrel Deck",
+  "FLAVOR": "Peaceful woodland critters.",
+  "DESCRIPTIONS": [
+    "At the start of each turn, add a Squirrel to your hand. You may right click to exhaust a Squirrel and draw a card."
+  ]
+  },
+  "leshy:MachineModificationRelic": {
+    "NAME": "Machine Modification",
+    "FLAVOR": "The power of a path not taken.",
+    "DESCRIPTIONS": [
+      "Gain an orb slot."
+    ]
+  },
+  "leshy:CandlestickRelic": {
+    "NAME": "Candlestick",
+    "FLAVOR": "Where lost souls gather.",
+    "DESCRIPTIONS": [
+      "At the start of Boss and Elites combats, add a Smoke to your hand."
+    ]
+  },
+  "leshy:BoonOfGoatsBloodRelic": {
+    "NAME": "Boon of Goat's Blood",
+    "FLAVOR": "Definitely not a cultist.",
+    "DESCRIPTIONS": [
+      "At the start of combat, summon a Black Goat with #yTransient."
+    ]
+  },
+  "leshy:ProspectorMaskRelic": {
+    "NAME": "Prospector Mask",
+    "FLAVOR": "We stuck GOLD!",
+    "DESCRIPTIONS": [
+      "At the start of combat, summon a Gold Nugget with 8 Health."
+    ]
+  },
+  "leshy:AnglerMaskRelic": {
+    "NAME": "Angler Mask",
+    "FLAVOR": "Go fish.",
+    "DESCRIPTIONS": [
+      "At the start of combat, summon a Bait Bucket."
+    ]
+  },
+  "leshy:TrapperMaskRelic": {
+    "NAME": "Trapper Mask",
+    "FLAVOR": "You wanna buy any ... pelts?",
+    "DESCRIPTIONS": [
+      "Pelts have 10 more Health."
+    ]
+  },
+  "leshy:BoonOfTheBoneLordRelic": {
+    "NAME": "Boon of the Bone Lord",
+    "FLAVOR": "Was the goat worth it?",
+    "DESCRIPTIONS": [
+      "At the start of combat, gain ", " Bone."
+    ]
+  },
+  "leshy:MagicEyeRelic": {
+    "NAME": "Magic Eye",
+    "FLAVOR": "Wonder who it belongs to.",
+    "DESCRIPTIONS": [
+      "Upon pickup, gain a Stunted Wolf and a Film Roll."
+    ]
+  },
+  "leshy:RedMushroomRelic": {
+    "NAME": "Red Mushroom",
+    "FLAVOR": "Not safe to eat",
+    "DESCRIPTIONS": [
+      "Upon pickup, choose and gain a base copy of 1 of 3 creatures from your deck.",
+      "Pick a card to obtain a copy of."
+    ]
+  },
+  "leshy:TraderMaskRelic": {
+    "NAME": "Trader Mask",
+    "FLAVOR": "Got any ... Pelts?",
+    "DESCRIPTIONS": [
+      "Pelts give 100 more gold."
+    ]
+  },
+  "leshy:BottledSquirrelRelic": {
+    "NAME": "Bottled Squirrel",
+    "FLAVOR": "A Squirrel with Innate.",
+    "DESCRIPTIONS": [
+      "At the start of combat, add a Squirrel to your hand."
+    ]
+  },
+  "leshy:SnorkelRelic": {
+    "NAME": "Snorkel",
+    "FLAVOR": "For people who hate Beat of Death.",
+    "DESCRIPTIONS": [
+      "Squirrels gain #yWaterborne."
+    ]
+  },
+  "leshy:InfestedPeltRelic": {
+    "NAME": "Infested Pelt",
+    "FLAVOR": "Full of ... goodies?",
+    "DESCRIPTIONS": [
+      "Upon pickup, gain 3 Wolf Pelts. When you summon a pelt, summon a Pelt Lice."
+    ]
+  },
+  "leshy:TheMoonRelic": {
+    "NAME": "The Moon",
+    "FLAVOR": "The final phase.",
+    "DESCRIPTIONS": [
+      "When you would die, heal to 10% of your Max HP and summon The Moon (works once)."
+    ]
+  },
+  "leshy:MycologistMaskRelic": {
+    "NAME": "Mycologist Mask",
+    "FLAVOR": "I think this could get messy.",
+    "DESCRIPTIONS": [
+      "When choosing a duplicate copy at the Mycologists, you may select any creature from your deck."
+    ]
+  },
+  "leshy:AcornRelic": {
+    "NAME": "Acorn",
+    "FLAVOR": "Food!",
+    "DESCRIPTIONS": [
+      "Squirrels gain 2 Attack and Health."
+    ]
+  },
+  "leshy:SquirrelArmorRelic": {
+    "NAME": "Squirrel Armor",
+    "FLAVOR": "How do they move in this?",
+    "DESCRIPTIONS": [
+      "Squirrels gain #yArmored."
+    ]
+  },
+  "leshy:TrenchCoatRelic": {
+    "NAME": "Trench Coat",
+    "FLAVOR": "Definitely not a Squirrel.",
+    "DESCRIPTIONS": [
+      "Upon pickup, pick a Creature to gain the Squirrel tribe.",
+      "Pick a card to gain the Squirrel tribe."
+    ]
+  },
+  "leshy:BallOfSquirrelsRelic": {
+    "NAME": "Ball of Squirrels",
+    "FLAVOR": "An endless tide.",
+    "DESCRIPTIONS": [
+      "At the start of each turn, add 2 Squirrels to your hand. Draw one fewer card each turn. Replaces Squirrel Deck."
+    ]
+  },
+  "leshy:CloverRelic": {
+    "NAME": "Clover",
+    "FLAVOR": "You must not like the cards I have given you.",
+    "DESCRIPTIONS": [
+      "On right click, reroll your combat rewards or chest contents. Usable 3 times."
+    ]
+  },
+  "leshy:PetFoodRelic": {
+    "NAME": "Pet Food",
+    "FLAVOR": "We have something for everyone!",
+    "DESCRIPTIONS": [
+      "Creatures matching your totem gain 1 Attack and Health."
+    ]
+  },
+  "leshy:GreatKrakenRelic": {
+    "NAME": "Great Kraken",
+    "FLAVOR": "Fancy meeting you here.",
+    "DESCRIPTIONS": [
+      "Upon pickup, pick and gain a Tentacle.",
+      "Pick a card to gain."
+    ]
+  },
+  "leshy:PileOfTeethRelic": {
+    "NAME": "Pile of Teeth",
+    "FLAVOR": "Where did these come from?",
+    "DESCRIPTIONS": [
+      "When you overkill a monster, gain Gold equal to overkill damage."
+    ]
+  },
+  "leshy:TombstoneRelic": {
+    "NAME": "Tombstone",
+    "FLAVOR": "Died from a lemon.",
+    "DESCRIPTIONS": [
+      "Creatures with Bone costs gain 4 Attack."
+    ]
+  },
+  "leshy:WhiteRockRelic": {
+    "NAME": "White Rock",
+    "FLAVOR": "Just add bear.",
+    "DESCRIPTIONS": [
+      "At the start of each turn, gain 3 Strength and ALL enemies gain 1 Strength."
+    ]
+  },
+  "leshy:DogTreatRelic": {
+    "NAME": "Dog Treat",
+    "FLAVOR": "For the goodest boy.",
+    "DESCRIPTIONS": [
+      "Upon pickup, Upgrade 2 random Creatures."
+    ]
+  },
+  "leshy:BoulderRelic": {
+    "NAME": "Boulder",
+    "FLAVOR": "Its a rock.",
+    "DESCRIPTIONS": [
+      "At the end of your turn, if your Creatures have less than ", " current Health, summon a Boulder with the difference."
+    ]
+  },
+  "leshy:ChickenEggRelic": {
+    "NAME": "Chicken Egg",
+    "FLAVOR": "What came first, the chicken or the pointless question?",
+    "DESCRIPTIONS": [
+      "Whenever you add a Creature to your deck, it is Upgraded."
+    ]
+  },
+  "leshy:BloodstoneRelic": {
+    "NAME": "Bloodstone",
+    "FLAVOR": "For when Squirrels put down their acorns and go to war.",
+    "DESCRIPTIONS": [
+      "For each Squirrel that died to damage this combat, Squirrels gain 1 Attack and Health."
+    ]
+  },
+  "leshy:TinyHeadbandRelic": {
+    "NAME": "Tiny Headband",
+    "FLAVOR": "Does anyone see any squirrels?",
+    "DESCRIPTIONS": [
+      "After every third Squirrel you play, give active Creatures 2 Attack and Health."
+    ]
+  },
+  "leshy:RecruitmentPosterRelic": {
+    "NAME": "Recruitment Poster",
+    "FLAVOR": "Here comes the Scurry.",
+    "DESCRIPTIONS": [
+      "At start of combat, add 3 Squirrels to your draw pile."
+    ]
+  },
+  "leshy:PaintbrushRelic": {
+    "NAME": "Paintbrush",
+    "FLAVOR": "Previous owner was a bush.",
+    "DESCRIPTIONS": [
+      "Creatures without a tribe gain #yAmorphous."
+    ]
+  },
+  "leshy:QuillRelic": {
+    "NAME": "Quill",
+    "FLAVOR": "Brings the dead to life.",
+    "DESCRIPTIONS": [
+      "On right click, spend 4 Bones to add 1 of 3 Creatures that cost Bones to hand."
+    ]
+  },
+  "leshy:TotemPoleRelic": {
+    "NAME": "Totem Pole",
+    "FLAVOR": "Has wood carving gone too far?",
+    "DESCRIPTIONS": [
+      "Your totem can have an additional base."
+    ]
+  },
+  "leshy:CameraRelic": {
+    "NAME": "Camera",
+    "FLAVOR": "The secret to immortality.",
+    "DESCRIPTIONS": [
+      "For every 3 Creatures that die to damage, you may craft an Amalgam with their cost, stats, and sigils."
+    ]
+  },
+  "leshy:LimoncelloRelic": {
+    "NAME": "Limoncello",
+    "FLAVOR": "Yar har.",
+    "DESCRIPTIONS": [
+      "When you lose HP, summon a Skeleton Crew. (6 times per combat)"
+    ]
+  },
+  "leshy:PileOfMeatRelic": {
+    "NAME": "Pile of Meat",
+    "FLAVOR": "Are you gonna finish that?",
+    "DESCRIPTIONS": [
+      "Stinky reduces attack damage by 2."
+    ]
+  },
+  "leshy:OldShellRelic": {
+    "NAME": "Old Shell",
+    "FLAVOR": "To live as a beast would be the noblest thing.",
+    "DESCRIPTIONS": [
+      "Stoats gain ", " Attack and Health for each Sigil they have."
+    ]
+  },
+  "leshy:GoatEyeRelic": {
+    "NAME": "Goat Eye",
+    "FLAVOR": "Why hello there!",
+    "DESCRIPTIONS": [
+      "I'm sure this will be useful."
+    ]
+  },
+  "leshy:HeraldOfTheScurryRelic": {
+    "NAME": "Herald of the Scurry",
+    "FLAVOR": "One squirrel, two squirrel, cute and furry. Three squirrel, four squirrel, what's the hurry? Five squirrel, six squirrel, you should worry. Run and hide, here comes the scurry!",
+    "DESCRIPTIONS": [
+      "Squirrels gain #yDouble #yStrike, #yLeader, and #yRampager."
+    ]
+  },
+  "leshy:ChimeraStatueRelic": {
+    "NAME": "Chimera Statue",
+    "FLAVOR": "Ed...ward.",
+    "DESCRIPTIONS": [
+      "Creatures gain 1 Attack for each different tribe in play."
+    ]
+  },
+  "leshy:OldDataRelic": {
+    "NAME": "OLD_DATA",
+    "FLAVOR": "01100100 01100101 01100101 01110000 01100010 01100101 01101110 01100101 01100001 01110100 01101000",
+    "DESCRIPTIONS": [
+      "Your totem can have an additional head.",
+      "The creature in the leftmost orb slot triggers end of turn effects an additional time.",
+      "Once per shuffle, you may right click to move a card in your deck to the top.",
+      "Glitched creatures gain ", " Attack and Health.",
+      "On right click, sacrifice a creature and add Squirrels to hand equal to its Blood cost.",
+      "At the start of combat, Glitch ", " random creatures in your deck."
+    ]
+  },
+  "leshy:ExoticPetFoodRelic": {
+    "NAME": "Exotic Pet Food",
+    "FLAVOR": "For non standard animals.",
+    "DESCRIPTIONS": [
+      "Creatures without a tribe gain 1 Attack and Health."
+    ]
+  },
+  "leshy:CawCawFaceRelic": {
+    "NAME": "Caw Caw Face",
+    "FLAVOR": "Caw CAAAAWWWW!",
+    "DESCRIPTIONS": [
+      "Creatures without a tribe also count as Avians."
+    ]
+  },
+  "leshy:BottledOpossumRelic": {
+    "NAME": "Bottled Opossum",
+    "FLAVOR": "There is a Frozen Opossum inside. Poor thing.",
+    "DESCRIPTIONS": [
+      "Upon pick up, choose a Creature. Start each combat with this card in your hand.",
+      "Choose a card for ",
+      "Start each combat with ",
+      " in your hand."
+    ]
+  },
+  "leshy:DeadSurvivorsRelic": {
+    "NAME": "Dead Survivors",
+    "FLAVOR": "Bit off more than they can chew.",
+    "DESCRIPTIONS": [
+      "Doubles creature stat gains from upgrades."
+    ]
+  },
+  "leshy:WolfSkullRelic": {
+    "NAME": "Wolf Skull",
+    "FLAVOR": "Wolves together strong.",
+    "DESCRIPTIONS": [
+      "Wolves gain Leader at double effectiveness."
+    ]
+  },
+  "leshy:BullfighterCapeRelic": {
+    "NAME": "Bullfighter Cape",
+    "FLAVOR": "For idiots who want to make bulls mad.",
+    "DESCRIPTIONS": [
+      "Wild Bulls gain #yDouble Strike and trigger #yRampager an additional time each turn."
+    ]
+  },
+  "leshy:GreenShellRelic": {
+    "NAME": "Green Shell",
+    "FLAVOR": "Reminiscent of Go Karts.",
+    "DESCRIPTIONS": [
+      "River Snappers gain #yArmored."
+    ]
+  },
+  "leshy:MantisClawRelic": {
+    "NAME": "Green Shell",
+    "FLAVOR": "Reminiscent of Go Karts.",
+    "DESCRIPTIONS": [
+      "Mantises gain #yDouble #yStrike."
+    ]
+  },
+  "leshy:RavenFeatherRelic": {
+    "NAME": "Raven Feather",
+    "FLAVOR": "Might look good on a hat.",
+    "DESCRIPTIONS": [
+      "Ravens gain #yHoarder."
+    ]
+  },
+  "leshy:GhostFoodRelic": {
+    "NAME": "Ghost Food",
+    "FLAVOR": "Now you can eat your cake and eat it too.",
+    "DESCRIPTIONS": [
+      "Creatures with Transient gain 2 Health."
+    ]
+  },
+  "leshy:SaplingRelic": {
+    "NAME": "Sapling",
+    "FLAVOR": "This could grow to be a formidable oak.",
+    "DESCRIPTIONS": [
+      "Creatures without a tribe use the highest of Attack or Health when dealing damage."
+    ]
+  },
+  "leshy:ArtOfSquirrelRelic": {
+    "NAME": "Art of Squirrel",
+    "FLAVOR": "Who's that handsome devil?",
+    "DESCRIPTIONS": [
+      "If you do not play any creatures during your turn, gain an extra Squirrel next turn."
+    ]
+  },
+  "leshy:SquirrelTeaSetRelic": {
+    "NAME": "Squirrel Tea Set",
+    "FLAVOR": "The key to a refreshing night's Squirrel.",
+    "DESCRIPTIONS": [
+      "Whenever you enter a Rest Site, start the next combat with an extra Squirrel."
+    ]
+  },
+  "leshy:BoneShieldRelic": {
+    "NAME": "Bone Shield",
+    "FLAVOR": "Surround yourself with a whirlwind of bones.",
+    "DESCRIPTIONS": [
+      "On right click, spend 4 Bones to gain 2 Block."
+    ]
+  },
+  "leshy:InfestationRelic": {
+    "NAME": "Infestation",
+    "FLAVOR": "Ants.",
+    "DESCRIPTIONS": [
+      "Non Squirrel creatures gain Ant Spawner. Ants gain Unkillable."
+    ]
+  },
+  "leshy:DiscriminationRelic": {
+    "NAME": "Discrimination",
+    "FLAVOR": "Tears a society apart.",
+    "DESCRIPTIONS": [
+      "Creatures not matching your totem lose 2 Attack and Health. (Health cannot go below 1)"
+    ]
+  },
+  "leshy:ScavengerRelic": {
+    "NAME": "Scavenger",
+    "FLAVOR": "Get your paws off my creature's bones!",
+    "DESCRIPTIONS": [
+      "You no longer gain Bones."
+    ]
+  },
+  "leshy:SlowStartRelic": {
+    "NAME": "Slow Start",
+    "FLAVOR": "If only Coffee Dripper helped.",
+    "DESCRIPTIONS": [
+      "At the start of combat, lose all [E] ."
+    ]
+  },
+  "leshy:BearTrapRelic": {
+    "NAME": "Bear Trap",
+    "FLAVOR": "Ouch.",
+    "DESCRIPTIONS": [
+      "The rightmost creature does not trigger end of turn effects."
+    ]
+  },
+  "leshy:GrudgeRelic": {
+    "NAME": "Grudge",
+    "FLAVOR": "They will remember that.",
+    "DESCRIPTIONS": [
+      "When you sacrifice a creature to pay Blood costs, Glitch it."
+    ]
+  },
+  "leshy:DrownedRelic": {
+    "NAME": "Drowned",
+    "FLAVOR": "Fell down a well.",
+    "DESCRIPTIONS": [
+      "Creatures gain Guardian. The rightmost creature gains Waterborne."
+    ]
+  },
+  "leshy:StarvationRelic": {
+    "NAME": "Starvation",
+    "FLAVOR": "Repulsive.",
+    "DESCRIPTIONS": [
+      "At the start of your turn, if you don't have a Starvation, summon a Starvation."
+    ]
+  },
+  "leshy:BoneLordsHornRelic": {
+    "NAME": "Bone Lord's Horn",
+    "FLAVOR": "A price for the Bone Lord's favor.",
+    "DESCRIPTIONS": [
+      "Once per turn, you may right click to spend X and gain X Bones."
+    ]
+  },
+  "leshy:BloodBagRelic": {
+    "NAME": "Blood Bag",
+    "FLAVOR": "Sometimes you must sacrifice yourself to succeed.",
+    "DESCRIPTIONS": [
+      "You may play creatures costing Blood you cannot afford and lose 5 HP per missing Blood."
+    ]
+  },
+  "leshy:SugarCubesRelic": {
+    "NAME": "Sugar Cubes",
+    "FLAVOR": "You know you want it.",
+    "DESCRIPTIONS": [
+      "The first non Transient creature you summon each turn is upgraded."
+    ]
+  },
+  "leshy:BearMedallionRelic": {
+    "NAME": "Bear Medallion",
+    "FLAVOR": "Contains the spirit of a bear.",
+    "DESCRIPTIONS": [
+      "At the start of turn, add a Grizzly with Ethereal and Transient to your hand."
+    ]
+  },
+  "leshy:PliersRelic": {
+    "NAME": "Pliers",
+    "FLAVOR": "Contains the spirit of a bear.",
+    "DESCRIPTIONS": [
+      "On right click, lose ", " HP and gain a Tooth."
+    ]
+  }
+
+}

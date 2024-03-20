@@ -1,0 +1,26 @@
+{
+  "leshy:SigilBonfireOption": {
+    "TEXT": [
+      "Sigil",
+      "(Free Action) Sacrifice a base Creature to give its sigils to another base Creature.",
+      "You need 1 base Creature with sigils and 1 other base Creature.",
+      "Select a Creature to sacrifice.",
+      "Select a Creature to gain the sigils.",
+      "Once per campfire.",
+      "Twice per campfire."
+    ]
+  },
+  "leshy:MycologistBonfireOption": {
+    "TEXT": [
+      "Mycologist",
+      "",
+      "(Free Action) Splice a duplicate onto another, transferring its sigils and its stats.",
+      "You need at least 1 creature.",
+      "",
+      "Select a Creature as the base.",
+      "Select a Creature to splice.",
+      "Select a Creature to add to your deck.",
+      "Once per campfire."
+    ]
+  }
+}

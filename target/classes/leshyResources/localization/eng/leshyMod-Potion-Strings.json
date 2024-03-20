@@ -1,0 +1,30 @@
+{
+        "leshy:BottledSquirrelPotion": {
+                "NAME": "Bottled Squirrel",
+                "DESCRIPTIONS": ["Put ", "a Squirrel ", " Squirrels ", "into your hand."]
+        },
+        "leshy:HoggyBankPotion": {
+                "NAME": "Hoggy Bank",
+                "DESCRIPTIONS": ["Gain ", " Bones."]
+        },
+        "leshy:MagickalBleachPotion": {
+                "NAME": "Magickal Bleach",
+                "DESCRIPTIONS": ["Remove all your debuffs."]
+        },
+        "leshy:HarpiesBirdlegFanPotion": {
+                "NAME": "Harpie's Birdleg Fan",
+                "DESCRIPTIONS": ["Give your Creatures Airborne."]
+        },
+        "leshy:WiseclockPotion": {
+                "NAME": "Wiseclock",
+                "DESCRIPTIONS": ["Move the Creature in the front to the back."]
+        },
+        "leshy:NanoArmorGeneratorPotion": {
+                "NAME": "Nano Armor Generator",
+                "DESCRIPTIONS": ["Gain ", " Buffer."]
+        },
+        "leshy:ToothPotion": {
+                "NAME": "Tooth",
+                "DESCRIPTIONS": ["Deal ", " Damage or discard to gain ", " Gold."]
+        }
+}

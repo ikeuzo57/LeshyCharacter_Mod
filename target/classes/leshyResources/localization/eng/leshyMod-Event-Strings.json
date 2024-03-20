@@ -1,0 +1,160 @@
+{
+  "leshy:IdentityCrisisEvent": {
+    "NAME": "Identity Crisis",
+    "DESCRIPTIONS": [
+      "As you move through ~The~ ~City~ you come across a #pPurple #pMirror. NL You look at it, but you see no reflection.",
+      "You see no one but #g~You~ #g~wish~ #g~to~ #g~become~ #g~someone.~",
+      "#r@YOU@ #r@EXIST@ #r@AND@ #r@ARE@ #r@VALID!@",
+      "#yYou #yare #yat #ypeace #ywith #yyour #ypresence.",
+      "You have no hands."
+    ],
+    "OPTIONS": [
+      "[Inspiration] #gGain #ga #gRandom #gStarting #gRelic.",
+      "[Denial] #rLose #r",
+      " #rMax #rHP. #gRemove #ga #gCard #gfrom #gyour #gdeck.",
+      "[Acceptance] #gGain #gApotheosis.",
+      "[TOUCH THE MIRROR] TOUCH TOUCH TO#C# TOUCH TO UCH TOUCH #rTOUCH TOUCH",
+      "[Leave]",
+      "Select card to remove."
+    ]
+  },
+  "leshy:MycologistsEvent": {
+    "NAME": "Mycologists",
+    "DESCRIPTIONS": [
+      "You found yourself among a grove of ~thick~ and ~pungent~ mushrooms. NL You squint to see a figure through a ~thick~ cloud of #gspores.",
+
+      "\"We are #yThe #yMycologists, yes?\" NL ~\"Yes.\"~ NL \"A-and we are performing our experiments far from- from-\" NL ~\"We~ ~are~ ~not~ ~welcome~ ~elsewhere.\"~ NL \"We will experiment on your flock, yes? We- we need #y2 #yof #ythe #ysame creatures?\" NL ~\"One~ ~for~ ~each~ ~of~ ~us.\"~",
+      "\"I- I think this could get #rmessy.\" NL ~\"Look~ ~away.\"~",
+      "\"Th- The ",
+      ".. It is now one? Wh- what have we done?\"",
+
+      "\"D- Did you bring us... #y2 #yof #ythe #ysame?\" NL ~\"We~ ~would~ ~like~ ~to~ ~experiment.\"~ NL \"O- Oh dear... Y- You don't.\" NL ~\"You~ ~have~ ~no~ ~duplicate~ ~cards.\"~",
+      "\"T- Take one of ours?\" NL ~\"We~ ~will~ ~use~ ~it~ ~next~ ~time.\"~",
+
+      "Something went wrong."
+    ],
+    "OPTIONS": [
+      "[Approach]",
+      "[Leave]",
+      "[Mycologists] #gSelect #ga #gcreature #gwith #ga #gduplicate.",
+      "[Mycologists] #gSelect #ga #gduplicate.",
+      "[Mycologists] #gGain #ga #gduplicate."
+    ]
+  },
+  "leshy:MysteriousStonesEvent": {
+    "NAME": "Mysterious Stones",
+    "DESCRIPTIONS": [
+      "You find a clearing with #r~bloodstained~ stones. NL You believe you can #rsacrifice an #yuntainted creature to give its #ySigils to another #yuntainted creature.",
+      "Which creature will inherit its ~power?~",
+      "You hope this was worth it.",
+
+      "Something went wrong."
+    ],
+    "OPTIONS": [
+      "[Leave]",
+      "[Mysterious Stones] #rSelect #ra #rcreature #rto #rsacrifice.",
+      "[Mysterious Stones] #gSelect #ga #gcreature #gto #ggain #gthe #gSigils.",
+      "[Mysterious Stones] You do not have valid creatures."
+    ]
+  },
+  "leshy:BoneAltarEvent": {
+    "NAME": "Bone Altar",
+    "DESCRIPTIONS": [
+      "You find an altar with a ~sinister~ goat skull. NL You feel compelled to make a sacrifice.",
+      "The altar seems pleased with your offering.",
+      "The altar is ~extremely~ pleased with your offering",
+
+      "Something went wrong."
+    ],
+    "OPTIONS": [
+      "[Leave]",
+      "[Bone Altar] #rSelect #ra #rcreature #rto #rsacrifice.",
+      "[Bone Altar] You do not have any valid creatures, somehow."
+    ]
+  },
+  "leshy:WoodcarverEvent": {
+    "NAME": "Woodcarver",
+    "DESCRIPTIONS": [
+      "You came upon the old #yWoodcarver who fixed her intense gaze upon you. NL After an overlong moment of silence, she moved to offer her carvings.",
+      "The grey-haired woman silently collected her carvings and left."
+    ],
+    "OPTIONS": [
+      "[Leave]",
+      "[Woodcarver] #gTake #ga #gcarving."
+    ]
+  },
+  "leshy:TrapperEvent": {
+    "NAME": "Trapper",
+    "DESCRIPTIONS": [
+      "You come upon the #yTrapper. He is trying to sell you his pelts. NL \"Ye won't find better pelts within a hundred miles!\""
+    ],
+    "OPTIONS": [
+      "[Rabbit] #rLose #r", " #rgold. #gGain #ga #gRabbit #gPelt.",
+      "[Wolf] #rLose #r", " #rgold. #gGain #ga #gWolf #gPelt.",
+      "[Golden] #rLose #r", " #rgold. #gGain #ga #gGolden #gPelt.",
+      "[Knife] #rLose #r", " #rgold. #gGain #ga #gKnife.",
+      "[Leave]"
+    ]
+  },
+  "leshy:PackEvent": {
+    "NAME": "Pack Rat",
+    "DESCRIPTIONS": [
+      "You come upon the #yPack #yRat. His pack is full to the brim with items.",
+      "He sees you are low on supplies and offers you some items from his pack.",
+      "He sees you have no room for supplies and decides to accompany you.",
+      "Certainly ~nothing~ #rbad will happen to him."
+    ],
+    "OPTIONS": [
+      "[Approach]",
+      "[Items] #gGain #gsome #gitems!",
+      "[Pack Rat] #gGain #ga #gPack #gRat.",
+      "[Leave]"
+    ]
+  },
+  "leshy:GoobertEvent": {
+    "NAME": "Goobert",
+    "DESCRIPTIONS": [
+      "#g\"I #gwill #g~paint!~ #gJust #glike #gthe #gmaster! NL #gNot #gas #ggood #gas #gthe #gmaster, #gno. NL #gI #gmay #gmake #gsome #g~errors.~ NL #gWhat #gshall #gI #gpaint #gfor #gyou?\"",
+      "#g\"W-What #gdo #gyou #gthink? NL #gWould #gthe #gmaster #gbe #gproud? NL #rPlease #rsay #ryes!\""
+    ],
+    "OPTIONS": [
+      "[Goobert] #gChoose #ga #gcreature #gfor #gGoobert #gto #gpaint.",
+      "[Leave]",
+      "[Goobert] You do not have any valid creatures, somehow."
+    ]
+  },
+  "leshy:RecruitmentEvent": {
+    "NAME": "Recruitment",
+    "DESCRIPTIONS": [
+      "Denizens of the forest approach tentatively. NL Only #y1 may grace your paltry deck.",
+      "Another creature joins your caravan."
+    ],
+    "OPTIONS": [
+      "[1 Blood] #gSearch #gfor #g1 #gBlood #gcost #gcreatures.",
+      "[2 Blood] #gSearch #gfor #g2 #gBlood #gcost #gcreatures.",
+      "[Bone] #gSearch #gfor #gBone #gcost #gcreatures.",
+      "[Tribal] #gPick #ga #gTribe #gto #gsearch #gfor.",
+      "[Avian] #gSearch #gfor #gAvian #gcreatures.",
+      "[Canine] #gSearch #gfor #gCanine #gcreatures.",
+      "[Hooved] #gSearch #gfor #gHooved #gcreatures.",
+      "[Insect] #gSearch #gfor #gInsect #gcreatures.",
+      "[Reptile] #gSearch #gfor #gReptile #gcreatures.",
+      "[Leave]"
+    ]
+  },
+  "leshy:DredgingRoomEvent": {
+    "NAME": "Dredging Room",
+    "DESCRIPTIONS": [
+      "You find yourself deep within a #yfactory in what appears to be a #ydredging #yroom. A lone robot silently operates a claw machine, pulling scrap from the black water onto a conveyor belt.",
+      "You feel the world ~shudder~ as the claw pulls #rsomething from ~01100100~ ~01100101~ ~01100101~ ~01110000~ ~01100010~ ~01100101~ ~01101110~ ~01100101~ ~01100001~ ~01110100~ ~01101000~ NL With this you could #yshape #ythe #yworld, but perhaps some secrets are better left forgotten.",
+      "You wonder if you'll be back for more."
+    ],
+    "OPTIONS": [
+      "[Approach]",
+      "#r[OLD_DATA]",
+      "[Leave]",
+      "#r[DEEPER]",
+      "[Resist] #rLose #r", " #rHP."
+    ]
+  }
+}
