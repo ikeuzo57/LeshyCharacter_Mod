@@ -40,9 +40,9 @@ public class Raven extends AbstractCreatureCard {
 
         tribe = CreatureTribe.AVIAN;
 
-        attack = baseAttack = trueBaseAttack = 10;
+        attack = baseAttack = trueBaseAttack = 8;
 
-        health = baseHealth = trueBaseHealth = 14;
+        health = baseHealth = trueBaseHealth = 12;
 
         innate.add(Sigils.AIRBORNE);
         current.add(Sigils.AIRBORNE);

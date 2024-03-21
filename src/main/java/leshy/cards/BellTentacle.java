@@ -33,7 +33,7 @@ public class BellTentacle extends AbstractCreatureCard {
     private static final int COST = -2;
 
     //private static final float SCALING = 1.0F;
-    private static final int BUFF = 12;
+    private static final int BUFF = 10;
 
     public BellTentacle() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
@@ -45,7 +45,7 @@ public class BellTentacle extends AbstractCreatureCard {
 
         tribe = CreatureTribe.NONE;
 
-        attack = baseAttack = trueBaseAttack = 10;
+        attack = baseAttack = trueBaseAttack = 8;
 
         health = baseHealth = trueBaseHealth = 4;
 

@@ -40,9 +40,9 @@ public class PeltLice extends AbstractCreatureCard {
 
         tribe = CreatureTribe.INSECT;
 
-        attack = baseAttack = trueBaseAttack = 10;
+        attack = baseAttack = trueBaseAttack = 8;
 
-        health = baseHealth = trueBaseHealth = 10;
+        health = baseHealth = trueBaseHealth = 8;
 
         innate.add(Sigils.DOUBLE_STRIKE);
         current.add(Sigils.DOUBLE_STRIKE);

@@ -40,9 +40,9 @@ public class WildBull extends AbstractCreatureCard {
 
         tribe = CreatureTribe.HOOVED;
 
-        attack = baseAttack = trueBaseAttack = 14;
+        attack = baseAttack = trueBaseAttack = 12;
 
-        health = baseHealth = trueBaseHealth = 12;
+        health = baseHealth = trueBaseHealth = 10;
 
         innate.add(Sigils.RAMPAGER);
         current.add(Sigils.RAMPAGER);

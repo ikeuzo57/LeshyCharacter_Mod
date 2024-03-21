@@ -40,7 +40,7 @@ public class GreatWhite extends AbstractCreatureCard {
 
         tribe = CreatureTribe.NONE;
 
-        attack = baseAttack = trueBaseAttack = 16;
+        attack = baseAttack = trueBaseAttack = 12;
 
         health = baseHealth = trueBaseHealth = 1;
 

@@ -40,9 +40,9 @@ public class RiverSnapper extends AbstractCreatureCard {
 
         tribe = CreatureTribe.REPTILE;
 
-        attack = baseAttack = trueBaseAttack = 4;
+        attack = baseAttack = trueBaseAttack = 2;
 
-        health = baseHealth = trueBaseHealth = 20;
+        health = baseHealth = trueBaseHealth = 18;
 
         initializeDescription();
 

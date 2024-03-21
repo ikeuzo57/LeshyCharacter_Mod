@@ -37,7 +37,7 @@ public class Dam extends AbstractCreatureCard {
         tribe = CreatureTribe.NONE;
 
 
-        health = baseHealth = trueBaseHealth = 8;
+        health = baseHealth = trueBaseHealth = 6;
 
         fleeting = baseFleeting = true;
         bloodless = true;

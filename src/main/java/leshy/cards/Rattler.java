@@ -42,7 +42,7 @@ public class Rattler extends AbstractCreatureCard {
 
         attack = baseAttack = trueBaseAttack = 18;
 
-        health = baseHealth = trueBaseHealth = 10;
+        health = baseHealth = trueBaseHealth = 8;
 
         initializeDescription();
 

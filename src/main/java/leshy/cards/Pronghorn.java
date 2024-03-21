@@ -40,9 +40,9 @@ public class Pronghorn extends AbstractCreatureCard {
 
         tribe = CreatureTribe.HOOVED;
 
-        attack = baseAttack = trueBaseAttack = 8;
+        attack = baseAttack = trueBaseAttack = 6;
 
-        health = baseHealth = trueBaseHealth = 14;
+        health = baseHealth = trueBaseHealth = 12;
 
         innate.add(Sigils.RAMPAGER);
         innate.add(Sigils.BIFURCATED);

@@ -35,7 +35,7 @@ public class SacrificePower extends AbstractPower implements CloneablePowerInter
     private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("bone_power84.png"));
     private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("bone_power32.png"));
 
-    private static final int BUFF = 8;
+    private static final int BUFF = 6;
 
     public SacrificePower(final AbstractCreature owner, final AbstractCreature source, final int amount) {
 

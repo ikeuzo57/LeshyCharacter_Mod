@@ -41,9 +41,9 @@ public class Alpha extends AbstractCreatureCard {
 
         tribe = CreatureTribe.CANINE;
 
-        attack = baseAttack = trueBaseAttack = 8;
+        attack = baseAttack = trueBaseAttack = 6;
 
-        health = baseHealth = trueBaseHealth = 10;
+        health = baseHealth = trueBaseHealth = 8;
 
         innate.add(Sigils.LEADER);
         current.add(Sigils.LEADER);

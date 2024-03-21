@@ -40,9 +40,9 @@ public class RatKing extends AbstractCreatureCard {
 
         tribe = CreatureTribe.NONE;
 
-        attack = baseAttack = trueBaseAttack = 16;
+        attack = baseAttack = trueBaseAttack = 14;
 
-        health = baseHealth = trueBaseHealth = 8;
+        health = baseHealth = trueBaseHealth = 6;
 
         innate.add(Sigils.BONE_KING);
         current.add(Sigils.BONE_KING);

@@ -38,7 +38,7 @@ public class Sean extends AbstractCreatureCard {
 
         tribe = CreatureTribe.NONE;
 
-        attack = baseAttack = trueBaseAttack = 4;
+        attack = baseAttack = trueBaseAttack = 2;
 
         health = baseHealth = trueBaseHealth = 16;
 
