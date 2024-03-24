@@ -78,15 +78,15 @@ public class OldDataRelic extends CustomRelic implements OnApplyPowerRelic, Clic
         String desc = "";
 
         if(head)
-            desc += DESCRIPTIONS[0] + " ";
+            desc += DESCRIPTIONS[0] + " NL ";
         if(left)
-            desc += DESCRIPTIONS[1] + " ";
+            desc += DESCRIPTIONS[1] + " NL ";
         if(top)
-            desc += DESCRIPTIONS[2] + " ";
+            desc += DESCRIPTIONS[2] + " NL ";
         if(sacrifice)
-            desc += DESCRIPTIONS[5] + " ";
+            desc += DESCRIPTIONS[5] + " NL ";
         if(staticBuff > 0)
-            desc += DESCRIPTIONS[3] + staticBuff + DESCRIPTIONS[4] + " ";
+            desc += DESCRIPTIONS[3] + staticBuff + DESCRIPTIONS[4] + " NL ";
 
         desc += DESCRIPTIONS[6] + this.counter + DESCRIPTIONS[7];
 

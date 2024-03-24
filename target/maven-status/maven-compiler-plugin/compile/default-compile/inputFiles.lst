@@ -48,6 +48,7 @@ C:\Users\seben\Documents\Personal\Game Info\STS\my_mods\Leshy\src\main\java\lesh
 C:\Users\seben\Documents\Personal\Game Info\STS\my_mods\Leshy\src\main\java\leshy\cards\TooFastTooSoon.java
 C:\Users\seben\Documents\Personal\Game Info\STS\my_mods\Leshy\src\main\java\leshy\relics\BloodBagRelic.java
 C:\Users\seben\Documents\Personal\Game Info\STS\my_mods\Leshy\src\main\java\leshy\relics\ChimeraStatueRelic.java
+C:\Users\seben\Documents\Personal\Game Info\STS\my_mods\Leshy\src\main\java\leshy\actions\FinicalHatchlingAction.java
 C:\Users\seben\Documents\Personal\Game Info\STS\my_mods\Leshy\src\main\java\leshy\cards\Smoke.java
 C:\Users\seben\Documents\Personal\Game Info\STS\my_mods\Leshy\src\main\java\leshy\cards\MudTurtle.java
 C:\Users\seben\Documents\Personal\Game Info\STS\my_mods\Leshy\src\main\java\leshy\relics\PaintbrushRelic.java
@@ -58,7 +59,6 @@ C:\Users\seben\Documents\Personal\Game Info\STS\my_mods\Leshy\src\main\java\lesh
 C:\Users\seben\Documents\Personal\Game Info\STS\my_mods\Leshy\src\main\java\leshy\relics\GreatKrakenRelic.java
 C:\Users\seben\Documents\Personal\Game Info\STS\my_mods\Leshy\src\main\java\leshy\relics\SquirrelTeaSetRelic.java
 C:\Users\seben\Documents\Personal\Game Info\STS\my_mods\Leshy\src\main\java\leshy\relics\DeadSurvivorsRelic.java
-C:\Users\seben\Documents\Personal\Game Info\STS\my_mods\Leshy\src\main\java\leshy\patches\BallOfSquirrelsPatch.java
 C:\Users\seben\Documents\Personal\Game Info\STS\my_mods\Leshy\src\main\java\leshy\cards\UndeadCat.java
 C:\Users\seben\Documents\Personal\Game Info\STS\my_mods\Leshy\src\main\java\leshy\cards\WaterborneTotem.java
 C:\Users\seben\Documents\Personal\Game Info\STS\my_mods\Leshy\src\main\java\leshy\cards\Roadkill.java
@@ -122,6 +122,7 @@ C:\Users\seben\Documents\Personal\Game Info\STS\my_mods\Leshy\src\main\java\lesh
 C:\Users\seben\Documents\Personal\Game Info\STS\my_mods\Leshy\src\main\java\leshy\relics\BottledSquirrelRelic.java
 C:\Users\seben\Documents\Personal\Game Info\STS\my_mods\Leshy\src\main\java\leshy\cards\MightyLeapTotem.java
 C:\Users\seben\Documents\Personal\Game Info\STS\my_mods\Leshy\src\main\java\leshy\cards\ReptileTotem.java
+C:\Users\seben\Documents\Personal\Game Info\STS\my_mods\Leshy\src\main\java\leshy\patches\ProceedButtonPatch.java
 C:\Users\seben\Documents\Personal\Game Info\STS\my_mods\Leshy\src\main\java\leshy\cards\Geck.java
 C:\Users\seben\Documents\Personal\Game Info\STS\my_mods\Leshy\src\main\java\leshy\cards\WisdomArmored.java
 C:\Users\seben\Documents\Personal\Game Info\STS\my_mods\Leshy\src\main\java\leshy\cards\GreatWhite.java

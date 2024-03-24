@@ -26,4 +26,6 @@ public class CreatureSavable {
     public int magic;
     public int secondMagic;
 
+    public boolean isStatic;
+
 }

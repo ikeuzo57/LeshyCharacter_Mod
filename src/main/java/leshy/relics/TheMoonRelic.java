@@ -49,7 +49,7 @@ public class TheMoonRelic extends CustomRelic implements OnPlayerDeathRelic {
             this.counter = -2;
             usedUp();
 
-            abstractPlayer.heal(AbstractDungeon.player.maxHealth/10);
+            abstractPlayer.heal((int)(AbstractDungeon.player.maxHealth*0.3));
             if(AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT)
                 addToBot(new TheMoonAction());
 

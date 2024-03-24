@@ -42,7 +42,7 @@ public class TheMoon extends AbstractCreatureCard {
 
         tribe = CreatureTribe.NONE;
 
-        attack = baseAttack = trueBaseAttack = 10;
+        attack = baseAttack = trueBaseAttack = 20;
 
         health = baseHealth = trueBaseHealth = 200;
 

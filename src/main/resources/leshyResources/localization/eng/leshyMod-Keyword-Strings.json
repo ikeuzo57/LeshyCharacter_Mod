@@ -50,7 +50,7 @@
       "Airborne",
       "airborne"
     ],
-    "DESCRIPTION": "Attacks inflict loss of life instead."
+    "DESCRIPTION": "Attacks inflict loss of HP instead."
   },
   {
     "NAMES": [
@@ -311,7 +311,7 @@
       "Brood_Parasite",
       "brood_parasite"
     ],
-    "DESCRIPTION": "When summoned, apply Broken Egg to a random enemy. They deal 20% less damage and prevent the next attack they take."
+    "DESCRIPTION": "When summoned, apply Broken Egg to a all enemies. They deal 20% less damage and prevent the next time they take damage."
   },
   {
     "PROPER_NAME": "Loose Tail",
@@ -412,7 +412,7 @@
       "Finical_Hatchling",
       "finical_hatchling"
     ],
-    "DESCRIPTION": "When drawn, if you have 2 sets of each tribe in your master deck, hatch."
+    "DESCRIPTION": "At start of combat, if you have 2 sets of each tribe in your master deck, hatch."
   },
   {
     "NAMES": [

@@ -57,7 +57,7 @@ public class DredgingOption {
         map.put(Reward.CHOICE_RARE, "#gGain #g1 #gof #g3 #gRare #gRelics.");
         map.put(Reward.ONE_BOSS, "#gGain #ga #gBoss #gRelic.");
         //Events
-        map.put(Reward.EVENTS, "#gChoose #gan #gEvent.");
+        map.put(Reward.EVENTS, "#gChoose #gan #gEvent. #rObtain #ra #rCurse.");
         map.put(Reward.MYSTERIOUS_STONES, "#gMysterious #gStones.");
         map.put(Reward.MYCOLOGISTS, "#gMycologists.");
         map.put(Reward.GOOBERT, "#gGoobert.");
@@ -78,9 +78,9 @@ public class DredgingOption {
     public static HashMap<Penalty, String> makePenaltyMap(){
         HashMap<Penalty, String> map = new HashMap<>();
         //Curses
-        map.put(Penalty.NORMALITY, "#rGain #r2 #rNormality.");
-        map.put(Penalty.PAIN, "#rGain #r2 #rPain.");
-        map.put(Penalty.ROADKILL, "#rGain #r2 #rRoadkill.");
+        map.put(Penalty.NORMALITY, "#rBecome #rCursed #r- #r2 #rNormality.");
+        map.put(Penalty.PAIN, "#rBecome #rCursed #r- #r2 #rPain.");
+        map.put(Penalty.ROADKILL, "#rBecome #rCursed #r- #r2 #rRoadkill.");
         //Blights
         map.put(Penalty.INFESTATION, "#rGain #rInfestation.");
         map.put(Penalty.DISCRIMINATION, "#rGain #rDiscrimination.");
@@ -260,6 +260,9 @@ public class DredgingOption {
                 AbstractDungeon.getCurrRoom().phase = AbstractRoom.RoomPhase.EVENT;
                 AbstractDungeon.getCurrRoom().event = new BoneAltarEvent();
                 AbstractDungeon.getCurrRoom().event.onEnterRoom();
+                break;
+            case EVENTS:
+                AbstractDungeon.effectList.add(new ShowCardAndObtainEffect(AbstractDungeon.getCard(AbstractCard.CardRarity.CURSE), MathUtils.random(0.1F, 0.9F) * Settings.WIDTH, MathUtils.random(0.2F, 0.8F) * Settings.HEIGHT));
                 break;
 
             //Misc
@@ -443,10 +446,11 @@ public class DredgingOption {
             if(r instanceof StarvationRelic)
                 list.remove(Penalty.STARVATION);
         }
-        while(list.size() > 4){
-            list.remove(AbstractDungeon.miscRng.random(list.size()-1));
+        ArrayList<Penalty> penalties = new ArrayList<>();
+        while(penalties.size() < 4){
+            penalties.add(list.remove(AbstractDungeon.miscRng.random(list.size()-1)));
         }
-        return list;
+        return penalties;
     }
 
     public static ArrayList<AbstractCard> getDeathcards(int num){

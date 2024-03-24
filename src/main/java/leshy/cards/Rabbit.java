@@ -46,8 +46,4 @@ public class Rabbit extends AbstractCreatureCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
     }
 
-    @Override
-    public boolean canUpgrade() {
-        return false;
-    }
 }

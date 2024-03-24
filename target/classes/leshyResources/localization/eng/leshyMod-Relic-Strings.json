@@ -7,7 +7,7 @@
     ]
   },"leshy:SquirrelDeckRelic": {
   "NAME": "Squirrel Deck",
-  "FLAVOR": "Peaceful woodland critters.",
+  "FLAVOR": "Beware the Beat of Death.",
   "DESCRIPTIONS": [
     "At the start of each turn, add a Squirrel to your hand. You may right click to exhaust a Squirrel and draw a card."
   ]
@@ -108,7 +108,7 @@
     "NAME": "The Moon",
     "FLAVOR": "The final phase.",
     "DESCRIPTIONS": [
-      "When you would die, heal to 10% of your Max HP and summon The Moon (works once)."
+      "When you would die, heal to 30% of your Max HP and summon The Moon (works once)."
     ]
   },
   "leshy:MycologistMaskRelic": {
@@ -144,7 +144,7 @@
     "NAME": "Ball of Squirrels",
     "FLAVOR": "An endless tide.",
     "DESCRIPTIONS": [
-      "At the start of each turn, add 2 Squirrels to your hand. Draw one fewer card each turn. Replaces Squirrel Deck."
+      "Replaces #ySquirrel #yDeck. NL At the start of each turn, add 2 Squirrels to your hand. Draw one fewer card each turn."
     ]
   },
   "leshy:CloverRelic": {
@@ -367,7 +367,7 @@
     ]
   },
   "leshy:MantisClawRelic": {
-    "NAME": "Green Shell",
+    "NAME": "Mantis Claw",
     "FLAVOR": "Reminiscent of Go Karts.",
     "DESCRIPTIONS": [
       "Mantises gain #yDouble #yStrike."

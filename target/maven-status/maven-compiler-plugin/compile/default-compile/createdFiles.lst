@@ -39,6 +39,7 @@ leshy\cards\MooseBuck.class
 leshy\potions\interfaces\OnDestroyPotion.class
 leshy\cards\WisdomStinky.class
 leshy\patches\NeowPatch$ButtonEffect$Locator.class
+leshy\patches\ProceedButtonPatch$Locator.class
 leshy\cards\OldDataStatic.class
 leshy\cards\FieldMice.class
 leshy\cards\DoubleStrikeTotem.class
@@ -62,7 +63,6 @@ leshy\relics\TinyHeadbandRelic.class
 leshy\patches\BottledOpossumPatch$MoveToTop.class
 leshy\patches\StaticCardPatch$DescriptionCN.class
 leshy\cards\OldDataTop.class
-leshy\patches\BallOfSquirrelsPatch.class
 leshy\relics\TotemPoleRelic.class
 leshy\powers\TargetPower.class
 leshy\cards\WisdomAirborne.class
@@ -345,6 +345,7 @@ leshy\cards\BaitBucket.class
 leshy\patches\StaticCardPatch$Tint.class
 leshy\relics\HeraldOfTheScurryRelic.class
 leshy\patches\BottledOpossumPatch.class
+leshy\actions\FinicalHatchlingAction.class
 leshy\cards\WisdomSharpQuills.class
 leshy\actions\WisdomAction.class
 leshy\relics\GoatEyeRelic.class
@@ -416,6 +417,7 @@ leshy\patches\RingWormPatch.class
 leshy\vfx\ReplacePeltEffect$1.class
 leshy\relics\GreenShellRelic.class
 leshy\patches\DestroyPotionPatch.class
+leshy\patches\ProceedButtonPatch.class
 leshy\cards\Reginald.class
 leshy\relics\CloverRelic.class
 leshy\actions\KnifeAction$1.class

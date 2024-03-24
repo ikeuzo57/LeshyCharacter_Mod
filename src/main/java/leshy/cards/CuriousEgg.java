@@ -1,6 +1,7 @@
 package leshy.cards;
 
 import basemod.helpers.TooltipInfo;
+import com.evacipated.cardcrawl.mod.stslib.cards.interfaces.StartupCard;
 import com.evacipated.cardcrawl.mod.stslib.patches.HitboxRightClick;
 import com.megacrit.cardcrawl.actions.common.ExhaustSpecificCardAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
@@ -10,6 +11,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import leshy.LeshyMod;
+import leshy.actions.FinicalHatchlingAction;
 import leshy.cards.abstracts.AbstractCreatureCard;
 import leshy.cards.abstracts.RightClickCard;
 import leshy.characters.Leshy;
@@ -20,7 +22,7 @@ import java.util.List;
 
 import static leshy.LeshyMod.makeCardPath;
 
-public class CuriousEgg extends AbstractCreatureCard implements RightClickCard {
+public class CuriousEgg extends AbstractCreatureCard implements RightClickCard, StartupCard {
 
 
     public static final String ID = LeshyMod.makeID(CuriousEgg.class.getSimpleName());
@@ -61,20 +63,11 @@ public class CuriousEgg extends AbstractCreatureCard implements RightClickCard {
     }
 
     @Override
-    public void triggerWhenDrawn() {
-        super.triggerWhenDrawn();
+    public boolean atBattleStartPreDraw() {
 
-        if(LeshyMod.fullSets >= magicNumber){
+        addToTop(new FinicalHatchlingAction(this, magicNumber));
 
-            Hydra hydra = new Hydra();
-            hydra.transform(this);
-            hydra.baseAttack += (this.baseAttack - this.trueBaseAttack);
-            hydra.baseHealth += (this.baseHealth - this.trueBaseHealth);
-            addToBot(new ExhaustSpecificCardAction(this, AbstractDungeon.player.hand));
-            addToBot(new MakeTempCardInHandAction(hydra));
-
-        }
-
+        return false;
     }
 
     @Override

@@ -55,7 +55,7 @@ public class BrokenEggPower extends AbstractPower implements CloneablePowerInter
     }
 
     public int onAttackedToChangeDamage(DamageInfo info, int damageAmount) {
-        if (info.type == DamageInfo.DamageType.NORMAL && damageAmount > 0){
+        if (info.type != DamageInfo.DamageType.HP_LOSS && damageAmount > 0){
             addToTop(new ReducePowerAction(this.owner, this.owner, this, 1));
             return 0;
         }

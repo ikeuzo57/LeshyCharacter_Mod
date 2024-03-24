@@ -650,10 +650,9 @@ public abstract class AbstractCreatureCard extends AbstractDynamicCard implement
             addToBot(new MakeTempCardInHandAction(rabbit));
         }
         if(current.contains(Sigils.BROOD_PARASITE)){
-            ArrayList<AbstractMonster> enemies = CreatureAttackAction.getRandomMonsters();
-            if(!enemies.isEmpty()){
-                addToBot(new ApplyPowerAction(enemies.get(0), AbstractDungeon.player, new BrokenEggPower(enemies.get(0), AbstractDungeon.player, 1), 1));
-            }
+            for(AbstractMonster m : AbstractDungeon.getCurrRoom().monsters.monsters)
+                if(m.currentHealth > 0 && !m.isDeadOrEscaped())
+                    addToBot(new ApplyPowerAction(m, AbstractDungeon.player, new BrokenEggPower(m, AbstractDungeon.player, 1), 1));
         }
         if(current.contains(Sigils.MIGHTY_LEAP)){
             applyMightyLeap = true;
@@ -1041,6 +1040,7 @@ public abstract class AbstractCreatureCard extends AbstractDynamicCard implement
         save.baseFleeting = this.baseFleeting;
         save.costType = this.costType;
         save.extraCost = this.extraCost;
+        save.isStatic = this.isStatic;
 
         return save;
 
@@ -1063,6 +1063,7 @@ public abstract class AbstractCreatureCard extends AbstractDynamicCard implement
         this.fleeting = this.baseFleeting = save.baseFleeting;
         this.costType = save.costType;
         this.extraCost = save.extraCost;
+        this.isStatic = save.isStatic;
 
     }
 

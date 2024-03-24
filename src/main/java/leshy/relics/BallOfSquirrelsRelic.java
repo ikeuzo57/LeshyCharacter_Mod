@@ -42,10 +42,48 @@ public class BallOfSquirrelsRelic extends CustomRelic{
     }
 
     @Override
+    public void instantObtain() {
+        LeshyMod.logger.info("Obtain");
+        if (AbstractDungeon.player.hasRelic(SquirrelDeckRelic.ID)) {
+            LeshyMod.logger.info("Replace");
+            for (int i = 0; i < AbstractDungeon.player.relics.size(); ++i) {
+                if (AbstractDungeon.player.relics.get(i).relicId.equals(SquirrelDeckRelic.ID)) {
+                    instantObtain(AbstractDungeon.player, i, true);
+                    break;
+                }
+            }
+        } else {
+            LeshyMod.logger.info("Not Replace");
+            super.instantObtain();
+            flash();
+        }
+    }
+
+    @Override
+    public void obtain() {
+        LeshyMod.logger.info("Obtain");
+        if (AbstractDungeon.player.hasRelic(SquirrelDeckRelic.ID)) {
+            LeshyMod.logger.info("Replace");
+            for (int i = 0; i < AbstractDungeon.player.relics.size(); ++i) {
+                if (AbstractDungeon.player.relics.get(i).relicId.equals(SquirrelDeckRelic.ID)) {
+                    instantObtain(AbstractDungeon.player, i, true);
+                    break;
+                }
+            }
+        } else {
+            LeshyMod.logger.info("Not Replace");
+            super.obtain();
+        }
+    }
+
+    @Override
+    public boolean canSpawn() {
+        return AbstractDungeon.player.hasRelic(SquirrelDeckRelic.ID);
+    }
+
+    @Override
     public String getUpdatedDescription() {
-
         return DESCRIPTIONS[0];
-
     }
 
 }
