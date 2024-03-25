@@ -36,8 +36,10 @@ public class MagicEyeRelic extends CustomRelic{
         FilmRoll film = new FilmRoll();
         AbstractDungeon.player.masterDeck.addToTop(wolf);
         AbstractDungeon.player.masterDeck.addToTop(film);
+        StuntedWolf copy = (StuntedWolf) wolf.makeSameInstanceOf();
+        copy.atBattleStartPreDraw();
         if(AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT){
-            addToBot(new MakeTempCardInHandAction(wolf.makeSameInstanceOf()));
+            addToBot(new MakeTempCardInHandAction(copy));
             addToBot(new MakeTempCardInHandAction(film.makeSameInstanceOf()));
         }
     }

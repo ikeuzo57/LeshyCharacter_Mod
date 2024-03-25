@@ -1,5 +1,6 @@
 package leshy.cards;
 
+import com.evacipated.cardcrawl.mod.stslib.cards.interfaces.StartupCard;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -18,7 +19,7 @@ import java.util.Arrays;
 
 import static leshy.LeshyMod.makeCardPath;
 
-public class StuntedWolf extends AbstractCreatureCard {
+public class StuntedWolf extends AbstractCreatureCard implements StartupCard {
 
 
     public static final String ID = LeshyMod.makeID(StuntedWolf.class.getSimpleName());
@@ -97,8 +98,10 @@ public class StuntedWolf extends AbstractCreatureCard {
     public void onSummon() {
         super.onSummon();
         AbstractPlayer p = AbstractDungeon.player;
-        wolfPower = new StuntedWolfPower(p, sigil);
-        addToTop(new ApplyPowerAction(p, p, wolfPower));
+        if(sigil != null){
+            wolfPower = new StuntedWolfPower(p, sigil);
+            addToTop(new ApplyPowerAction(p, p, wolfPower));
+        }
 
         switch (AbstractDungeon.miscRng.random(3)){
             case 0:
@@ -178,6 +181,22 @@ public class StuntedWolf extends AbstractCreatureCard {
                 break;
         }
 
+    }
+
+    @Override
+    public boolean atBattleStartPreDraw() {
+
+        ArrayList<Sigils> list = new ArrayList<>(Arrays.asList(AbstractCreatureCard.Sigils.values()));
+        list.remove(Sigils.AMORPHOUS);
+        list.remove(Sigils.TRINKET_BEARER);
+        int size = list.size();
+        int index = AbstractDungeon.miscRng.random(size - 1);
+
+        sigil = list.get(index);
+
+        initializeDescription();
+
+        return false;
     }
 
     @Override
