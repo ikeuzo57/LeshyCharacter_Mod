@@ -149,7 +149,7 @@ public class BoneAltarEvent extends AbstractImageEvent {
     public static CardGroup getSacrificeOptions(boolean changeName){
         CardGroup list = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
         for(AbstractCard c : AbstractDungeon.player.masterDeck.group) {
-            if (c instanceof AbstractCreatureCard && !((AbstractCreatureCard) c).bloodless){
+            if (c instanceof AbstractCreatureCard){
 
                 if(changeName){
                     if (c instanceof Stoat) {

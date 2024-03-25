@@ -114,6 +114,7 @@ leshy\relics\BottledOpossumRelic.class
 leshy\cards\Squirrel.class
 leshy\cards\Magpie.class
 leshy\cards\Bloodhound.class
+leshy\patches\ApotheosisPatch.class
 leshy\actions\KinAction.class
 leshy\patches\SneckoOilPatch$ShopCreatureCards.class
 leshy\patches\PeltPatch.class
@@ -146,6 +147,7 @@ leshy\cards\FledglingTotem.class
 leshy\relics\DogTreatRelic.class
 leshy\patches\LeshyEventPatch$removePlayer.class
 leshy\actions\BuffAllCreaturesAction.class
+leshy\patches\ApotheosisPatch$Locator.class
 leshy\relics\BoulderRelic.class
 leshy\cards\BoonOfGoatsBlood.class
 leshy\actions\RampagerAction.class

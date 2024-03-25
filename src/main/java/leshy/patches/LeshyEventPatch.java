@@ -31,7 +31,7 @@ public class LeshyEventPatch {
 
             if(AbstractDungeon.player instanceof Leshy){
                 ReflectionHacks.setPrivateStatic(AbstractDungeon.class, "eventRoomChance", 0F);
-                ReflectionHacks.setPrivateStatic(AbstractDungeon.class, "restRoomChance", 0.08F);
+                //ReflectionHacks.setPrivateStatic(AbstractDungeon.class, "restRoomChance", 0.08F);
 
                 boolean place = true;
                 for (MapRoomNode n : AbstractDungeon.map.get(7))

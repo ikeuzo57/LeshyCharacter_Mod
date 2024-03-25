@@ -202,7 +202,7 @@ public class MycologistsEvent extends AbstractImageEvent {
         CardGroup list = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
 
         for(AbstractCard c : AbstractDungeon.player.masterDeck.group)
-            if(c instanceof AbstractCreatureCard && !((AbstractCreatureCard) c).bloodless && ((AbstractCreatureCard) c).mushroomCount == 1)
+            if(c instanceof AbstractCreatureCard && ((AbstractCreatureCard) c).mushroomCount == 1)
                 for(AbstractCard c2 : AbstractDungeon.player.masterDeck.group)
                     if(c.cardID.equals(c2.cardID) && !c.uuid.equals(c2.uuid) && ((AbstractCreatureCard) c2).mushroomCount == 1){
                         list.addToTop(c);
@@ -230,7 +230,7 @@ public class MycologistsEvent extends AbstractImageEvent {
 
         ArrayList<AbstractCreatureCard> options = new ArrayList<>();
         for(AbstractCard c : AbstractDungeon.player.masterDeck.group)
-            if(c instanceof AbstractCreatureCard && !((AbstractCreatureCard) c).bloodless && ((AbstractCreatureCard) c).mycologistReroll > 0 && ((AbstractCreatureCard) c).mushroomCount == 1)
+            if(c instanceof AbstractCreatureCard && ((AbstractCreatureCard) c).mycologistReroll > 0 && ((AbstractCreatureCard) c).mushroomCount == 1)
                 options.add((AbstractCreatureCard) c.makeCopy());
 
 

@@ -195,7 +195,7 @@ public class MysteriousStonesEvent extends AbstractImageEvent {
     public static CardGroup getSacrificeOptions(boolean changeName){
         CardGroup list = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
         for(AbstractCard c : AbstractDungeon.player.masterDeck.group){
-            if(c instanceof AbstractCreatureCard && !((AbstractCreatureCard) c).bloodless && !((AbstractCreatureCard) c).innate.isEmpty() && ((AbstractCreatureCard) c).gained.isEmpty() && !getRecipientOptions((AbstractCreatureCard) c, false).isEmpty()){
+            if(c instanceof AbstractCreatureCard && !((AbstractCreatureCard) c).innate.isEmpty() && ((AbstractCreatureCard) c).gained.isEmpty() && !getRecipientOptions((AbstractCreatureCard) c, false).isEmpty()){
                 if(changeName){
                     if (c instanceof Stinkbug){
 
@@ -234,7 +234,7 @@ public class MysteriousStonesEvent extends AbstractImageEvent {
                 HashSet<AbstractCreatureCard.Sigils> joinInnates = new HashSet<>();
                 joinInnates.addAll(((AbstractCreatureCard) c).innate);
                 joinInnates.addAll(sacrifice.innate);
-                if ((((AbstractCreatureCard) c).gained.isEmpty() && !((AbstractCreatureCard) c).bloodless && !(joinInnates.equals(((AbstractCreatureCard) c).innate)))
+                if ((((AbstractCreatureCard) c).gained.isEmpty() && !(joinInnates.equals(((AbstractCreatureCard) c).innate)))
                         || c instanceof Stoat){
                     if(changeName){
                         if (c instanceof Stoat) {

@@ -10,6 +10,7 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.powers.FlightPower;
 import com.megacrit.cardcrawl.powers.VulnerablePower;
 import com.megacrit.cardcrawl.powers.WeakPower;
 import com.megacrit.cardcrawl.vfx.combat.FlashAtkImgEffect;
@@ -113,7 +114,10 @@ public class CreatureAttackAction extends AbstractGameAction {
         double vulnMulti = 1.0;
         for(AbstractPower ap : am.powers) {
             if (ap instanceof VulnerablePower) {
-                vulnMulti = 1.5;
+                vulnMulti *= 1.5;
+            }
+            if (ap instanceof FlightPower) {
+                vulnMulti *= 0.5;
             }
         }
         int lifeLoss = (int) ((double) card.attack * vulnMulti);

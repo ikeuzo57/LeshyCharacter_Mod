@@ -68,18 +68,27 @@ public class CagedWolf extends AbstractCreatureCard {
         super.onSacrifice();
         if(!bounce) {
             AbstractCreatureCard wolf = new Wolf();
+            wolf.transform(this);
             wolf.baseAttack += (this.baseAttack - this.trueBaseAttack);
             wolf.baseHealth += (this.baseHealth - this.trueBaseHealth);
             wolf.attack = wolf.baseAttack;
             wolf.health = wolf.baseHealth;
+            wolf.initializeDescription();
             CreatureOrb orb = new CreatureOrb(wolf);
             addToBot(new SummonCreatureAction(orb));
-            AbstractDungeon.player.masterDeck.addToTop(wolf.makeSameInstanceOf());
         }
-        AbstractCard purge = null;
+        AbstractCreatureCard purge = null;
         for(AbstractCard ac : AbstractDungeon.player.masterDeck.group){
-            if(ac.uuid == this.uuid){
-                purge = ac;
+            if(ac.uuid == this.uuid && ac instanceof AbstractCreatureCard){
+                purge = (AbstractCreatureCard) ac;
+                AbstractCreatureCard wolf = new Wolf();
+                wolf.transform(purge);
+                wolf.baseAttack += (purge.baseAttack - purge.trueBaseAttack);
+                wolf.baseHealth += (purge.baseHealth - purge.trueBaseHealth);
+                wolf.attack = wolf.baseAttack;
+                wolf.health = wolf.baseHealth;
+                wolf.initializeDescription();
+                AbstractDungeon.player.masterDeck.addToTop(wolf);
                 break;
             }
         }
