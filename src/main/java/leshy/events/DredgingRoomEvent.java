@@ -157,6 +157,7 @@ public class DredgingRoomEvent extends AbstractImageEvent {
                 options.get(i).applyOption();
 
                 if(options.get(i).isEvents()){
+                    this.imageEventText.updateBodyText("");
                     chooseEvent();
                 }else{
                     this.imageEventText.updateBodyText(DESCRIPTIONS[2]);
@@ -175,14 +176,17 @@ public class DredgingRoomEvent extends AbstractImageEvent {
 
     public void chooseEvent(){
         options = new ArrayList<>();
+        options.add(new DredgingOption(DredgingOption.Reward.BONE_ALTAR, DredgingOption.Penalty.NONE));
+        options.add(new DredgingOption(DredgingOption.Reward.GOOBERT, DredgingOption.Penalty.NONE));
         options.add(new DredgingOption(DredgingOption.Reward.MYCOLOGISTS, DredgingOption.Penalty.NONE));
         options.add(new DredgingOption(DredgingOption.Reward.MYSTERIOUS_STONES, DredgingOption.Penalty.NONE));
-        options.add(new DredgingOption(DredgingOption.Reward.GOOBERT, DredgingOption.Penalty.NONE));
-        options.add(new DredgingOption(DredgingOption.Reward.BONE_ALTAR, DredgingOption.Penalty.NONE));
+        options.add(new DredgingOption(DredgingOption.Reward.PACK, DredgingOption.Penalty.NONE));
+        options.add(new DredgingOption(DredgingOption.Reward.TRAPPER, DredgingOption.Penalty.NONE));
+        options.add(new DredgingOption(DredgingOption.Reward.WOODCARVER, DredgingOption.Penalty.NONE));
         this.imageEventText.clearAllDialogs();
         for(int j=0; j<options.size(); j++){
             DredgingOption o = options.get(j);
-            String preText = "[" + String.format("%2s", Integer.toBinaryString(j)).replace(' ', '0') + "] ";
+            String preText = "[" + String.format("%3s", Integer.toBinaryString(j)).replace(' ', '0') + "] ";
             if(o.previewCard != null)
                 this.imageEventText.setDialogOption(preText + o.getText(), o.previewCard);
             else if(o.previewRelic != null)

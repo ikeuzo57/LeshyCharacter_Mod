@@ -7,7 +7,7 @@
     ]
   },"leshy:SquirrelDeckRelic": {
   "NAME": "Squirrel Deck",
-  "FLAVOR": "Beware the Beat of Death.",
+  "FLAVOR": "Cute woodland critters.",
   "DESCRIPTIONS": [
     "At the start of each turn, add a Squirrel to your hand. You may right click to exhaust a Squirrel and draw a card."
   ]
@@ -92,9 +92,9 @@
   },
   "leshy:SnorkelRelic": {
     "NAME": "Snorkel",
-    "FLAVOR": "For people who hate Beat of Death.",
+    "FLAVOR": "Not even the seas will save you.",
     "DESCRIPTIONS": [
-      "Squirrels gain #yWaterborne."
+      "Squirrels gain #yWaterborne and 6 Attack."
     ]
   },
   "leshy:InfestedPeltRelic": {

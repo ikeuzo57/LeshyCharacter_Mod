@@ -111,7 +111,7 @@ public class BoneAltarEvent extends AbstractImageEvent {
             }else if(c instanceof AbstractCreatureCard) {
 
                 this.imageEventText.updateBodyText(DESCRIPTIONS[1]);
-                bones = 1;
+                bones = 2;
 
             }else{
                 this.imageEventText.updateBodyText(DESCRIPTIONS[3]);

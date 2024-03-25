@@ -35,7 +35,7 @@ public class Aquasquirrel extends AbstractCreatureCard {
 
         tribe = CreatureTribe.SQUIRREL;
 
-        health = baseHealth = trueBaseHealth = 1;
+        health = baseHealth = trueBaseHealth = 3;
 
 
         fleeting = baseFleeting = true;

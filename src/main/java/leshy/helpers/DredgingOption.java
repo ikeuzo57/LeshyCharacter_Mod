@@ -29,7 +29,7 @@ public class DredgingOption {
         //Relics
         THREE_COMMON, TWO_UNCOMMON, CHOICE_RARE, ONE_BOSS,
         //Events
-        EVENTS, MYSTERIOUS_STONES, MYCOLOGISTS, GOOBERT, BONE_ALTAR,
+        EVENTS, MYSTERIOUS_STONES, MYCOLOGISTS, GOOBERT, BONE_ALTAR, WOODCARVER, TRAPPER, PACK,
         //Misc
         REMOVE_THREE_CREATURES, CHANGE_TRIBE, SKIN,
         SQUIRREL_MORPH, GLITCH_BUFF, DUPLICATE_DECK,
@@ -62,6 +62,9 @@ public class DredgingOption {
         map.put(Reward.MYCOLOGISTS, "#gMycologists.");
         map.put(Reward.GOOBERT, "#gGoobert.");
         map.put(Reward.BONE_ALTAR, "#gBone #gAltar.");
+        map.put(Reward.WOODCARVER, "#gWoodcarver.");
+        map.put(Reward.TRAPPER, "#gTrapper.");
+        map.put(Reward.PACK, "#gPack.");
         //Misc
         map.put(Reward.REMOVE_THREE_CREATURES, "#gRemove #gthree #gcreatures.");
         map.put(Reward.CHANGE_TRIBE, "#gPick #ga #gcreature #gto #gbecome #ga #g!TRIBE!.");
@@ -259,6 +262,21 @@ public class DredgingOption {
             case BONE_ALTAR:
                 AbstractDungeon.getCurrRoom().phase = AbstractRoom.RoomPhase.EVENT;
                 AbstractDungeon.getCurrRoom().event = new BoneAltarEvent();
+                AbstractDungeon.getCurrRoom().event.onEnterRoom();
+                break;
+            case WOODCARVER:
+                AbstractDungeon.getCurrRoom().phase = AbstractRoom.RoomPhase.EVENT;
+                AbstractDungeon.getCurrRoom().event = new WoodcarverEvent();
+                AbstractDungeon.getCurrRoom().event.onEnterRoom();
+                break;
+            case TRAPPER:
+                AbstractDungeon.getCurrRoom().phase = AbstractRoom.RoomPhase.EVENT;
+                AbstractDungeon.getCurrRoom().event = new TrapperEvent();
+                AbstractDungeon.getCurrRoom().event.onEnterRoom();
+                break;
+            case PACK:
+                AbstractDungeon.getCurrRoom().phase = AbstractRoom.RoomPhase.EVENT;
+                AbstractDungeon.getCurrRoom().event = new PackEvent();
                 AbstractDungeon.getCurrRoom().event.onEnterRoom();
                 break;
             case EVENTS:

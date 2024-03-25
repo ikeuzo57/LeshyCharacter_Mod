@@ -2,6 +2,7 @@ package leshy.events;
 
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -10,6 +11,7 @@ import com.megacrit.cardcrawl.events.GenericEventDialog;
 import com.megacrit.cardcrawl.localization.EventStrings;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndObtainEffect;
 import leshy.LeshyMod;
+import leshy.cards.SquirrelTotem;
 import leshy.cards.abstracts.AbstractCreatureCard;
 import leshy.cards.abstracts.AbstractTotemBaseCard;
 
@@ -62,7 +64,7 @@ public class WoodcarverEvent extends AbstractImageEvent {
                 switch (i) {
                     case 0:
                         selectTotem = true;
-                        AbstractDungeon.cardRewardScreen.customCombatOpen(getTotemOptions(), "Add one to hand.", false);
+                        AbstractDungeon.gridSelectScreen.open(getTotemOptions(), 1, false, "Take a carving.");
                         this.imageEventText.updateBodyText(DESCRIPTIONS[1]);
                         this.imageEventText.updateDialogOption(0, OPTIONS[0]);
                         this.imageEventText.clearRemainingOptions();
@@ -91,9 +93,9 @@ public class WoodcarverEvent extends AbstractImageEvent {
     public void update() {
         super.update();
 
-        if (AbstractDungeon.cardRewardScreen.discoveryCard != null && selectTotem) {
+        if (!AbstractDungeon.gridSelectScreen.selectedCards.isEmpty() && selectTotem) {
             selectTotem = false;
-            AbstractCard c = AbstractDungeon.cardRewardScreen.discoveryCard;
+            AbstractCard c = AbstractDungeon.gridSelectScreen.selectedCards.get(0);
             AbstractDungeon.effectList.add(new ShowCardAndObtainEffect(c, Settings.WIDTH / 2.0F, Settings.HEIGHT / 2.0F));
             AbstractDungeon.gridSelectScreen.selectedCards.clear();
         }
@@ -103,7 +105,7 @@ public class WoodcarverEvent extends AbstractImageEvent {
 
 
 
-    public static ArrayList<AbstractCard> getTotemOptions(){
+    public static CardGroup getTotemOptions(){
 
         int count = 4;
         if (AbstractDungeon.ascensionLevel >= 15)
@@ -119,21 +121,22 @@ public class WoodcarverEvent extends AbstractImageEvent {
             if(c instanceof AbstractTotemBaseCard)
                 rare.add((AbstractTotemBaseCard) c.makeCopy());
 
-        ArrayList<AbstractCard> list = new ArrayList<>();
+        CardGroup list = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
         while(list.size() < count){
             if(AbstractDungeon.cardRandomRng.randomBoolean(0.8F)){
                 LeshyMod.logger.info("Uncommon");
-                list.add(uncommon.remove(AbstractDungeon.cardRandomRng.random(uncommon.size()-1)));
+                list.addToTop(uncommon.remove(AbstractDungeon.cardRandomRng.random(uncommon.size()-1)));
             }else{
                 LeshyMod.logger.info("Rare");
                 AbstractTotemBaseCard card = rare.get(AbstractDungeon.cardRandomRng.random(rare.size()-1));
                 if(AbstractDungeon.miscRng.randomBoolean(card.spawnRate)){
-                    list.add(card);
+                    list.addToTop(card);
                     rare.remove(card);
                     LeshyMod.logger.info("Added");
                 }
             }
         }
+        list.addToTop(new SquirrelTotem());
         return list;
     }
 
