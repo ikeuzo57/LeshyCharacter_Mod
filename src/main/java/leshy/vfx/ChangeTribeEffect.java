@@ -36,6 +36,7 @@ public class ChangeTribeEffect extends AbstractGameEffect {
             for (AbstractCard c : AbstractDungeon.gridSelectScreen.selectedCards) {
                 if(c instanceof AbstractCreatureCard){
                     ((AbstractCreatureCard) c).tribe = this.tribe;
+                    ((AbstractCreatureCard) c).initializeDescription();
                     AbstractDungeon.effectsQueue.add(new UpgradeShineEffect(Settings.WIDTH / 2.0F, Settings.HEIGHT / 2.0F));
                     AbstractDungeon.effectsQueue.add(new ShowCardBrieflyEffect(c.makeStatEquivalentCopy()));
                 }

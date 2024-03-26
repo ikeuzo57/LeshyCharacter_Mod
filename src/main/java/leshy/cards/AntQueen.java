@@ -60,9 +60,4 @@ public class AntQueen extends AbstractCreatureCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
     }
 
-    @Override
-    public String extraText() {
-        return "leshy:Ant";
-    }
-
 }

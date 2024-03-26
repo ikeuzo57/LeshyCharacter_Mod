@@ -443,6 +443,9 @@ public abstract class AbstractCreatureCard extends AbstractDynamicCard implement
     public void initializeDescription() {
         this.rawDescription = extraText();
 
+        if(tribe == CreatureTribe.ANT)
+            this.rawDescription = "leshy:Ant";
+
         String keywords = "";
 
         if(isEthereal)
