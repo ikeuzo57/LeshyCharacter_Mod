@@ -116,7 +116,7 @@ public class CreatureAttackAction extends AbstractGameAction {
             if (ap instanceof VulnerablePower) {
                 vulnMulti *= 1.5;
             }
-            if (ap instanceof FlightPower) {
+            if (!card.current.contains(AbstractCreatureCard.Sigils.AIRBORNE) && ap instanceof FlightPower) {
                 vulnMulti *= 0.5;
             }
         }

@@ -55,7 +55,7 @@ public class BloodCostAction extends AbstractGameAction {
             for(AbstractOrb o : p.orbs){
                 if(o instanceof CreatureOrb && !(((CreatureOrb) o).creatureCard instanceof Starvation)){
 
-                    if(((CreatureOrb) o).creatureCard.bloodless){
+                    if(((CreatureOrb) o).creatureCard.bloodless && !((CreatureOrb) o).creatureCard.current.contains(AbstractCreatureCard.Sigils.WORTHY_SACRIFICE)){
                         continue;
                     }
                     boolean skipCard = false;
@@ -86,7 +86,7 @@ public class BloodCostAction extends AbstractGameAction {
                     addToBot(new LoseHPAction(p, p, (cost - bloodAvailable) * BloodBagRelic.LIFE_LOSS));
 
                 for(AbstractOrb o : p.orbs){
-                    if(o instanceof CreatureOrb && !((CreatureOrb) o).creatureCard.bloodless  && !(((CreatureOrb) o).creatureCard instanceof Starvation)) {
+                    if(o instanceof CreatureOrb && !(((CreatureOrb) o).creatureCard.bloodless && !((CreatureOrb) o).creatureCard.current.contains(AbstractCreatureCard.Sigils.WORTHY_SACRIFICE))  && !(((CreatureOrb) o).creatureCard instanceof Starvation)) {
 
                         for(AbstractPower ap : AbstractDungeon.player.powers){
                             if(ap instanceof SacrificePower)

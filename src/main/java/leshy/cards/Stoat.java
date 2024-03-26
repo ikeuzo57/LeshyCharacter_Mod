@@ -151,7 +151,7 @@ public class Stoat extends AbstractCreatureCard {
 
     @Override
     public String extraText() {
-        return "Can always receive Sigils from Mysterious Stones events.";
+        return "leshy:Pick_Me";
     }
 
     @Override

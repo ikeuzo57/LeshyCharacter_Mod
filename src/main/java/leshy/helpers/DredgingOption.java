@@ -435,7 +435,8 @@ public class DredgingOption {
         list.add(Reward.SQUIRREL_MORPH);
         list.add(Reward.GLITCH_BUFF);
         list.add(Reward.DUPLICATE_DECK);
-        list.add(Reward.BLOOD_TO_BONE);
+        if(hasBlood())
+            list.add(Reward.BLOOD_TO_BONE);
         list.add(Reward.THREE_COLORLESS);
         list.add(Reward.SKIN);
         list.add(Reward.DEATHCARD);
@@ -443,6 +444,13 @@ public class DredgingOption {
             list.remove(AbstractDungeon.miscRng.random(list.size()-1));
         }
         return list;
+    }
+
+    public static boolean hasBlood(){
+        for(AbstractCard c : AbstractDungeon.player.masterDeck.group)
+            if(c instanceof AbstractCreatureCard && ((AbstractCreatureCard) c).costType == AbstractCreatureCard.CreatureCostType.BLOOD)
+                return true;
+        return false;
     }
 
     public static ArrayList<Penalty> getRandomPenalties(){

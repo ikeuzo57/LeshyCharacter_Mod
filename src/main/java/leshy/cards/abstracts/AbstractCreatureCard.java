@@ -454,7 +454,7 @@ public abstract class AbstractCreatureCard extends AbstractDynamicCard implement
             keywords += "Retain ";
         if(isFrail || tempFrail)
             keywords += "Frail ";
-        if(bloodless)
+        if(bloodless && !current.contains(Sigils.WORTHY_SACRIFICE))
             keywords += "leshy:Bloodless ";
         if(fleeting && !current.contains(Sigils.UNKILLABLE))
             keywords += "leshy:Transient ";
@@ -836,7 +836,7 @@ public abstract class AbstractCreatureCard extends AbstractDynamicCard implement
 
             int totalBloodAvailable = 0;
             for(AbstractOrb o : p.orbs){
-                if(o instanceof CreatureOrb && !(((CreatureOrb) o).creatureCard.bloodless) && !(((CreatureOrb) o).creatureCard instanceof Starvation)){
+                if(o instanceof CreatureOrb && !(((CreatureOrb) o).creatureCard.bloodless && !((CreatureOrb) o).creatureCard.current.contains(AbstractCreatureCard.Sigils.WORTHY_SACRIFICE)) && !(((CreatureOrb) o).creatureCard instanceof Starvation)){
                     if(((CreatureOrb) o).creatureCard.current.contains(Sigils.WORTHY_SACRIFICE)){
                         totalBloodAvailable += 3;
                     }else{

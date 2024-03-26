@@ -81,7 +81,7 @@
       "Many_Lives",
       "many_lives"
     ],
-    "DESCRIPTION": "Can pay blood costs 9 times before being sacrificed."
+    "DESCRIPTION": "Can pay Blood costs 9 times before being sacrificed."
   },
   {
     "PROPER_NAME": "Worthy Sacrifice",
@@ -91,7 +91,7 @@
       "Worthy_Sacrifice",
       "worthy_sacrifice"
     ],
-    "DESCRIPTION": "When sacrificed to pay Blood costs, this pays for 3 Blood."
+    "DESCRIPTION": "When sacrificed to pay Blood costs, this pays for 3 Blood. Overwrites Bloodless."
   },
   {
     "PROPER_NAME": "Bone King",
@@ -101,7 +101,7 @@
       "Bone_King",
       "bone_king"
     ],
-    "DESCRIPTION": "When sacrificed, gain an additional 3 Bones."
+    "DESCRIPTION": "Grants an additional 3 Bones."
   },
   {
     "PROPER_NAME": "Bone Digger",
@@ -156,7 +156,7 @@
       "Transient",
       "transient"
     ],
-    "DESCRIPTION": "When killed, this is exhausted instead of being put into your discard pile. Overridden by Unkillable."
+    "DESCRIPTION": "When killed, this is exhausted instead of being put into your discard pile."
   },
   {
     "NAMES": [
@@ -311,7 +311,7 @@
       "Brood_Parasite",
       "brood_parasite"
     ],
-    "DESCRIPTION": "When summoned, apply Broken Egg to a all enemies. They deal 20% less damage and prevent the next time they take damage."
+    "DESCRIPTION": "When summoned, apply Broken Egg to all enemies. They deal 20% less damage and prevent the next time they take damage."
   },
   {
     "PROPER_NAME": "Loose Tail",
@@ -524,6 +524,16 @@
       "glitched"
     ],
     "DESCRIPTION": "Hides the details of the card, showing only when it is playable."
+  },
+  {
+    "PROPER_NAME": "Pick Me",
+    "NAMES": [
+      "Pick Me",
+      "pick me",
+      "Pick_Me",
+      "pick_me"
+    ],
+    "DESCRIPTION": "Can always receive Sigils from Mysterious Stones events."
   }
 ]
 
