@@ -12,7 +12,7 @@ import java.util.HashSet;
 import static leshy.LeshyMod.makeRelicOutlinePath;
 import static leshy.LeshyMod.makeRelicPath;
 
-public class PaintbrushRelic extends CustomRelic implements CreatureSigilRelic {
+public class PaintbrushRelic extends CustomRelic {
 
     public static final String ID = LeshyMod.makeID(PaintbrushRelic.class.getSimpleName());
 
@@ -31,16 +31,4 @@ public class PaintbrushRelic extends CustomRelic implements CreatureSigilRelic {
 
     }
 
-
-    @Override
-    public HashSet<AbstractCreatureCard.Sigils> giveSigils(AbstractCreatureCard c) {
-
-        HashSet<AbstractCreatureCard.Sigils> sigils = new HashSet<>();
-
-        if(c.tribe == AbstractCreatureCard.CreatureTribe.NONE)
-            sigils.add(AbstractCreatureCard.Sigils.AMORPHOUS);
-
-        return sigils;
-
-    }
 }

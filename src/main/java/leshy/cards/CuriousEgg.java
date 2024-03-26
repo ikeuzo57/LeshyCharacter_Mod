@@ -64,6 +64,7 @@ public class CuriousEgg extends AbstractCreatureCard implements RightClickCard, 
 
     @Override
     public boolean atBattleStartPreDraw() {
+        super.atBattleStartPreDraw();
 
         addToTop(new FinicalHatchlingAction(this, magicNumber));
 

@@ -5,6 +5,7 @@ import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.evacipated.cardcrawl.mod.stslib.cards.interfaces.BranchingUpgradesCard;
 import com.evacipated.cardcrawl.mod.stslib.cards.interfaces.OnObtainCard;
 import com.evacipated.cardcrawl.mod.stslib.cards.interfaces.SpawnModificationCard;
+import com.evacipated.cardcrawl.mod.stslib.cards.interfaces.StartupCard;
 import com.google.gson.reflect.TypeToken;
 import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.actions.defect.SeekAction;
@@ -39,7 +40,7 @@ import java.util.*;
 
 import static com.megacrit.cardcrawl.core.CardCrawlGame.languagePack;
 
-public abstract class AbstractCreatureCard extends AbstractDynamicCard implements OnObtainCard, CustomSavable<CreatureSavable>, SpawnModificationCard, BranchingUpgradesCard {
+public abstract class AbstractCreatureCard extends AbstractDynamicCard implements OnObtainCard, CustomSavable<CreatureSavable>, SpawnModificationCard, BranchingUpgradesCard, StartupCard {
 
     String id;
 
@@ -810,13 +811,25 @@ public abstract class AbstractCreatureCard extends AbstractDynamicCard implement
     @Override
     public void triggerWhenDrawn() {
         super.triggerWhenDrawn();
-
         applyPowers();
+    }
+
+    @Override
+    public boolean atBattleStartPreDraw() {
+
+        if(this.tribe == CreatureTribe.NONE)
+            for(AbstractRelic r : AbstractDungeon.player.relics)
+                if(r instanceof PaintbrushRelic){
+                    this.gained.add(Sigils.AMORPHOUS);
+                    this.current.add(Sigils.AMORPHOUS);
+                }
 
         if(this.current.contains(Sigils.AMORPHOUS) && !this.amorphousTriggered){
             this.amorphousTriggered = true;
             BloodCreatureAction.addRandomSigils(this, 1);
         }
+
+        return false;
     }
 
     public void onDamage(){

@@ -9,7 +9,7 @@
   "NAME": "Squirrel Deck",
   "FLAVOR": "Cute woodland critters.",
   "DESCRIPTIONS": [
-    "At the start of each turn, add a Squirrel to your hand. You may right click to exhaust a Squirrel and draw a card."
+    "At the start of turn, add a Squirrel to your hand. You may right click to exhaust a Squirrel and draw a card."
   ]
   },
   "leshy:MachineModificationRelic": {
@@ -136,8 +136,8 @@
     "NAME": "Trench Coat",
     "FLAVOR": "Definitely not a Squirrel.",
     "DESCRIPTIONS": [
-      "Upon pickup, pick a Creature to gain the Squirrel tribe.",
-      "Pick a card to gain the Squirrel tribe."
+      "Upon pickup, pick a creature to gain the Squirrel tribe.",
+      "Pick a creature to gain the Squirrel tribe."
     ]
   },
   "leshy:BallOfSquirrelsRelic": {
@@ -236,7 +236,7 @@
     "NAME": "Paintbrush",
     "FLAVOR": "Previous owner was a bush.",
     "DESCRIPTIONS": [
-      "Creatures without a tribe gain #yAmorphous."
+      "Creatures without a tribe gain #yAmorphous at the start of combat."
     ]
   },
   "leshy:QuillRelic": {

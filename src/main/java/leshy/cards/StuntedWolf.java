@@ -185,6 +185,7 @@ public class StuntedWolf extends AbstractCreatureCard implements StartupCard {
 
     @Override
     public boolean atBattleStartPreDraw() {
+        super.atBattleStartPreDraw();
 
         ArrayList<Sigils> list = new ArrayList<>(Arrays.asList(AbstractCreatureCard.Sigils.values()));
         list.remove(Sigils.AMORPHOUS);

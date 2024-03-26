@@ -71,7 +71,7 @@
       "Fledgling",
       "fledgling"
     ],
-    "DESCRIPTION": "At the start of turn, this become a better form or gain 20% stats."
+    "DESCRIPTION": "At the start of turn, this becomes a better form or gains 20% stats."
   },
   {
     "PROPER_NAME": "Many Lives",
@@ -348,7 +348,7 @@
       "Rampager",
       "rampager"
     ],
-    "DESCRIPTION": "At end of turn, moves in a direction."
+    "DESCRIPTION": "At the end of turn, this moves in a direction."
   },
   {
     "PROPER_NAME": "Double Strike",
@@ -487,7 +487,7 @@
       "Amorphous",
       "amorphous"
     ],
-    "DESCRIPTION": "When drawn, replace this Sigil with a random new Sigil."
+    "DESCRIPTION": "At start of combat, replace this Sigil with a random new Sigil."
   },
   {
     "NAMES": [
