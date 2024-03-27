@@ -13,8 +13,8 @@ At the end of each turn, creatures deal damage to a random enemy based on their 
 When you take damage, creatures redirect that damage to themselves. If their Health reaches 0, they are sent to the discard pile.
 
 [h3] Creature Tribes [/h3]
-There are five different tribes : Avian, Canine, Hooved, Insect, and Reptile. Not all creatures have tribes. If a creature does, it is displayed where the card's type is normally displayed.
-Tribes don't do anything on their own and only mean something when interacting with other mechanics.
+There are five main tribes : Avian, Canine, Hooved, Insect, and Reptile. Not all creatures have tribes. If a creature does, it is displayed where the card's type is normally displayed.
+There are many things that interact with tribes.
 
 [h3] Sigils [/h3]
 Sigils are special keywords that a creature can have that have unique effects. There are a variety of methods for creatures to obtain more Sigils.

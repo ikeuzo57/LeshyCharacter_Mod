@@ -13,11 +13,11 @@
         },
         "leshy:HarpiesBirdlegFanPotion": {
                 "NAME": "Harpie's Birdleg Fan",
-                "DESCRIPTIONS": ["Give your Creatures Airborne."]
+                "DESCRIPTIONS": ["Give your creatures Airborne."]
         },
         "leshy:WiseclockPotion": {
                 "NAME": "Wiseclock",
-                "DESCRIPTIONS": ["Move the Creature in the front to the back."]
+                "DESCRIPTIONS": ["Move the creature in the front to the back."]
         },
         "leshy:NanoArmorGeneratorPotion": {
                 "NAME": "Nano Armor Generator",

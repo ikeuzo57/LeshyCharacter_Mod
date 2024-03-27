@@ -18,13 +18,6 @@ public class RemovePotionsPatch {
 
         if(chosenClass == Leshy.Enums.LESHY){
 
-            PotionHelper.potions.remove("Strength Potion");
-            PotionHelper.potions.remove("SteroidPotion");
-            PotionHelper.potions.remove("CultistPotion");
-
-            PotionHelper.potions.remove("Dexterity Potion");
-            PotionHelper.potions.remove("SpeedPotion");
-
             PotionHelper.potions.remove("AttackPotion");
 
         }

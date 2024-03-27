@@ -55,7 +55,7 @@ public class BlackGoat extends AbstractCreatureCard {
 
         attack = baseAttack = trueBaseAttack = 0;
 
-        health = baseHealth = trueBaseHealth = 8;
+        health = baseHealth = trueBaseHealth = 10;
 
         innate.add(Sigils.WORTHY_SACRIFICE);
         current.add(Sigils.WORTHY_SACRIFICE);

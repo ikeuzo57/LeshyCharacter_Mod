@@ -4,21 +4,17 @@ Leshy is a character from the video game Inscryption, another deck building rogu
 # Main Mechanics
 ## Resources / Costs
 Creatures don't cost Energy. Instead, they cost Blood, Bones, or nothing.
-
 Blood costs are paid by sacrificing a number of creatures in play. You are provided a Squirrel each turn to help pay for these costs.
-
 You obtain 1 Bone whenever a creature dies.
 
 ## Creature Stats
 Creatures have 2 main stats : Attack and Health.
-
 At the end of each turn, creatures deal damage to a random enemy based on their Attack.
-
 When you take damage, creatures redirect that damage to themselves. If their Health reaches 0, they are sent to the discard pile.
 
 ## Creature Tribes
-There are five different tribes : Avian, Canine, Hooved, Insect, and Reptile. Not all creatures have tribes. If a creature does, it is displayed where the card's type is normally displayed.
-Tribes don't do anything on their own and only mean something when interacting with other mechanics.
+There are five main tribes : Avian, Canine, Hooved, Insect, and Reptile. Not all creatures have tribes. If a creature does, it is displayed where the card's type is normally displayed.
+There are many things that interact with tribes.
 
 ## Sigils
 Sigils are special keywords that a creature can have that have unique effects. There are a variety of methods for creatures to obtain more Sigils.

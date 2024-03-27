@@ -344,8 +344,8 @@
   },
   "leshy:StruckGold": {
     "NAME": "Struck Gold",
-    "DESCRIPTION": "Sacrifice any number of Creatures. Summon a Gold Nugget with their current Health. NL Exhaust",
-    "UPGRADE_DESCRIPTION": "Sacrifice any number of Creatures. Summon a Gold Nugget with their current Health."
+    "DESCRIPTION": "Sacrifice any number of creatures. Summon a Gold Nugget with their current Health. NL Exhaust",
+    "UPGRADE_DESCRIPTION": "Sacrifice any number of creatures. Summon a Gold Nugget with their current Health."
   },
   "leshy:Hydra": {
     "NAME": "Hydra",
@@ -377,8 +377,8 @@
   },
   "leshy:GoFish": {
     "NAME": "Go Fish",
-    "DESCRIPTION": "Return a Creature to hand.",
-    "UPGRADE_DESCRIPTION": "Retain NL Return a Creature to hand."
+    "DESCRIPTION": "Return a creature to hand.",
+    "UPGRADE_DESCRIPTION": "Retain NL Return a creature to hand."
   },
   "leshy:Alpha": {
     "NAME": "Alpha",
@@ -433,12 +433,12 @@
     "DESCRIPTION": ""
   },
   "leshy:DeathCard": {
-    "NAME": "Death Card",
+    "NAME": "Deathcard",
     "DESCRIPTION": ""
   },
   "leshy:FilmRoll": {
     "NAME": "Film Roll",
-    "DESCRIPTION": "Craft a Death Card using your master deck. NL Exhaust"
+    "DESCRIPTION": "Craft a Deathcard using your master deck. NL Exhaust"
   },
   "leshy:Opossum": {
     "NAME": "Opossum",
@@ -619,8 +619,8 @@
   },
   "leshy:TrialOfWisdom": {
     "NAME": "Trial of Wisdom",
-    "DESCRIPTION": "Reveal the top 3 cards of your deck. Select a sigil from among them to give to a creature. NL Exhaust",
-    "UPGRADE_DESCRIPTION": "Reveal the top 3 cards of your deck. Select a sigil from among them to give to a creature."
+    "DESCRIPTION": "Reveal the top 3 cards of your deck. Select a Sigil from among them to give to a creature. NL Exhaust",
+    "UPGRADE_DESCRIPTION": "Reveal the top 3 cards of your deck. Select a Sigil from among them to give to a creature."
   },
   "leshy:TrialOfKin": {
     "NAME": "Trial of Kin",
@@ -654,8 +654,8 @@
   },
   "leshy:TrialOfBlood": {
     "NAME": "Trial of Blood",
-    "DESCRIPTION": "Reveal the top 3 cards of your deck. If their total Blood cost is 4 or more, select 1 of 3 leshy:Powerful Creatures to Summon. NL Exhaust",
-    "UPGRADE_DESCRIPTION": "Reveal the top 3 cards of your deck. If their total Blood cost is 4 or more, select 1 of 3 leshy:Powerful Creatures to Summon."
+    "DESCRIPTION": "Reveal the top 3 cards of your deck. If their total Blood cost is 4 or more, select 1 of 3 leshy:Powerful creatures to Summon. NL Exhaust",
+    "UPGRADE_DESCRIPTION": "Reveal the top 3 cards of your deck. If their total Blood cost is 4 or more, select 1 of 3 leshy:Powerful creatures to Summon."
   },
   "leshy:HandTentacle": {
     "NAME": "Hand Tentacle",
@@ -715,7 +715,7 @@
   },
   "leshy:Voucher": {
     "NAME": "Voucher",
-    "DESCRIPTION": "Choose a Creature to replace this with permanently. NL Exhaust"
+    "DESCRIPTION": "Choose a creature to replace this with permanently. NL Exhaust"
   },
   "leshy:Beaver": {
     "NAME": "Beaver",

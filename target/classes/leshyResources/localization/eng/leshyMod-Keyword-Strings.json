@@ -321,7 +321,7 @@
       "Loose_Tail",
       "loose_tail"
     ],
-    "DESCRIPTION": "The first time this dies, restore up to 6 Health and move to the back."
+    "DESCRIPTION": "The first time this dies to damage, restore up to 6 Health and move to the back."
   },
   {
     "PROPER_NAME": "Ant Spawner",
@@ -419,7 +419,7 @@
       "Hydra",
       "hydra"
     ],
-    "DESCRIPTION": "Gains 3 Attack and Heath for each set of each tribe in your master deck."
+    "DESCRIPTION": "Gains 3 Attack and Health for each set of each tribe in your master deck."
   },
   {
     "PROPER_NAME": "Double Bones",
@@ -429,7 +429,7 @@
       "Double_Bones",
       "double_bones"
     ],
-    "DESCRIPTION": "Gains Attack equal to double your bones."
+    "DESCRIPTION": "Gains Attack equal to double your Bones."
   },
   {
     "PROPER_NAME": "Spilled Blood",

@@ -58,7 +58,7 @@
     "NAME": "Boon of the Bone Lord",
     "FLAVOR": "Was the goat worth it?",
     "DESCRIPTIONS": [
-      "At the start of combat, gain ", " Bone."
+      "At the start of combat, gain ", " Bones."
     ]
   },
   "leshy:MagicEyeRelic": {
@@ -194,21 +194,21 @@
     "NAME": "Dog Treat",
     "FLAVOR": "For the goodest boy.",
     "DESCRIPTIONS": [
-      "Upon pickup, Upgrade 2 random Creatures."
+      "Upon pickup, Upgrade 2 random creatures."
     ]
   },
   "leshy:BoulderRelic": {
     "NAME": "Boulder",
     "FLAVOR": "Its a rock.",
     "DESCRIPTIONS": [
-      "At the end of your turn, if your Creatures have less than ", " current Health, summon a Boulder with the difference."
+      "At the end of your turn, if your creatures have less than ", " current Health, summon a Boulder with the difference."
     ]
   },
   "leshy:ChickenEggRelic": {
     "NAME": "Chicken Egg",
     "FLAVOR": "What came first, the chicken or the pointless question?",
     "DESCRIPTIONS": [
-      "Whenever you add a Creature to your deck, it is Upgraded."
+      "Whenever you add a creature to your deck, it is Upgraded."
     ]
   },
   "leshy:BloodstoneRelic": {
@@ -222,7 +222,7 @@
     "NAME": "Tiny Headband",
     "FLAVOR": "Does anyone see any squirrels?",
     "DESCRIPTIONS": [
-      "After every third Squirrel you play, give active Creatures 2 Attack and Health."
+      "After every third Squirrel you play, give active creatures 2 Attack and Health."
     ]
   },
   "leshy:RecruitmentPosterRelic": {
@@ -257,7 +257,7 @@
     "NAME": "Camera",
     "FLAVOR": "The secret to immortality.",
     "DESCRIPTIONS": [
-      "For every 3 Creatures that die to damage, you may craft an Amalgam with their cost, stats, and sigils."
+      "For every 3 creatures that die to damage, you may craft an Amalgam with their cost, stats, and Sigils."
     ]
   },
   "leshy:LimoncelloRelic": {
@@ -332,7 +332,7 @@
     "NAME": "Bottled Opossum",
     "FLAVOR": "There is a Frozen Opossum inside. Poor thing.",
     "DESCRIPTIONS": [
-      "Upon pick up, choose a Creature. Start each combat with this card in your hand.",
+      "Upon pick up, choose a creature. Start each combat with this card in your hand.",
       "Choose a card for ",
       "Start each combat with ",
       " in your hand."
