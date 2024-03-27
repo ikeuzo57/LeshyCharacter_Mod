@@ -31,15 +31,25 @@ public class TinyHeadbandRelic extends CustomRelic{
     public void onPlayCard(AbstractCard c, AbstractMonster m) {
         if(c instanceof AbstractCreatureCard && (((AbstractCreatureCard) c).tribe == AbstractCreatureCard.CreatureTribe.SQUIRREL || ((AbstractCreatureCard) c).tribe == AbstractCreatureCard.CreatureTribe.AMALGAM)){
             this.counter++;
-            if(this.counter >= 3){
-                flash();
-                ((AbstractCreatureCard) c).baseAttack += 2;
-                ((AbstractCreatureCard) c).baseHealth += 2;
-                c.applyPowers();
-                addToBot(new BuffAllCreaturesAction(1));
-                this.counter = 0;
-            }
+            if(this.counter >= 3)
+                beginLongPulse();
         }
+    }
+
+    @Override
+    public void onPlayerEndTurn() {
+        super.onPlayerEndTurn();
+        if(this.counter >= 3){
+            flash();
+            addToBot(new BuffAllCreaturesAction(2));
+        }
+    }
+
+    @Override
+    public void atTurnStart() {
+        super.atTurnStart();
+        stopPulse();
+        this.counter = 0;
     }
 
     @Override

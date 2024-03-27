@@ -30,7 +30,7 @@ public class BloodToSquirrelAction extends AbstractGameAction {
 
             CardGroup tmp = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
             for(AbstractOrb o : p.orbs){
-                if(o instanceof CreatureOrb && !(((CreatureOrb) o).creatureCard instanceof Starvation)){
+                if(o instanceof CreatureOrb && !(((CreatureOrb) o).creatureCard instanceof Starvation) && ((CreatureOrb) o).creatureCard.costType == AbstractCreatureCard.CreatureCostType.BLOOD){
                     AbstractCreatureCard card = (AbstractCreatureCard) ((CreatureOrb) o).creatureCard.makeSameInstanceOf();
                     card.orb = (CreatureOrb) o;
                     card.applyPowers();

@@ -31,7 +31,7 @@ public class HoarderTotem extends AbstractTotemBaseCard {
     public HoarderTotem() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
 
-        spawnRate = 0.2F;
+        spawnRate = 0.5F;
         base = AbstractCreatureCard.Sigils.HOARDER;
 
     }

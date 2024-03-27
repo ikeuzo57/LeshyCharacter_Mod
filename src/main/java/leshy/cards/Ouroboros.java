@@ -44,15 +44,14 @@ public class Ouroboros extends AbstractCreatureCard implements SpawnModification
 
         tribe = CreatureTribe.REPTILE;
 
-        attack = baseAttack = trueBaseAttack = 8;
+        attack = baseAttack = trueBaseAttack = 10;
 
-        health = baseHealth = trueBaseHealth = 8;
+        health = baseHealth = trueBaseHealth = 10;
 
         innate.add(Sigils.UNKILLABLE);
         current.add(Sigils.UNKILLABLE);
 
         mycologistReroll = 0.01F;
-        spawnRate = 0.3F;
 
         initializeDescription();
 
@@ -62,20 +61,20 @@ public class Ouroboros extends AbstractCreatureCard implements SpawnModification
 
     @Override
     public void onSacrifice() {
-        super.onSacrifice();
-        if(!bounce) {
+        if(orb.dead) {
             this.deaths++;
         }
+        super.onSacrifice();
     }
 
     @Override
     public double specialAttackMultiplier() {
-        return 1 + (0.1D * this.deaths);
+        return 1 + (0.2D * this.deaths);
     }
 
     @Override
     public double specialHealthMultiplier() {
-        return 1 + (0.1D * this.deaths);
+        return 1 + (0.2D * this.deaths);
     }
 
     @Override

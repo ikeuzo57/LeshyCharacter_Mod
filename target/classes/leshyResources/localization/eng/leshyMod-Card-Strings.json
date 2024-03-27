@@ -771,7 +771,7 @@
   },
   "leshy:OldDataSacrifice": {
     "NAME": "Blood to Squirrel",
-    "DESCRIPTION": "On right click, sacrifice a creature and add Squirrels to hand equal to its Blood cost."
+    "DESCRIPTION": "On right click, sacrifice a Blood cost creature and add Squirrels to hand equal to its Blood cost."
   },
   "leshy:OldDataPliers": {
     "NAME": "Pliers",

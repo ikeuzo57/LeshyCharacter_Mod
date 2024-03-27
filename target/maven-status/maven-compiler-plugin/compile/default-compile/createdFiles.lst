@@ -42,7 +42,6 @@ leshy\patches\NeowPatch$ButtonEffect$Locator.class
 leshy\patches\ProceedButtonPatch$Locator.class
 leshy\cards\OldDataStatic.class
 leshy\cards\FieldMice.class
-leshy\cards\DoubleStrikeTotem.class
 leshy\actions\BeesWithinAction.class
 leshy\cards\TheMoon.class
 leshy\relics\PileOfTeethRelic.class
@@ -185,7 +184,6 @@ leshy\cards\RiverOtter.class
 leshy\relics\BottledOpossumRelic$BottledOpossumSavable.class
 leshy\cards\abstracts\AbstractCreatureCard$1.class
 leshy\cards\Vertebrae.class
-leshy\cards\SquirrelTotem.class
 leshy\patches\CreatureTypePatch$FramePre.class
 leshy\cards\GoldenPelt.class
 leshy\relics\BearMedallionRelic.class

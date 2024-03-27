@@ -37,7 +37,12 @@ public class RoadkillAction extends AbstractGameAction {
             if(card != null){
 
                 AbstractDungeon.player.hand.moveToExhaustPile(card);
-                AbstractDungeon.player.hand.moveToExhaustPile(roadkill);
+                if(AbstractDungeon.player.hand.contains(roadkill))
+                    AbstractDungeon.player.hand.moveToExhaustPile(roadkill);
+                if(AbstractDungeon.player.discardPile.contains(roadkill))
+                    AbstractDungeon.player.discardPile.moveToExhaustPile(roadkill);
+                if(AbstractDungeon.player.drawPile.contains(roadkill))
+                    AbstractDungeon.player.drawPile.moveToExhaustPile(roadkill);
 
                 CardCrawlGame.dungeon.checkForPactAchievement();
                 card.exhaustOnUseOnce = false;

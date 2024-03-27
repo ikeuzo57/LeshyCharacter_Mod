@@ -446,7 +446,7 @@
       "Ouroboros",
       "ouroboros"
     ],
-    "DESCRIPTION": "On death, gain 10% Attack and Health."
+    "DESCRIPTION": "When this dies to damage, gain 20% Attack and Health."
   },
   {
     "PROPER_NAME": "Kills Survivors",

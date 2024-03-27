@@ -222,7 +222,7 @@
     "NAME": "Tiny Headband",
     "FLAVOR": "Does anyone see any squirrels?",
     "DESCRIPTIONS": [
-      "After every third Squirrel you play, give active creatures 2 Attack and Health."
+      "At the end of turn, if you've summon 3 or more Squirrels this turn, give active creatures 2 Attack and Health."
     ]
   },
   "leshy:RecruitmentPosterRelic": {
@@ -310,7 +310,7 @@
       "The creature in the leftmost orb slot triggers end of turn effects an additional time.",
       "Once per shuffle, you may right click to move a card in your deck to the top.",
       "Glitched creatures gain ", " Attack and Health.",
-      "On right click, sacrifice a creature and add Squirrels to hand equal to its Blood cost.",
+      "On right click, sacrifice Blood cost creature and add Squirrels to hand equal to its Blood cost.",
       "At the start of combat, Glitch ", " random creatures in your deck."
     ]
   },

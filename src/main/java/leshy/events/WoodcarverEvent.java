@@ -11,7 +11,6 @@ import com.megacrit.cardcrawl.events.GenericEventDialog;
 import com.megacrit.cardcrawl.localization.EventStrings;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndObtainEffect;
 import leshy.LeshyMod;
-import leshy.cards.SquirrelTotem;
 import leshy.cards.abstracts.AbstractCreatureCard;
 import leshy.cards.abstracts.AbstractTotemBaseCard;
 
@@ -136,7 +135,6 @@ public class WoodcarverEvent extends AbstractImageEvent {
                 }
             }
         }
-        list.addToTop(new SquirrelTotem());
         return list;
     }
 

@@ -1,33 +1,32 @@
 [h1] Introduction [/h1]
-Leshy is a character from the video game Inscryption, another deck building rogue-like that involves creature based combat. This mod introduces the Creature card type which is used by the vast majority of Leshy's cards.
+Leshy is a character from Inscryption, another deck building roguelike centered on creature based combat. This mod introduces the Creature card type, which is used by the vast majority of his card pool.
 
 [h1] Main Mechanics [/h1]
 [h3] Resources / Costs [/h3]
-Creatures don't cost Energy. Instead, they cost Blood, Bones, or nothing.
-Blood costs are paid by sacrificing a number of creatures in play. You are provided a Squirrel each turn to help pay for these costs.
-You obtain 1 Bone whenever a creature dies.
+Instead of costing energy, Creatures cost Blood, Bones, or nothing.
+Pay Blood costs by sacrificing creatures equal to that cost. You gain a Squirrel at the start of your turn to help pay it.
+You gain 1 Bone whenever a creature dies.
 
 [h3] Creature Stats [/h3]
-Creatures have 2 main stats : Attack and Health.
-At the end of each turn, creatures deal damage to a random enemy based on their Attack.
-When you take damage, creatures redirect that damage to themselves. If their Health reaches 0, they are sent to the discard pile.
+Creatures have 2 numeric stats : Attack and Health.
+At the end of each turn, creatures deal damage equal to their Attack to a random enemy.
+Enemies damage creatures in play from right to left. When a creature has 0 remaining Health, they go to the discard pile. You take the remainder, if any.
 
 [h3] Creature Tribes [/h3]
-There are five main tribes : Avian, Canine, Hooved, Insect, and Reptile. Not all creatures have tribes. If a creature does, it is displayed where the card's type is normally displayed.
-There are many things that interact with tribes.
+Most creatures belong to one of five tribes: Avian, Canine, Hooved, Insect, or Reptile. Some creatures are tribeless. The tribe is displayed in the card type section. Tribes synergize with many things.
 
 [h3] Sigils [/h3]
-Sigils are special keywords that a creature can have that have unique effects. There are a variety of methods for creatures to obtain more Sigils.
+Sigils are special effects that many creatures have. A creature can gain additional Sigils via multiple methods.
 
 [h3] Mysterious Stones [/h3]
-This Event appears on the map and allows you to sacrifice a creature to give its Sigils to another. Both creatures cannot have gained any extra Sigils.
+This Event appears on the map and allows you to sacrifice a creature to pass its Sigils to another. Only creatures without Sigils gained from prior events can give or receive Sigils this way.
 
 [h3] Totem [/h3]
-Your Totem is an effect you build during combat using your Powers. It grants all creatures of a certain tribe a certain Sigil. For example: "Canines gain Airborne."
+A Totem gives creatures of a certain tribe a certain Sigil. Totem head and totem base Powers are used to set the tribe and Sigil respectively. When active, it's written as "Canines gain Airborne".
 
 [h1] Developer's Note [/h1]
-Hello everyone! This is the first character mod I'm confident enough in to publish and boy has this been quite the journey. I started working on this early 2022 ish and had gone through several revamps and burnouts. The current version tries to remain true to Inscryption Act 1 and Kaycee's Mod with the base mechanics and events while taking a variety of creative liberties. Speaking of creative liberties, I hope you guys like the Glitched Cards. I love that mechanic.
+Hello everyone! This is the first character mod I'm confident enough in to publish and boy has this been quite the journey. I started working on this early 2022 ish and had gone through several revamps and burnouts. The current version tries to remain true to Inscryption Act 1 and Kaycee's Mod with the base mechanics and events while taking creative and mechanical liberties. Speaking of creative liberties, I hope you guys like the Glitched Cards. I love that mechanic.
 
-This mod has a lot of moving parts. Like holy hell, we have a lot going on. There are 29 different Sigils. 29!! And you can combine them in a variety of ways. Point being, there will be bugs. I will be [b]shocked[/b] if me and my playtesters found all the bugs. If you find any, please let me know!
+This mod has a lot of moving parts. Like holy hell, we have a lot going on. There are 29 different Sigils. 29!! And you can combine them in a variety of ways. Point being, there will be bugs. I will be [b]shocked[/b] if me and my playtesters found all the bugs. If you find any, or have balance suggestions of any kind, please let me know!
 
 Shoutouts to my friends and playtesters: ZVisionless, Meh Squirrel, and Muffin.

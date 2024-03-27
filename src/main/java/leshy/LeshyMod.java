@@ -734,7 +734,6 @@ public class LeshyMod implements
         BaseMod.addCard(new DireWolfPup());
         BaseMod.addCard(new Bloodhound());
         BaseMod.addCard(new RatKing());
-        BaseMod.addCard(new SquirrelTotem());
         BaseMod.addCard(new GuardianTotem());
         BaseMod.addCard(new TrialOfWisdom());
         BaseMod.addCard(new TrialOfKin());
@@ -778,7 +777,6 @@ public class LeshyMod implements
         BaseMod.addCard(new MudTurtle());
         BaseMod.addCard(new DireWolf());
         BaseMod.addCard(new FecundityTotem());
-        BaseMod.addCard(new DoubleStrikeTotem());
         BaseMod.addCard(new UnkillableTotem());
         BaseMod.addCard(new BlackGoat());
         BaseMod.addCard(new MantisGod());
@@ -813,7 +811,6 @@ public class LeshyMod implements
         UnlockTracker.unlockCard(AvianTotem.ID);
         UnlockTracker.unlockCard(InsectTotem.ID);
         UnlockTracker.unlockCard(ReptileTotem.ID);
-        UnlockTracker.unlockCard(SquirrelTotem.ID);
         UnlockTracker.unlockCard(FledglingTotem.ID);
         UnlockTracker.unlockCard(BoneKingTotem.ID);
         UnlockTracker.unlockCard(HoarderTotem.ID);
@@ -897,7 +894,6 @@ public class LeshyMod implements
         UnlockTracker.unlockCard(MightyLeapTotem.ID);
         UnlockTracker.unlockCard(WaterborneTotem.ID);
         UnlockTracker.unlockCard(FecundityTotem.ID);
-        UnlockTracker.unlockCard(DoubleStrikeTotem.ID);
         UnlockTracker.unlockCard(UnkillableTotem.ID);
         UnlockTracker.unlockCard(PackMule.ID);
         UnlockTracker.unlockCard(GuardianTotem.ID);

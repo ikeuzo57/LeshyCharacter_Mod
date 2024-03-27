@@ -63,7 +63,7 @@ public class OldDataRelic extends CustomRelic implements OnApplyPowerRelic, Clic
     public static boolean selectingEffect = false;
     public static boolean selectingClick = false;
 
-    public OldDataRelic() {
+    public OldDataRelic(){
         super(ID, IMG, OUTLINE, RelicTier.SPECIAL, LandingSound.MAGICAL);
 
         this.counter = 1;
@@ -175,7 +175,7 @@ public class OldDataRelic extends CustomRelic implements OnApplyPowerRelic, Clic
                 topAvailable = true;
             if(this.sacrifice){
                 for(AbstractOrb o : AbstractDungeon.player.orbs){
-                    if(o instanceof CreatureOrb && !(((CreatureOrb) o).creatureCard instanceof Starvation)){
+                    if(o instanceof CreatureOrb && !(((CreatureOrb) o).creatureCard instanceof Starvation) && ((CreatureOrb) o).creatureCard.costType == AbstractCreatureCard.CreatureCostType.BLOOD){
                         sacrificeAvailable = true;
                         break;
                     }

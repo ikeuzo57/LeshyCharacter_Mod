@@ -716,7 +716,17 @@ public abstract class AbstractCreatureCard extends AbstractDynamicCard implement
 
         if(applyMightyLeap){
             applyMightyLeap = false;
-            addToBot(new ReducePowerAction(p, p, "Artifact", 1));
+            int numMightyLeap = 0;
+            for(AbstractOrb o : AbstractDungeon.player.orbs)
+                if(o instanceof CreatureOrb && ((CreatureOrb) o).creatureCard.current.contains(Sigils.MIGHTY_LEAP))
+                    numMightyLeap++;
+            for(AbstractPower ap : AbstractDungeon.player.powers){
+                if(ap instanceof ArtifactPower){
+                    if (ap.amount >= numMightyLeap)
+                        addToTop(new ReducePowerAction(p, p, "Artifact", 1));
+                    break;
+                }
+            }
         }
 
         if(applyStinky){
