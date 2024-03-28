@@ -42,22 +42,7 @@ public class GlitchAction extends AbstractGameAction {
                 card.isStatic = true;
                 MultiCardPreview.clear(card);
 
-                ArrayList<AbstractCreatureCard> creatureList = new ArrayList<>();
-                for(AbstractCard c : AbstractDungeon.srcCommonCardPool.group)
-                    if(c instanceof AbstractCreatureCard && !((AbstractCreatureCard) c).bloodless)
-                        creatureList.add((AbstractCreatureCard) c);
-                for(AbstractCard c : AbstractDungeon.srcUncommonCardPool.group)
-                    if(c instanceof AbstractCreatureCard && !((AbstractCreatureCard) c).bloodless)
-                        creatureList.add((AbstractCreatureCard) c);
-                for(AbstractCard c : AbstractDungeon.srcRareCardPool.group)
-                    if(c instanceof AbstractCreatureCard && !((AbstractCreatureCard) c).bloodless)
-                        creatureList.add((AbstractCreatureCard) c);
-                AbstractCreatureCard random = creatureList.get(AbstractDungeon.miscRng.random(creatureList.size() - 1));
-                random.isStatic = true;
-                MultiCardPreview.clear(random);
-
-                AbstractDungeon.player.drawPile.group.add(AbstractDungeon.player.drawPile.group.indexOf(this.glitch), random);
-                AbstractDungeon.player.drawPile.removeCard(this.glitch);
+                AbstractDungeon.player.drawPile.moveToExhaustPile(this.glitch);
 
                 OldDataRelic.glitchedNames.add(card.name);
 

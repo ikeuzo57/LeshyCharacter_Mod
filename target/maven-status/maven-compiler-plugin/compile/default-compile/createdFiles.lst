@@ -19,7 +19,6 @@ leshy\actions\SeekTopAction.class
 leshy\relics\GreatKrakenRelic.class
 leshy\patches\CreatureTypePatch.class
 leshy\relics\ArtOfSquirrelRelic.class
-leshy\powers\TrapperPower.class
 leshy\cards\WisdomWorthySacrifice.class
 leshy\patches\NeowPatch$ButtonEffect.class
 leshy\potions\HarpiesBirdlegFanPotion.class

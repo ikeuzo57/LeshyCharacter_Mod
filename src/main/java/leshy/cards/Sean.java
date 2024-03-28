@@ -38,9 +38,9 @@ public class Sean extends AbstractCreatureCard {
 
         tribe = CreatureTribe.NONE;
 
-        attack = baseAttack = trueBaseAttack = 2;
+        attack = baseAttack = trueBaseAttack = 4;
 
-        health = baseHealth = trueBaseHealth = 16;
+        health = baseHealth = trueBaseHealth = 18;
 
         innate.add(Sigils.TOUCH_OF_DEATH);
         innate.add(Sigils.MIGHTY_LEAP);

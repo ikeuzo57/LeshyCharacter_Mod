@@ -38,9 +38,9 @@ public class Cody extends AbstractCreatureCard {
 
         tribe = CreatureTribe.NONE;
 
-        attack = baseAttack = trueBaseAttack = 16;
+        attack = baseAttack = trueBaseAttack = 18;
 
-        health = baseHealth = trueBaseHealth = 4;
+        health = baseHealth = trueBaseHealth = 6;
 
         innate.add(Sigils.GUARDIAN);
         innate.add(Sigils.LOOSE_TAIL);

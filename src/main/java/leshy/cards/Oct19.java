@@ -40,7 +40,7 @@ public class Oct19 extends AbstractCreatureCard {
 
         attack = baseAttack = trueBaseAttack = 12;
 
-        health = baseHealth = trueBaseHealth = 6;
+        health = baseHealth = trueBaseHealth = 8;
 
         innate.add(Sigils.TOUCH_OF_DEATH);
         current.addAll(innate);

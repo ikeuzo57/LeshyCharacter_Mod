@@ -177,7 +177,7 @@ public class DredgingOption {
                 break;
             //Misc
             case HALF_MAX_HP:
-                loseHP = AbstractDungeon.player.maxHealth/2;
+                loseHP = (int)(AbstractDungeon.player.maxHealth*0.4);
                 text = text.replace("!HP!", ""+loseHP);
                 break;
         }

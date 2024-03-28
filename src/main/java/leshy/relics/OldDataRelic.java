@@ -117,7 +117,7 @@ public class OldDataRelic extends CustomRelic implements OnApplyPowerRelic, Clic
     public void atBattleStartPreDraw() {
         ArrayList<AbstractCreatureCard> list = new ArrayList<>();
         for(AbstractCard c : AbstractDungeon.player.drawPile.group){
-            if(c instanceof AbstractCreatureCard && !((AbstractCreatureCard) c).isStatic && !((AbstractCreatureCard) c).bloodless)
+            if(c instanceof AbstractCreatureCard && !((AbstractCreatureCard) c).isStatic && !((AbstractCreatureCard) c).baseFleeting)
                 list.add((AbstractCreatureCard) c);
         }
         while(list.size() > this.counter){

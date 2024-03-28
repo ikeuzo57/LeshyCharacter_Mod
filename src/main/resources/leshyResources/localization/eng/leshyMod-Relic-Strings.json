@@ -51,7 +51,7 @@
     "NAME": "Trapper Mask",
     "FLAVOR": "You wanna buy any ... pelts?",
     "DESCRIPTIONS": [
-      "Pelts have 10 more Health."
+      "Pelts gain 10 Health."
     ]
   },
   "leshy:BoonOfTheBoneLordRelic": {

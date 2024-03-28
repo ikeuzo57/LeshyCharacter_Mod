@@ -727,7 +727,7 @@
   },
   "leshy:Glitch": {
     "NAME": "Glitch",
-    "DESCRIPTION": "At start of combat, leshy:Glitch a creature and replace this with a random leshy:Glitched creature."
+    "DESCRIPTION": "At start of combat, leshy:Glitch a random creature in your deck and exhaust this."
   },
   "leshy:Knife": {
     "NAME": "Knife",

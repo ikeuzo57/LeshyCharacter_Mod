@@ -38,9 +38,9 @@ public class Tamara extends AbstractCreatureCard {
 
         tribe = CreatureTribe.NONE;
 
-        attack = baseAttack = trueBaseAttack = 8;
+        attack = baseAttack = trueBaseAttack = 10;
 
-        health = baseHealth = trueBaseHealth = 12;
+        health = baseHealth = trueBaseHealth = 15;
 
         innate.add(Sigils.AIRBORNE);
         innate.add(Sigils.LOOSE_TAIL);

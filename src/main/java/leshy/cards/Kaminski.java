@@ -40,7 +40,7 @@ public class Kaminski extends AbstractCreatureCard {
 
         attack = baseAttack = trueBaseAttack = 0;
 
-        health = baseHealth = trueBaseHealth = 8;
+        health = baseHealth = trueBaseHealth = 10;
 
         innate.add(Sigils.GUARDIAN);
         innate.add(Sigils.SHARP_QUILLS);
