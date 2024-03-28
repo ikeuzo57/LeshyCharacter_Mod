@@ -61,7 +61,7 @@
   },
   "leshy:Brawl": {
     "NAME": "Brawl",
-    "DESCRIPTION": "Deal !D! Damage. NL Trigger all Creature end of turn effects. NL Exhaust"
+    "DESCRIPTION": "Deal !D! Damage. NL Activate all creature end of turn effects. NL Exhaust"
   },
   "leshy:BlackGoat": {
     "NAME": "Black Goat",
@@ -295,8 +295,8 @@
   },
   "leshy:TooFastTooSoon": {
     "NAME": "Too Fast Too Soon",
-    "DESCRIPTION": "Unplayable above half health. NL Sacrifice all your Creatures. NL Summon a Grizzly with leshy:Mighty_Leap and leshy:Transient for each orb slot. NL Exhaust",
-    "UPGRADE_DESCRIPTION": "Unplayable above half health. NL Sacrifice all your Creatures. NL Summon a Grizzly with leshy:Mighty_Leap, leshy:Transient, and 4 more Attack and Health for each orb slot. NL Exhaust"
+    "DESCRIPTION": "Unplayable above half HP. NL Sacrifice all your creatures. NL Summon a Grizzly with leshy:Mighty_Leap and leshy:Transient for each orb slot. NL Exhaust",
+    "UPGRADE_DESCRIPTION": "Unplayable above half HP. NL Sacrifice all your creatures. NL Summon a Grizzly with leshy:Mighty_Leap, leshy:Transient, and 4 more Attack and Health for each orb slot. NL Exhaust"
   },
   "leshy:CorpseMaggots": {
     "NAME": "Corpse Maggots",
@@ -654,8 +654,8 @@
   },
   "leshy:TrialOfBlood": {
     "NAME": "Trial of Blood",
-    "DESCRIPTION": "Reveal the top 3 cards of your deck. If their total Blood cost is 4 or more, select 1 of 3 leshy:Powerful creatures to Summon. NL Exhaust",
-    "UPGRADE_DESCRIPTION": "Reveal the top 3 cards of your deck. If their total Blood cost is 4 or more, select 1 of 3 leshy:Powerful creatures to Summon."
+    "DESCRIPTION": "Reveal the top 3 cards of your deck. If their total Blood cost is 4 or more, select 1 of 3 leshy:Powerful creatures to summon. NL Exhaust",
+    "UPGRADE_DESCRIPTION": "Reveal the top 3 cards of your deck. If their total Blood cost is 4 or more, select 1 of 3 leshy:Powerful creatures to summon."
   },
   "leshy:HandTentacle": {
     "NAME": "Hand Tentacle",

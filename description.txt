@@ -10,7 +10,7 @@ You gain 1 Bone whenever a creature dies.
 [h3] Creature Stats [/h3]
 Creatures have 2 numeric stats : Attack and Health.
 At the end of each turn, creatures deal damage equal to their Attack to a random enemy.
-Enemies damage creatures in play from right to left. When a creature has 0 remaining Health, they go to the discard pile. You take the remainder, if any.
+Enemies damage creatures in play from right to left. When a creature has 0 remaining Health, it goes to the discard pile. You take the remainder, if any.
 
 [h3] Creature Tribes [/h3]
 Most creatures belong to one of five tribes: Avian, Canine, Hooved, Insect, or Reptile. Some creatures are tribeless. The tribe is displayed in the card type section. Tribes synergize with many things.
@@ -30,3 +30,6 @@ Hello everyone! This is the first character mod I'm confident enough in to publi
 This mod has a lot of moving parts. Like holy hell, we have a lot going on. There are 29 different Sigils. 29!! And you can combine them in a variety of ways. Point being, there will be bugs. I will be [b]shocked[/b] if me and my playtesters found all the bugs. If you find any, or have balance suggestions of any kind, please let me know!
 
 Shoutouts to my friends and playtesters: ZVisionless, Meh Squirrel, and Muffin.
+
+If you have any specific questions on mechanics or interactions, check out the documentation I threw together.
+https://docs.google.com/document/d/1N9_IniThfsOTpFCUfUeR5VkTyiOiaMYg_JUdDDfQZIs/edit?pli=1
