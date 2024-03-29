@@ -35,7 +35,7 @@ public class TargetPower extends AbstractPower implements CloneablePowerInterfac
         this.owner = owner;
         this.source = source;
 
-        this.type = AbstractPower.PowerType.DEBUFF;
+        this.type = AbstractPower.PowerType.BUFF;
 
         // We load those txtures here.
         this.region128 = new TextureAtlas.AtlasRegion(tex84, 0, 0, 84, 84);

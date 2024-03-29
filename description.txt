@@ -9,7 +9,7 @@ You gain 1 Bone whenever a creature dies.
 
 [h3] Creature Stats [/h3]
 Creatures have 2 numeric stats : Attack and Health.
-At the end of each turn, creatures deal damage equal to their Attack to a random enemy.
+At the end of each turn, creatures deal damage equal to their Attack to an enemy. One of your starter relics lets you designate a target.
 Enemies damage creatures in play from right to left. When a creature has 0 remaining Health, it goes to the discard pile. You take the remainder, if any.
 
 [h3] Creature Tribes [/h3]

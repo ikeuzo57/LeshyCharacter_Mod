@@ -5,6 +5,7 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.math.MathUtils;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndObtainEffect;
 import leshy.LeshyMod;
 import leshy.cards.WolfPelt;
@@ -22,6 +23,9 @@ public class InfestedPeltRelic extends CustomRelic{
 
     public InfestedPeltRelic() {
         super(ID, IMG, OUTLINE, RelicTier.BOSS, LandingSound.FLAT);
+
+        tips.add(new PowerTip("Pelt Lice", "10/10 with #yDouble #yStrike."));
+        tips.add(new PowerTip("Double Strike", "Attacks the enemy an additional time. Attacks a different enemy if Bifurcated."));
 
     }
 

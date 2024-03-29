@@ -47,6 +47,7 @@ public class RemoveRelicsPatch {
             AbstractDungeon.relicsToRemoveOnStart.add("Ice Cream");
 
             AbstractDungeon.relicsToRemoveOnStart.add("OrangePellets");
+            AbstractDungeon.relicsToRemoveOnStart.add("PrismaticShard");
 
             AbstractDungeon.relicsToRemoveOnStart.add("Pandora's Box");
 

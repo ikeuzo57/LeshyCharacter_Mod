@@ -2,6 +2,7 @@ package leshy.relics;
 
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import leshy.LeshyMod;
@@ -40,5 +41,10 @@ public class WhistleRelic extends CustomRelic implements ClickMonsterRelic {
     public void onClick(AbstractMonster m) {
         flash();
         addToBot(new TargetAction(m));
+        if (AbstractDungeon.player.hasPower("Surrounded")){
+            AbstractDungeon.player.flipHorizontal = (m.drawX < AbstractDungeon.player.drawX);
+            m.removeSurroundedPower();
+        }
+
     }
 }
