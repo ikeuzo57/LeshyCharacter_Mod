@@ -1029,32 +1029,36 @@ public class LeshyMod implements
     @Override
     public void receiveOnBattleStart(AbstractRoom abstractRoom) {
 
-        SacrificePower sp = new SacrificePower(AbstractDungeon.player, AbstractDungeon.player, 0);
-        AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, sp));
+        if(AbstractDungeon.player instanceof Leshy){
 
-        cawCaw = false;
-        wolfSkull = false;
-        bullfighter = false;
-        sapling = false;
-        blood = false;
-        for(AbstractRelic r : AbstractDungeon.player.relics) {
-            if(r instanceof CawCawFaceRelic)
-                cawCaw = true;
-            if(r instanceof WolfSkullRelic)
-                wolfSkull = true;
-            if(r instanceof BullfighterCapeRelic)
-                bullfighter = true;
-            if(r instanceof SaplingRelic)
-                sapling = true;
-            if(r instanceof BloodBagRelic)
-                blood = true;
+            SacrificePower sp = new SacrificePower(AbstractDungeon.player, AbstractDungeon.player, 0);
+            AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, sp));
+
+            cawCaw = false;
+            wolfSkull = false;
+            bullfighter = false;
+            sapling = false;
+            blood = false;
+            for(AbstractRelic r : AbstractDungeon.player.relics){
+                if (r instanceof CawCawFaceRelic)
+                    cawCaw = true;
+                if (r instanceof WolfSkullRelic)
+                    wolfSkull = true;
+                if (r instanceof BullfighterCapeRelic)
+                    bullfighter = true;
+                if (r instanceof SaplingRelic)
+                    sapling = true;
+                if (r instanceof BloodBagRelic)
+                    blood = true;
+            }
+
+            updateFullSets();
+
+            for (int i = 0; i < (AbstractDungeon.player.energy.energyMaster - Leshy.ENERGY_PER_TURN); i++)
+                if (AbstractDungeon.player.hand.group.size() < (10 - AbstractDungeon.player.gameHandSize))
+                    AbstractDungeon.actionManager.addToTop(new MakeTempCardInHandAction(getSquirrel()));
+
         }
-
-        updateFullSets();
-
-        for(int i=0; i<(AbstractDungeon.player.energy.energyMaster - Leshy.ENERGY_PER_TURN); i++)
-            if (AbstractDungeon.player.hand.group.size() < (10 - AbstractDungeon.player.gameHandSize))
-                AbstractDungeon.actionManager.addToTop(new MakeTempCardInHandAction(getSquirrel()));
 
     }
 
