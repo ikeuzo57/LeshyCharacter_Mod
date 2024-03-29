@@ -1,4 +1,4 @@
-package leshy.helpers;
+package leshy.helpers.deprecated;
 
 import com.badlogic.gdx.math.MathUtils;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -13,17 +13,17 @@ import com.megacrit.cardcrawl.rewards.RewardItem;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndObtainEffect;
 import leshy.cards.*;
+import leshy.cards.abstracts.AbstractCreatureCard;
 import leshy.events.*;
 import leshy.relics.*;
-import leshy.vfx.*;
-import leshy.cards.abstracts.AbstractCreatureCard;
 import leshy.rewards.LinkedRewardItem;
+import leshy.vfx.*;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 
-public class DredgingOption {
+public class DredgingOption_Copy {
 
     public enum Reward {
         //Relics
@@ -110,7 +110,7 @@ public class DredgingOption {
     private int loseHP = -1;
     private AbstractCreatureCard.CreatureTribe change = null;
 
-    public DredgingOption(Reward reward, Penalty penalty){
+    public DredgingOption_Copy(Reward reward, Penalty penalty){
         this.text = makeText(reward, penalty);
         this.reward = reward;
         this.penalty = penalty;
@@ -402,7 +402,7 @@ public class DredgingOption {
 
     }
 
-    public static ArrayList<DredgingOption> getOptions(){
+    public static ArrayList<DredgingOption_Copy> getOptions(){
 
         ArrayList<Reward> rewards = new ArrayList<>();
         rewards.add(Reward.EVENTS);
@@ -411,9 +411,9 @@ public class DredgingOption {
 
         ArrayList<Penalty> penalties = getRandomPenalties();
 
-        ArrayList<DredgingOption> options = new ArrayList<>();
+        ArrayList<DredgingOption_Copy> options = new ArrayList<>();
         for(int i=0; i<4; i++){
-            options.add(new DredgingOption(rewards.get(i), penalties.get(i)));
+            options.add(new DredgingOption_Copy(rewards.get(i), penalties.get(i)));
         }
         return options;
 

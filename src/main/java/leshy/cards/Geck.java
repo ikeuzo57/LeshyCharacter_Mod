@@ -40,9 +40,9 @@ public class Geck extends AbstractCreatureCard {
 
         tribe = CreatureTribe.REPTILE;
 
-        attack = baseAttack = trueBaseAttack = 5;
+        attack = baseAttack = trueBaseAttack = 6;
 
-        health = baseHealth = trueBaseHealth = 5;
+        health = baseHealth = trueBaseHealth = 6;
 
         initializeDescription();
 

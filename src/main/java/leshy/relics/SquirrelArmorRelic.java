@@ -2,6 +2,7 @@ package leshy.relics;
 
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
+import com.megacrit.cardcrawl.helpers.PowerTip;
 import leshy.LeshyMod;
 import leshy.cards.abstracts.AbstractCreatureCard;
 import leshy.relics.interfaces.CreatureSigilRelic;
@@ -21,6 +22,8 @@ public class SquirrelArmorRelic extends CustomRelic implements CreatureSigilReli
 
     public SquirrelArmorRelic() {
         super(ID, IMG, OUTLINE, RelicTier.BOSS, LandingSound.HEAVY);
+
+        tips.add(new PowerTip("Armored", "Prevents the first time this takes damage."));
 
     }
 

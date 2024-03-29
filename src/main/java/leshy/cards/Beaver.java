@@ -40,9 +40,9 @@ public class Beaver extends AbstractCreatureCard {
 
         tribe = CreatureTribe.NONE;
 
-        attack = baseAttack = trueBaseAttack = 2;
+        attack = baseAttack = trueBaseAttack = 4;
 
-        health = baseHealth = trueBaseHealth = 8;
+        health = baseHealth = trueBaseHealth = 10;
 
         innate.add(Sigils.DAM_BUILDER);
         current.add(Sigils.DAM_BUILDER);

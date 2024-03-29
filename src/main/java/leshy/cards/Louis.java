@@ -38,7 +38,7 @@ public class Louis extends AbstractCreatureCard {
 
         tribe = CreatureTribe.NONE;
 
-        attack = baseAttack = trueBaseAttack = 12;
+        attack = baseAttack = trueBaseAttack = 14;
 
         health = baseHealth = trueBaseHealth = 1;
 

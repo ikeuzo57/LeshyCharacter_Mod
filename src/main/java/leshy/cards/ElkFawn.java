@@ -46,7 +46,7 @@ public class ElkFawn extends AbstractCreatureCard {
 
         attack = baseAttack = trueBaseAttack = 2;
 
-        health = baseHealth = trueBaseHealth = 6;
+        health = baseHealth = trueBaseHealth = 8;
 
         innate.add(Sigils.FLEDGLING);
         innate.add(Sigils.RAMPAGER);

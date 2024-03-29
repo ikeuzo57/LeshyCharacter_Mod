@@ -41,9 +41,9 @@ public class Cuckoo extends AbstractCreatureCard {
         tribe = CreatureTribe.AVIAN;
 
 
-        attack = baseAttack = trueBaseAttack = 5;
+        attack = baseAttack = trueBaseAttack = 6;
 
-        health = baseHealth = trueBaseHealth = 5;
+        health = baseHealth = trueBaseHealth = 6;
 
         innate.add(Sigils.AIRBORNE);
         innate.add(Sigils.BROOD_PARASITE);

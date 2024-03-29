@@ -42,7 +42,7 @@ public class Skunk extends AbstractCreatureCard {
 
         attack = baseAttack = trueBaseAttack = 0;
 
-        health = baseHealth = trueBaseHealth = 10;
+        health = baseHealth = trueBaseHealth = 12;
 
         innate.add(Sigils.STINKY);
         current.add(Sigils.STINKY);

@@ -40,7 +40,7 @@ public class Wolf extends AbstractCreatureCard {
 
         tribe = CreatureTribe.CANINE;
 
-        attack = baseAttack = trueBaseAttack = 16;
+        attack = baseAttack = trueBaseAttack = 20;
 
         health = baseHealth = trueBaseHealth = 4;
 

@@ -46,7 +46,7 @@ public class WorkerAnt extends AbstractCreatureCard {
 
         attack = baseAttack = trueBaseAttack = 4;
 
-        health = baseHealth = trueBaseHealth = 6;
+        health = baseHealth = trueBaseHealth = 8;
 
         initializeDescription();
 

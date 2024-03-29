@@ -382,7 +382,7 @@
       "Bell_Ringer",
       "bell_ringer"
     ],
-    "DESCRIPTION": "Gains 10 Attack per space away from the right side."
+    "DESCRIPTION": "Gains 12 Attack per space away from the right side."
   },
   {
     "PROPER_NAME": "Card Counter",
@@ -439,7 +439,7 @@
       "Spilled_Blood",
       "spilled_blood"
     ],
-    "DESCRIPTION": "Gains 6 Attack for each creature sacrificed for Blood costs this turn."
+    "DESCRIPTION": "Gains 8 Attack for each creature sacrificed for Blood costs this turn."
   },
   {
     "NAMES": [

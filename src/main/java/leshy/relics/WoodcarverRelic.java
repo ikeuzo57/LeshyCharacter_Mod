@@ -19,6 +19,8 @@ public class WoodcarverRelic extends CustomRelic implements ClickableRelic {
     private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("woodcarver_relic.png"));
     private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("woodcarver_relic.png"));
 
+    boolean used = false;
+
     public WoodcarverRelic() {
         super(ID, IMG, OUTLINE, RelicTier.STARTER, LandingSound.FLAT);
 
@@ -32,9 +34,20 @@ public class WoodcarverRelic extends CustomRelic implements ClickableRelic {
     }
 
     @Override
+    public void atBattleStart() {
+        super.atBattleStart();
+        used = false;
+        grayscale = false;
+        flash();
+    }
+
+    @Override
     public void onRightClick() {
 
-        if(!AbstractDungeon.isScreenUp && AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT){
+        if(!AbstractDungeon.isScreenUp && AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT && !used){
+
+            used = true;
+            grayscale = true;
 
             this.flash();
             addToBot(new WoodcarverAction());

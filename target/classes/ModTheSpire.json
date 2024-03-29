@@ -3,7 +3,7 @@
   "name": "Leshy",
   "author_list": ["Wensber"],
   "description": "A character mod inspired by Leshy from Inscryption.",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "sts_version": "01-23-2019",
   "mts_version": "3.8.0",
   "dependencies": ["basemod", "stslib"],

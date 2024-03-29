@@ -40,7 +40,7 @@ public class MantisGod extends AbstractCreatureCard {
 
         tribe = CreatureTribe.INSECT;
 
-        attack = baseAttack = trueBaseAttack = 10;
+        attack = baseAttack = trueBaseAttack = 12;
 
         health = baseHealth = 2;
 

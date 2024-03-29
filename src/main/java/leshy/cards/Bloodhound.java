@@ -41,9 +41,9 @@ public class Bloodhound extends AbstractCreatureCard {
 
         tribe = CreatureTribe.CANINE;
 
-        attack = baseAttack = trueBaseAttack = 8;
+        attack = baseAttack = trueBaseAttack = 10;
 
-        health = baseHealth = trueBaseHealth = 12;
+        health = baseHealth = trueBaseHealth = 14;
 
         innate.add(Sigils.GUARDIAN);
         current.add(Sigils.GUARDIAN);

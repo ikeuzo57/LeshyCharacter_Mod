@@ -51,9 +51,9 @@
     "NAME": "Rat King",
     "DESCRIPTION": ""
   },
-  "leshy:Target": {
-    "NAME": "Target",
-    "DESCRIPTION": "Deal !D! Damage X times. Creatures leshy:Target the enemy. NL Exhaust"
+  "leshy:Scissors": {
+    "NAME": "Scissors",
+    "DESCRIPTION": "Deal !D! Damage X times. NL Exhaust"
   },
   "leshy:Dagger": {
     "NAME": "Dagger",
@@ -77,13 +77,11 @@
   },
   "leshy:HoovedTotem": {
     "NAME": "Hooved Totem",
-    "DESCRIPTION": "Add the Hooved head to your leshy:Totem. NL Draw a card.",
-    "UPGRADE_DESCRIPTION": "Innate NL Add the Hooved head to your leshy:Totem. NL Draw a card."
+    "DESCRIPTION": "Add the Hooved head to your leshy:Totem."
   },
   "leshy:CanineTotem": {
     "NAME": "Canine Totem",
-    "DESCRIPTION": "Add the Canine head to your leshy:Totem. NL Draw a card.",
-    "UPGRADE_DESCRIPTION": "Innate NL Add the Canine head to your leshy:Totem. NL Draw a card."
+    "DESCRIPTION": "Add the Canine head to your leshy:Totem."
   },
   "leshy:BifurcatedTotem": {
     "NAME": "Bifurcated Totem",
@@ -97,18 +95,15 @@
   },
   "leshy:AvianTotem": {
     "NAME": "Avian Totem",
-    "DESCRIPTION": "Add the Avian head to your leshy:Totem. NL Draw a card.",
-    "UPGRADE_DESCRIPTION": "Innate NL Add the Avian head to your leshy:Totem. NL Draw a card."
+    "DESCRIPTION": "Add the Avian head to your leshy:Totem."
   },
   "leshy:InsectTotem": {
     "NAME": "Insect Totem",
-    "DESCRIPTION": "Add the Insect head to your leshy:Totem. NL Draw a card.",
-    "UPGRADE_DESCRIPTION": "Innate NL Add the Insect head to your leshy:Totem. NL Draw a card."
+    "DESCRIPTION": "Add the Insect head to your leshy:Totem."
   },
   "leshy:ReptileTotem": {
     "NAME": "Reptile Totem",
-    "DESCRIPTION": "Add the Reptile head to your leshy:Totem. NL Draw a card.",
-    "UPGRADE_DESCRIPTION": "Innate NL Add the Reptile head to your leshy:Totem. NL Draw a card."
+    "DESCRIPTION": "Add the Reptile head to your leshy:Totem."
   },
   "leshy:SquirrelTotem": {
     "NAME": "Squirrel Totem",
@@ -739,7 +734,7 @@
   },
   "leshy:OldDataHead": {
     "NAME": "Twin Headed",
-    "DESCRIPTION": "Your totem can have an additional head."
+    "DESCRIPTION": "Woodcarver Mask adds an additional Totem head."
   },
   "leshy:OldDataLeft": {
     "NAME": "Extra Attacks",

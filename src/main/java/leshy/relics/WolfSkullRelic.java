@@ -2,6 +2,7 @@ package leshy.relics;
 
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
+import com.megacrit.cardcrawl.helpers.PowerTip;
 import leshy.LeshyMod;
 import leshy.cards.abstracts.AbstractCreatureCard;
 import leshy.cards.DireWolf;
@@ -25,6 +26,8 @@ public class WolfSkullRelic extends CustomRelic implements CreatureSigilRelic {
 
     public WolfSkullRelic() {
         super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.CLINK);
+
+        tips.add(new PowerTip("Leader", "Other creatures with the same tribe as this one gain 4 Attack."));
 
     }
 

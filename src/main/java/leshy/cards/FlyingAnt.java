@@ -44,7 +44,7 @@ public class FlyingAnt extends AbstractCreatureCard {
 
         tribe = CreatureTribe.ANT;
 
-        attack = baseAttack = trueBaseAttack = 8;
+        attack = baseAttack = trueBaseAttack = 10;
 
         health = baseHealth = trueBaseHealth = 2;
 

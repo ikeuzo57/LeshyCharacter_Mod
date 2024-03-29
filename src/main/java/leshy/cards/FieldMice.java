@@ -40,9 +40,9 @@ public class FieldMice extends AbstractCreatureCard {
 
         tribe = CreatureTribe.NONE;
 
-        attack = baseAttack = trueBaseAttack = 10;
+        attack = baseAttack = trueBaseAttack = 12;
 
-        health = baseHealth = trueBaseHealth = 10;
+        health = baseHealth = trueBaseHealth = 12;
 
         innate.add(Sigils.FECUNDITY);
         current.add(Sigils.FECUNDITY);

@@ -41,9 +41,9 @@ public class Stoat extends AbstractCreatureCard {
 
         tribe = CreatureTribe.NONE;
 
-        attack = baseAttack = trueBaseAttack = 2;
+        attack = baseAttack = trueBaseAttack = 3;
 
-        health = baseHealth = trueBaseHealth = 8;
+        health = baseHealth = trueBaseHealth = 9;
 
         initializeDescription();
 

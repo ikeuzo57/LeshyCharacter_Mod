@@ -3,6 +3,7 @@ package leshy.relics;
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.helpers.PowerTip;
 import leshy.LeshyMod;
 import leshy.cards.abstracts.AbstractCreatureCard;
 import leshy.relics.interfaces.CreatureSigilRelic;
@@ -22,6 +23,9 @@ public class DrownedRelic extends CustomRelic implements CreatureSigilRelic {
 
     public DrownedRelic() {
         super(ID, IMG, OUTLINE, RelicTier.SPECIAL, LandingSound.MAGICAL);
+
+        tips.add(new PowerTip("Guardian", "Summoned in the front."));
+        tips.add(new PowerTip("Waterborne", "No longer prevents damage."));
 
     }
 

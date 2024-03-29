@@ -2,6 +2,7 @@ package leshy.relics;
 
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
+import com.megacrit.cardcrawl.helpers.PowerTip;
 import leshy.LeshyMod;
 import leshy.cards.abstracts.AbstractCreatureCard;
 import leshy.relics.interfaces.CreatureSigilRelic;
@@ -24,6 +25,8 @@ public class SnorkelRelic extends CustomRelic implements CreatureSigilRelic, Cre
 
     public SnorkelRelic() {
         super(ID, IMG, OUTLINE, RelicTier.SHOP, LandingSound.CLINK);
+
+        tips.add(new PowerTip("Waterborne", "No longer prevents damage."));
 
     }
 

@@ -2,6 +2,7 @@ package leshy.relics;
 
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
+import com.megacrit.cardcrawl.helpers.PowerTip;
 import leshy.LeshyMod;
 import leshy.cards.abstracts.AbstractCreatureCard;
 import leshy.cards.RiverSnapper;
@@ -22,6 +23,8 @@ public class GreenShellRelic extends CustomRelic implements CreatureSigilRelic {
 
     public GreenShellRelic() {
         super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.CLINK);
+
+        tips.add(new PowerTip("Armored", "Prevents the first time this takes damage."));
 
     }
 

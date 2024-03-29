@@ -40,7 +40,7 @@ public class RiverOtter extends AbstractCreatureCard {
 
         tribe = CreatureTribe.NONE;
 
-        attack = baseAttack = trueBaseAttack = 8;
+        attack = baseAttack = trueBaseAttack = 10;
 
         health = baseHealth = trueBaseHealth = 1;
 

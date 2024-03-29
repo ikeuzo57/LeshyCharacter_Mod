@@ -175,6 +175,7 @@ public class Leshy extends CustomPlayer{
     public ArrayList<String> getStartingRelics() {
         ArrayList<String> retVal = new ArrayList<>();
 
+        retVal.add(WhistleRelic.ID);
         retVal.add(WoodcarverRelic.ID);
         retVal.add(SquirrelDeckRelic.ID);
 

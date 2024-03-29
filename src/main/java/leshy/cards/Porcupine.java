@@ -42,7 +42,7 @@ public class Porcupine extends AbstractCreatureCard {
 
         attack = baseAttack = trueBaseAttack = 4;
 
-        health = baseHealth = trueBaseHealth = 6;
+        health = baseHealth = trueBaseHealth = 8;
 
         innate.add(Sigils.SHARP_QUILLS);
         current.add(Sigils.SHARP_QUILLS);

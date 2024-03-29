@@ -40,9 +40,9 @@ public class Rattler extends AbstractCreatureCard {
 
         tribe = CreatureTribe.REPTILE;
 
-        attack = baseAttack = trueBaseAttack = 18;
+        attack = baseAttack = trueBaseAttack = 20;
 
-        health = baseHealth = trueBaseHealth = 8;
+        health = baseHealth = trueBaseHealth = 10;
 
         initializeDescription();
 

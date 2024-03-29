@@ -48,7 +48,7 @@ public class RedHart extends AbstractCreatureCard {
 
         attack = baseAttack = trueBaseAttack = 0;
 
-        health = baseHealth = trueBaseHealth = 10;
+        health = baseHealth = trueBaseHealth = 12;
 
         innate.add(Sigils.RAMPAGER);
         current.add(Sigils.RAMPAGER);

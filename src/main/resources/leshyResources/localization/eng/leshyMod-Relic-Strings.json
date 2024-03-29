@@ -3,7 +3,7 @@
     "NAME": "Woodcarver Mask",
     "FLAVOR": "Carves Totems of Creature and Sigil.",
     "DESCRIPTIONS": [
-      "On right click during combat, choose and gain a basic Totem head you do not have."
+      "Once per combat, you may right click to add a basic Totem head to your Totem."
     ]
   },"leshy:SquirrelDeckRelic": {
   "NAME": "Squirrel Deck",
@@ -306,7 +306,7 @@
     "NAME": "OLD_DATA",
     "FLAVOR": "01100100 01100101 01100101 01110000 01100010 01100101 01101110 01100101 01100001 01110100 01101000",
     "DESCRIPTIONS": [
-      "Your totem can have an additional head.",
+      "Woodcarver Mask adds an additional Totem head.",
       "The creature in the leftmost orb slot triggers end of turn effects an additional time.",
       "Once per shuffle, you may right click to move a card in your deck to the top.",
       "Glitched creatures gain ", " Attack and Health.",
@@ -504,6 +504,13 @@
     "FLAVOR": "Contains the spirit of a bear.",
     "DESCRIPTIONS": [
       "On right click, lose ", " HP and gain a Tooth."
+    ]
+  },
+  "leshy:WhistleRelic": {
+    "NAME": "Whistle",
+    "FLAVOR": "Loud and commanding.",
+    "DESCRIPTIONS": [
+      "You may right click an enemy to #yTarget them."
     ]
   }
 

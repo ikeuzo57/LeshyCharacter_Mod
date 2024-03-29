@@ -48,7 +48,7 @@ public class Mole extends AbstractCreatureCard {
 
         attack = baseAttack = trueBaseAttack = 0;
 
-        health = baseHealth = trueBaseHealth = 10;
+        health = baseHealth = trueBaseHealth = 12;
 
         innate.add(Sigils.GUARDIAN);
         current.add(Sigils.GUARDIAN);

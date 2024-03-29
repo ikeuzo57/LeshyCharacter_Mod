@@ -11,6 +11,7 @@ leshy\cards\WisdomAmorphous.class
 leshy\patches\RenderTitlePatch.class
 leshy\vfx\BloodToBoneEffect.class
 leshy\cards\Amalgam.class
+leshy\helpers\deprecated\DredgingOption_Copy$Reward.class
 leshy\actions\RoadkillAction.class
 leshy\cards\HoovedTotem.class
 leshy\cards\Mole.class
@@ -18,8 +19,10 @@ leshy\util\TextureLoader.class
 leshy\actions\SeekTopAction.class
 leshy\relics\GreatKrakenRelic.class
 leshy\patches\CreatureTypePatch.class
+leshy\helpers\DredgingPenalty$1.class
 leshy\relics\ArtOfSquirrelRelic.class
 leshy\cards\WisdomWorthySacrifice.class
+leshy\helpers\DredgingReward$Reward.class
 leshy\patches\NeowPatch$ButtonEffect.class
 leshy\potions\HarpiesBirdlegFanPotion.class
 leshy\cards\WorkerAnt.class
@@ -60,6 +63,7 @@ leshy\cards\WisdomMightyLeap.class
 leshy\relics\TinyHeadbandRelic.class
 leshy\patches\BottledOpossumPatch$MoveToTop.class
 leshy\patches\StaticCardPatch$DescriptionCN.class
+leshy\helpers\DredgingReward$1.class
 leshy\cards\OldDataTop.class
 leshy\relics\TotemPoleRelic.class
 leshy\powers\TargetPower.class
@@ -75,10 +79,12 @@ leshy\patches\PlayCreaturePatch.class
 leshy\cards\Wolf.class
 leshy\cards\Cat.class
 leshy\cards\RiverSnapper.class
+leshy\helpers\DredgingReward.class
 leshy\cards\RabbitPelt.class
 leshy\cards\DireWolf.class
 leshy\cards\Starvation.class
 leshy\cards\Raven.class
+leshy\relics\WhistleRelic.class
 leshy\cards\abstracts\AbstractCreatureCard$CreatureTribe.class
 leshy\patches\LeshyEventPatch$RowRestrict$Locator.class
 leshy\cards\Glitch.class
@@ -114,9 +120,9 @@ leshy\cards\Magpie.class
 leshy\cards\Bloodhound.class
 leshy\patches\ApotheosisPatch.class
 leshy\actions\KinAction.class
+leshy\helpers\DredgingPenalty$Penalty.class
 leshy\patches\SneckoOilPatch$ShopCreatureCards.class
 leshy\patches\PeltPatch.class
-leshy\cards\Target.class
 leshy\cards\WolfPelt.class
 leshy\cards\Knife.class
 leshy\cards\DeathCard.class
@@ -191,6 +197,7 @@ leshy\vfx\ReplaceSquirrelEffect.class
 leshy\helpers\OldDataSavable.class
 leshy\relics\SquirrelArmorRelic.class
 leshy\events\PackEvent.class
+leshy\patches\ClickMonsterRelicPatch.class
 leshy\relics\BottledSquirrelRelic.class
 leshy\actions\KinCreatureAction.class
 leshy\cards\CagedWolf.class
@@ -214,7 +221,6 @@ leshy\patches\PlayCreaturePatch$PutInStasis.class
 leshy\cards\Sean.class
 leshy\patches\MerchantCreaturePatch.class
 leshy\relics\QuillRelic.class
-leshy\helpers\DredgingOption$1.class
 leshy\patches\PlayCreaturePatch$DontMoveCreatureCards.class
 leshy\actions\FilmRollStatAction.class
 leshy\cards\Roadkill.class
@@ -262,6 +268,7 @@ leshy\cards\abstracts\AbstractCreatureCard.class
 leshy\relics\DrownedRelic.class
 leshy\relics\BallOfSquirrelsRelic.class
 leshy\cards\StrangePupa.class
+leshy\relics\interfaces\ClickMonsterRelic.class
 leshy\vfx\ReplacePeltEffect.class
 leshy\relics\CloverRelic$1.class
 leshy\cards\BoonOfTheAmbidextrous.class
@@ -317,7 +324,6 @@ leshy\actions\SilentRemovePowerAction.class
 leshy\cards\WisdomLooseTail.class
 leshy\patches\RenderCreaturePreviewInFrontPatch.class
 leshy\relics\TrenchCoatRelic.class
-leshy\helpers\DredgingOption.class
 leshy\cards\Dam.class
 leshy\cards\Skunk.class
 leshy\rewards\LinkedRewardItem.class
@@ -334,7 +340,6 @@ leshy\relics\BloodBagRelic.class
 leshy\relics\MachineModificationRelic.class
 leshy\patches\ScreenlessRelicPatch.class
 leshy\cards\WisdomAntSpawner.class
-leshy\relics\SaplingRelic.class
 leshy\rooms\MysteriousStonesRoom.class
 leshy\cards\DireWolfPup.class
 leshy\potions\ToothPotion.class
@@ -351,6 +356,7 @@ leshy\relics\GoatEyeRelic.class
 leshy\patches\RenderTitlePatch$Locator.class
 leshy\relics\WoodcarverRelic.class
 leshy\actions\VoucherAction.class
+leshy\helpers\deprecated\DredgingOption_Copy$Penalty.class
 leshy\relics\PliersRelic.class
 leshy\cards\StruckGold.class
 leshy\actions\TheMoonAction.class
@@ -369,7 +375,6 @@ leshy\relics\DeadSurvivorsRelic.class
 leshy\potions\HoggyBankPotion.class
 leshy\variables\LeshySecondMagicNumber.class
 leshy\cards\MirrorTentacle.class
-leshy\helpers\DredgingOption$Penalty.class
 leshy\actions\FilmRollAction.class
 leshy\cards\WolfCub.class
 leshy\cards\CanineTotem.class
@@ -393,8 +398,11 @@ leshy\cards\Kaminski.class
 leshy\cards\Urayuli.class
 leshy\cards\Elk.class
 leshy\cards\FecundityTotem.class
+leshy\helpers\deprecated\DredgingOption_Copy.class
+leshy\cards\Scissors.class
 leshy\cards\WisdomTrinketBearer.class
 leshy\cards\GuardianTotem.class
+leshy\helpers\deprecated\DredgingOption_Copy$1.class
 leshy\cards\Geck.class
 leshy\cards\Coyote.class
 leshy\patches\StaticCardPatch$Title.class
@@ -416,12 +424,12 @@ leshy\patches\RingWormPatch.class
 leshy\vfx\ReplacePeltEffect$1.class
 leshy\relics\GreenShellRelic.class
 leshy\patches\DestroyPotionPatch.class
+leshy\helpers\DredgingPenalty.class
 leshy\patches\ProceedButtonPatch.class
 leshy\cards\Reginald.class
 leshy\relics\CloverRelic.class
 leshy\actions\KnifeAction$1.class
 leshy\cards\abstracts\AbstractCreatureCard$Sigils.class
-leshy\helpers\DredgingOption$Reward.class
 leshy\powers\StinkyPower.class
 leshy\relics\BoonOfGoatsBloodRelic.class
 leshy\events\DredgingRoomEvent.class

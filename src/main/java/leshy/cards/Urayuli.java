@@ -40,9 +40,9 @@ public class Urayuli extends AbstractCreatureCard {
 
         tribe = CreatureTribe.NONE;
 
-        attack = baseAttack = trueBaseAttack = 30;
+        attack = baseAttack = trueBaseAttack = 35;
 
-        health = baseHealth = trueBaseHealth = 30;
+        health = baseHealth = trueBaseHealth = 35;
 
         mycologistReroll = 0.01F;
 

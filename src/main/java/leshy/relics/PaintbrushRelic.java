@@ -2,6 +2,7 @@ package leshy.relics;
 
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
+import com.megacrit.cardcrawl.helpers.PowerTip;
 import leshy.LeshyMod;
 import leshy.cards.abstracts.AbstractCreatureCard;
 import leshy.relics.interfaces.CreatureSigilRelic;
@@ -21,6 +22,8 @@ public class PaintbrushRelic extends CustomRelic {
 
     public PaintbrushRelic() {
         super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.FLAT);
+
+        tips.add(new PowerTip("Amorphous", "At start of combat, replace this Sigil with a random new Sigil."));
 
     }
 

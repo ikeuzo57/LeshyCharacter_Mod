@@ -43,7 +43,7 @@ public class Bullfrog extends AbstractCreatureCard {
 
         attack = baseAttack = trueBaseAttack = 4;
 
-        health = baseHealth = trueBaseHealth = 6;
+        health = baseHealth = trueBaseHealth = 8;
 
         innate.add(Sigils.MIGHTY_LEAP);
         current.add(Sigils.MIGHTY_LEAP);

@@ -40,9 +40,9 @@ public class MooseBuck extends AbstractCreatureCard {
 
         tribe = CreatureTribe.HOOVED;
 
-        attack = baseAttack = trueBaseAttack = 12;
+        attack = baseAttack = trueBaseAttack = 14;
 
-        health = baseHealth = trueBaseHealth = 28;
+        health = baseHealth = trueBaseHealth = 32;
 
         innate.add(Sigils.RAMPAGER);
         current.add(Sigils.RAMPAGER);

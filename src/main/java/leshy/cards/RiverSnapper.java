@@ -42,7 +42,7 @@ public class RiverSnapper extends AbstractCreatureCard {
 
         attack = baseAttack = trueBaseAttack = 2;
 
-        health = baseHealth = trueBaseHealth = 18;
+        health = baseHealth = trueBaseHealth = 22;
 
         initializeDescription();
 

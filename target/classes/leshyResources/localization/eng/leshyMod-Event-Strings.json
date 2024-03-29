@@ -154,7 +154,7 @@
       "#r[OLD_DATA]",
       "[Leave]",
       "#r[DEEPER]",
-      "[Resist] #rLose #r", " #rHP."
+      "[Resist]"
     ]
   }
 }

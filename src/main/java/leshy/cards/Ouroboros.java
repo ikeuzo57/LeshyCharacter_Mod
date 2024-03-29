@@ -44,9 +44,9 @@ public class Ouroboros extends AbstractCreatureCard implements SpawnModification
 
         tribe = CreatureTribe.REPTILE;
 
-        attack = baseAttack = trueBaseAttack = 10;
+        attack = baseAttack = trueBaseAttack = 12;
 
-        health = baseHealth = trueBaseHealth = 10;
+        health = baseHealth = trueBaseHealth = 12;
 
         innate.add(Sigils.UNKILLABLE);
         current.add(Sigils.UNKILLABLE);

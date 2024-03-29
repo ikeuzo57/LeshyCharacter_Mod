@@ -42,7 +42,7 @@ public class Cat extends AbstractCreatureCard {
 
         attack = baseAttack = trueBaseAttack = 0;
 
-        health = baseHealth = trueBaseHealth = 10;
+        health = baseHealth = trueBaseHealth = 12;
 
         innate.add(Sigils.MANY_LIVES);
         current.add(Sigils.MANY_LIVES);

@@ -40,9 +40,9 @@ public class Opossum extends AbstractCreatureCard {
 
         tribe = CreatureTribe.NONE;
 
-        attack = baseAttack = trueBaseAttack = 5;
+        attack = baseAttack = trueBaseAttack = 6;
 
-        health = baseHealth = trueBaseHealth = 5;
+        health = baseHealth = trueBaseHealth = 6;
 
         initializeDescription();
 

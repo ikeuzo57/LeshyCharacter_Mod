@@ -43,7 +43,7 @@ public class Stinkbug extends AbstractCreatureCard {
 
         attack = baseAttack = trueBaseAttack = 4;
 
-        health = baseHealth = trueBaseHealth = 6;
+        health = baseHealth = trueBaseHealth = 8;
 
         innate.add(Sigils.STINKY);
         current.add(Sigils.STINKY);

@@ -2,6 +2,7 @@ package leshy.relics;
 
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
+import com.megacrit.cardcrawl.helpers.PowerTip;
 import leshy.LeshyMod;
 import leshy.cards.abstracts.AbstractCreatureCard;
 import leshy.cards.Raven;
@@ -22,6 +23,8 @@ public class RavenFeatherRelic extends CustomRelic implements CreatureSigilRelic
 
     public RavenFeatherRelic() {
         super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.CLINK);
+
+        tips.add(new PowerTip("Hoarder", "When summoned, put a card in your draw pile into your hand."));
 
     }
 

@@ -40,7 +40,7 @@ public class Kingfisher extends AbstractCreatureCard {
 
         tribe = CreatureTribe.AVIAN;
 
-        attack = baseAttack = trueBaseAttack = 8;
+        attack = baseAttack = trueBaseAttack = 10;
 
         health = baseHealth = trueBaseHealth = 1;
 

@@ -47,7 +47,7 @@ public class HandTentacle extends AbstractCreatureCard {
 
         attack = baseAttack = trueBaseAttack = 0;
 
-        health = baseHealth = trueBaseHealth = 2;
+        health = baseHealth = trueBaseHealth = 4;
 
 
         initializeDescription();

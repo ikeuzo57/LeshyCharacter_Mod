@@ -3,6 +3,7 @@ package leshy.relics;
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import leshy.LeshyMod;
 import leshy.actions.SummonCreatureAction;
@@ -23,6 +24,9 @@ public class StarvationRelic extends CustomRelic{
 
     public StarvationRelic() {
         super(ID, IMG, OUTLINE, RelicTier.SPECIAL, LandingSound.SOLID);
+
+        tips.add(new PowerTip("Starvation", "0/1 with #yWaterborne and cannot be sacrificed."));
+        tips.add(new PowerTip("Waterborne", "No longer prevents damage."));
 
     }
 

@@ -45,9 +45,9 @@ public class DireWolfPup extends AbstractCreatureCard {
         tribe = CreatureTribe.CANINE;
 
 
-        attack = baseAttack = trueBaseAttack = 6;
+        attack = baseAttack = trueBaseAttack = 8;
 
-        health = baseHealth = trueBaseHealth = 6;
+        health = baseHealth = trueBaseHealth = 8;
 
         innate.add(Sigils.FLEDGLING);
         innate.add(Sigils.BONE_DIGGER);

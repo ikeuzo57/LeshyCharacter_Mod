@@ -111,8 +111,6 @@ public class LeshyMod implements
     public static boolean wolfSkull = false;
     public static boolean bullfighter = false;
 
-    public static boolean sapling = false;
-
     public static boolean blood = false;
     
     // =============== INPUT TEXTURE LOCATION =================
@@ -415,6 +413,7 @@ public class LeshyMod implements
         logger.info("Adding relics");
 
         //Starter
+        BaseMod.addRelicToCustomPool(new WhistleRelic(), Leshy.Enums.LESHY_BROWN);
         BaseMod.addRelicToCustomPool(new WoodcarverRelic(), Leshy.Enums.LESHY_BROWN);
         BaseMod.addRelicToCustomPool(new SquirrelDeckRelic(), Leshy.Enums.LESHY_BROWN);
 
@@ -482,7 +481,6 @@ public class LeshyMod implements
         BaseMod.addRelicToCustomPool(new BallOfSquirrelsRelic(), Leshy.Enums.LESHY_BROWN);
         BaseMod.addRelicToCustomPool(new LimoncelloRelic(), Leshy.Enums.LESHY_BROWN);
         BaseMod.addRelicToCustomPool(new QuillRelic(), Leshy.Enums.LESHY_BROWN);
-        BaseMod.addRelicToCustomPool(new SaplingRelic(), Leshy.Enums.LESHY_BROWN);
 
         //Event
         BaseMod.addRelicToCustomPool(new MagicEyeRelic(), Leshy.Enums.LESHY_BROWN);
@@ -501,6 +499,7 @@ public class LeshyMod implements
 
 
         UnlockTracker.markRelicAsSeen(WoodcarverRelic.ID);
+        UnlockTracker.markRelicAsSeen(WhistleRelic.ID);
         UnlockTracker.markRelicAsSeen(RedMushroomRelic.ID);
         UnlockTracker.markRelicAsSeen(AcornRelic.ID);
         UnlockTracker.markRelicAsSeen(PetFoodRelic.ID);
@@ -551,7 +550,6 @@ public class LeshyMod implements
         UnlockTracker.markRelicAsSeen(RavenFeatherRelic.ID);
         UnlockTracker.markRelicAsSeen(BloodstoneRelic.ID);
         UnlockTracker.markRelicAsSeen(GhostFoodRelic.ID);
-        UnlockTracker.markRelicAsSeen(SaplingRelic.ID);
         UnlockTracker.markRelicAsSeen(ArtOfSquirrelRelic.ID);
         UnlockTracker.markRelicAsSeen(SquirrelTeaSetRelic.ID);
         UnlockTracker.markRelicAsSeen(BoneShieldRelic.ID);
@@ -698,7 +696,7 @@ public class LeshyMod implements
         BaseMod.addCard(new RabbitPelt());
         BaseMod.addCard(new Porcupine());
         BaseMod.addCard(new Bat());
-        BaseMod.addCard(new Target());
+        BaseMod.addCard(new Scissors());
         BaseMod.addCard(new GrandFir());
         BaseMod.addCard(new Amalgam());
         BaseMod.addCard(new StrangeFrogs());
@@ -801,7 +799,7 @@ public class LeshyMod implements
         UnlockTracker.unlockCard(Stinkbug.ID);
         UnlockTracker.unlockCard(Cat.ID);
         UnlockTracker.unlockCard(RatKing.ID);
-        UnlockTracker.unlockCard(Target.ID);
+        UnlockTracker.unlockCard(Scissors.ID);
         UnlockTracker.unlockCard(Brawl.ID);
         UnlockTracker.unlockCard(BlackGoat.ID);
         UnlockTracker.unlockCard(Grizzly.ID);
@@ -1037,7 +1035,6 @@ public class LeshyMod implements
             cawCaw = false;
             wolfSkull = false;
             bullfighter = false;
-            sapling = false;
             blood = false;
             for(AbstractRelic r : AbstractDungeon.player.relics){
                 if (r instanceof CawCawFaceRelic)
@@ -1046,8 +1043,6 @@ public class LeshyMod implements
                     wolfSkull = true;
                 if (r instanceof BullfighterCapeRelic)
                     bullfighter = true;
-                if (r instanceof SaplingRelic)
-                    sapling = true;
                 if (r instanceof BloodBagRelic)
                     blood = true;
             }

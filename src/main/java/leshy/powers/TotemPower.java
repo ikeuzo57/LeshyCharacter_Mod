@@ -33,8 +33,6 @@ public class TotemPower extends AbstractPower implements CloneablePowerInterface
     private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("totem_power84.png"));
     private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("totem_power32.png"));
 
-    public int maxTribes = 1;
-    private final ArrayList<AbstractCreatureCard.CreatureTribe> orderedTribes = new ArrayList<>();
     private final HashSet<AbstractCreatureCard.CreatureTribe> tribes = new HashSet<>();
 
     public int maxBases = 1;
@@ -140,11 +138,6 @@ public class TotemPower extends AbstractPower implements CloneablePowerInterface
 
     public void setTribe(AbstractCreatureCard.CreatureTribe set){
         tribes.add(set);
-        orderedTribes.add(set);
-
-        if(orderedTribes.size() > maxTribes){
-            tribes.remove(orderedTribes.remove(0));
-        }
     }
 
     public HashSet<AbstractCreatureCard.CreatureTribe> getTribe(){

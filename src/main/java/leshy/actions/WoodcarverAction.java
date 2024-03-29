@@ -6,7 +6,11 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.relics.AbstractRelic;
+import leshy.LeshyMod;
 import leshy.cards.*;
+import leshy.cards.abstracts.TotemHeadCard;
+import leshy.relics.OldDataRelic;
 
 public class WoodcarverAction extends AbstractGameAction {
 
@@ -26,7 +30,17 @@ public class WoodcarverAction extends AbstractGameAction {
                 return;
             }
 
-            AbstractDungeon.gridSelectScreen.open(tmp, 1, "Pick a totem head.", false);
+            int num = 1;
+            for(AbstractRelic r : AbstractDungeon.player.relics){
+                if(r instanceof OldDataRelic){
+                    if(((OldDataRelic) r).head){
+                        num = 2;
+                    }
+                    break;
+                }
+            }
+
+            AbstractDungeon.gridSelectScreen.open(tmp, num, "Pick a totem head.", false);
 
             tickDuration();
             return;
@@ -35,10 +49,13 @@ public class WoodcarverAction extends AbstractGameAction {
 
         if (!AbstractDungeon.gridSelectScreen.selectedCards.isEmpty()) {
 
-            AbstractCard card = AbstractDungeon.gridSelectScreen.selectedCards.get(0);
+            for(AbstractCard c : AbstractDungeon.gridSelectScreen.selectedCards){
 
-            AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(card));
-            AbstractDungeon.player.masterDeck.addToTop(card);
+                if(c instanceof TotemHeadCard){
+                    addToBot(new TotemHeadAction((TotemHeadCard) c));
+                }
+
+            }
 
             AbstractDungeon.gridSelectScreen.selectedCards.clear();
 
@@ -62,19 +79,6 @@ public class WoodcarverAction extends AbstractGameAction {
         tmp.addToTop(hooved);
         tmp.addToTop(insect);
         tmp.addToTop(reptile);
-
-        for(AbstractCard c : AbstractDungeon.player.masterDeck.group){
-            if(c instanceof AvianTotem)
-                tmp.removeCard(avian);
-            if(c instanceof CanineTotem)
-                tmp.removeCard(canine);
-            if(c instanceof HoovedTotem)
-                tmp.removeCard(hooved);
-            if(c instanceof InsectTotem)
-                tmp.removeCard(insect);
-            if(c instanceof ReptileTotem)
-                tmp.removeCard(reptile);
-        }
         return tmp;
     }
 

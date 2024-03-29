@@ -44,9 +44,9 @@ public class Elk extends AbstractCreatureCard {
 
         tribe = CreatureTribe.HOOVED;
 
-        attack = baseAttack = trueBaseAttack = 6;
+        attack = baseAttack = trueBaseAttack = 8;
 
-        health = baseHealth = trueBaseHealth = 14;
+        health = baseHealth = trueBaseHealth = 16;
 
         innate.add(Sigils.RAMPAGER);
         current.add(Sigils.RAMPAGER);

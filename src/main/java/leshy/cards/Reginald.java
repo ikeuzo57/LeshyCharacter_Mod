@@ -38,9 +38,9 @@ public class Reginald extends AbstractCreatureCard {
 
         tribe = CreatureTribe.NONE;
 
-        attack = baseAttack = trueBaseAttack = 5;
+        attack = baseAttack = trueBaseAttack = 6;
 
-        health = baseHealth = trueBaseHealth = 15;
+        health = baseHealth = trueBaseHealth = 16;
 
         innate.add(Sigils.TOUCH_OF_DEATH);
         current.addAll(innate);

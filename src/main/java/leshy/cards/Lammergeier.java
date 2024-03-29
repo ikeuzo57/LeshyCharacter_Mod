@@ -45,7 +45,7 @@ public class Lammergeier extends AbstractCreatureCard {
 
         attack = baseAttack = trueBaseAttack = 0;
 
-        health = baseHealth = trueBaseHealth = 20;
+        health = baseHealth = trueBaseHealth = 24;
 
 
         magicNumber = baseMagicNumber = 2;

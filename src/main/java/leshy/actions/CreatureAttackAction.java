@@ -121,11 +121,6 @@ public class CreatureAttackAction extends AbstractGameAction {
             }
         }
         int lifeLoss = (int) ((double) card.attack * vulnMulti);
-        if(LeshyMod.sapling && card.tribe == AbstractCreatureCard.CreatureTribe.NONE){
-            int lifeLoss_Health = (int) ((double) (card.health - card.orb.damageTaken) * vulnMulti);
-            if(lifeLoss_Health > lifeLoss)
-                lifeLoss = lifeLoss_Health;
-        }
 
         if(card.current.contains(AbstractCreatureCard.Sigils.TOUCH_OF_DEATH)) {
             addToTop(new ApplyPowerAction(am, AbstractDungeon.player, new VulnerablePower(am, POISON_AMOUNT, false), POISON_AMOUNT));

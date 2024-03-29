@@ -9,7 +9,8 @@ import com.megacrit.cardcrawl.events.GenericEventDialog;
 import com.megacrit.cardcrawl.localization.EventStrings;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import leshy.LeshyMod;
-import leshy.helpers.DredgingOption;
+import leshy.helpers.DredgingPenalty;
+import leshy.helpers.DredgingReward;
 import leshy.relics.OldDataRelic;
 
 import java.util.ArrayList;
@@ -29,8 +30,8 @@ public class DredgingRoomEvent extends AbstractImageEvent {
 
     private int screenNum = 0; // The initial screen we will see when encountering the event - screen 0;
 
-    private ArrayList<DredgingOption> options;
-    private int hpLoss;
+    private ArrayList<DredgingPenalty> penalties;
+    private ArrayList<DredgingReward> rewards;
 
     private static final ArrayList<String> bodyText = makeBodyText();
 
@@ -64,10 +65,8 @@ public class DredgingRoomEvent extends AbstractImageEvent {
 
         this.noCardsInRewards = true;
 
-        hpLoss = AbstractDungeon.player.maxHealth/5;
-        if(AbstractDungeon.ascensionLevel >= 15)
-            hpLoss = AbstractDungeon.player.maxHealth/4;
-        options = DredgingOption.getOptions();
+        penalties = DredgingPenalty.getRandomPenalties();
+        rewards = DredgingReward.getOptions();
 
     }
 
@@ -110,8 +109,9 @@ public class DredgingRoomEvent extends AbstractImageEvent {
                         this.imageEventText.updateBodyText(bodyText.get(AbstractDungeon.miscRng.random(bodyText.size()-1)));
                         this.imageEventText.clearAllDialogs();
 
+
                         this.imageEventText.setDialogOption(OPTIONS[3]);
-                        this.imageEventText.setDialogOption(OPTIONS[4] + hpLoss + OPTIONS[5]);
+                        this.imageEventText.setDialogOption(OPTIONS[4]);
 
                         screenNum = 2;
                         break;
@@ -128,8 +128,8 @@ public class DredgingRoomEvent extends AbstractImageEvent {
                         this.imageEventText.updateBodyText(bodyText.get(AbstractDungeon.miscRng.random(bodyText.size()-1)));
                         this.imageEventText.clearAllDialogs();
 
-                        for(int j=0; j<options.size(); j++){
-                            DredgingOption o = options.get(j);
+                        for(int j = 0; j< penalties.size(); j++){
+                            DredgingPenalty o = penalties.get(j);
                             String preText = "[" + String.format("%2s", Integer.toBinaryString(j)).replace(' ', '0') + "] ";
                             if(o.previewCard != null)
                                 this.imageEventText.setDialogOption(preText + o.getText(), o.previewCard);
@@ -143,31 +143,51 @@ public class DredgingRoomEvent extends AbstractImageEvent {
                         break;
 
                     case 1:
-                        AbstractDungeon.player.damage(new DamageInfo(null, hpLoss, DamageInfo.DamageType.HP_LOSS));
                         this.imageEventText.updateBodyText(DESCRIPTIONS[2]);
                         this.imageEventText.clearAllDialogs();
                         this.imageEventText.setDialogOption(OPTIONS[2]);
-                        screenNum = 4;
+                        screenNum = 10;
                         break;
                 }
                 break;
 
-            case 3: //OLD_DATA choices
+            case 3:
 
-                options.get(i).applyOption();
+                penalties.get(i).applyPenalty();
 
-                if(options.get(i).isEvents()){
+                this.imageEventText.updateBodyText(bodyText.get(AbstractDungeon.miscRng.random(bodyText.size()-1)));
+                this.imageEventText.clearAllDialogs();
+
+                for(int j = 0; j< rewards.size(); j++){
+                    DredgingReward o = rewards.get(j);
+                    String preText = "[" + String.format("%2s", Integer.toBinaryString(j)).replace(' ', '0') + "] ";
+                    if(o.previewCard != null)
+                        this.imageEventText.setDialogOption(preText + o.getText(), o.previewCard);
+                    else if(o.previewRelic != null)
+                        this.imageEventText.setDialogOption(preText + o.getText(), o.previewRelic);
+                    else
+                        this.imageEventText.setDialogOption(preText + o.getText());
+                }
+
+                screenNum = 4;
+                break;
+
+            case 4: //OLD_DATA choices
+
+                rewards.get(i).applyReward();
+
+                if(rewards.get(i).isEvents()){
                     this.imageEventText.updateBodyText("");
                     chooseEvent();
                 }else{
                     this.imageEventText.updateBodyText(DESCRIPTIONS[2]);
                     this.imageEventText.clearAllDialogs();
                     this.imageEventText.setDialogOption(OPTIONS[2]);
-                    screenNum = 4;
+                    screenNum = 10;
                 }
                 break;
 
-            case 4:
+            case 10:
                 openMap();
                 break;
 
@@ -175,17 +195,18 @@ public class DredgingRoomEvent extends AbstractImageEvent {
     }
 
     public void chooseEvent(){
-        options = new ArrayList<>();
-        options.add(new DredgingOption(DredgingOption.Reward.BONE_ALTAR, DredgingOption.Penalty.NONE));
-        options.add(new DredgingOption(DredgingOption.Reward.GOOBERT, DredgingOption.Penalty.NONE));
-        options.add(new DredgingOption(DredgingOption.Reward.MYCOLOGISTS, DredgingOption.Penalty.NONE));
-        options.add(new DredgingOption(DredgingOption.Reward.MYSTERIOUS_STONES, DredgingOption.Penalty.NONE));
-        options.add(new DredgingOption(DredgingOption.Reward.PACK, DredgingOption.Penalty.NONE));
-        options.add(new DredgingOption(DredgingOption.Reward.TRAPPER, DredgingOption.Penalty.NONE));
-        options.add(new DredgingOption(DredgingOption.Reward.WOODCARVER, DredgingOption.Penalty.NONE));
+        rewards = new ArrayList<>();
+        rewards.add(new DredgingReward(DredgingReward.Reward.BONE_ALTAR));
+        rewards.add(new DredgingReward(DredgingReward.Reward.GOOBERT));
+        rewards.add(new DredgingReward(DredgingReward.Reward.MYCOLOGISTS));
+        rewards.add(new DredgingReward(DredgingReward.Reward.MYSTERIOUS_STONES));
+        rewards.add(new DredgingReward(DredgingReward.Reward.PACK));
+        rewards.add(new DredgingReward(DredgingReward.Reward.TRAPPER));
+        rewards.add(new DredgingReward(DredgingReward.Reward.WOODCARVER));
+
         this.imageEventText.clearAllDialogs();
-        for(int j=0; j<options.size(); j++){
-            DredgingOption o = options.get(j);
+        for(int j = 0; j< rewards.size(); j++){
+            DredgingReward o = rewards.get(j);
             String preText = "[" + String.format("%3s", Integer.toBinaryString(j)).replace(' ', '0') + "] ";
             if(o.previewCard != null)
                 this.imageEventText.setDialogOption(preText + o.getText(), o.previewCard);

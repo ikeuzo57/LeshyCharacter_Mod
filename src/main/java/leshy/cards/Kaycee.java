@@ -40,7 +40,7 @@ public class Kaycee extends AbstractCreatureCard {
 
         attack = baseAttack = trueBaseAttack = 4;
 
-        health = baseHealth = trueBaseHealth = 8;
+        health = baseHealth = trueBaseHealth = 10;
 
         innate.add(Sigils.BIFURCATED);
         innate.add(Sigils.SHARP_QUILLS);

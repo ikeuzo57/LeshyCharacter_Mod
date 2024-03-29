@@ -9,6 +9,7 @@ import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.vfx.ObtainPotionEffect;
 import leshy.LeshyMod;
@@ -31,6 +32,8 @@ public class PliersRelic extends CustomRelic implements ClickableRelic {
 
     public PliersRelic() {
         super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.FLAT);
+
+        tips.add(new PowerTip("Tooth", "Deal 20 Damage or discard to gain 20 Gold."));
 
     }
 

@@ -52,7 +52,7 @@ public class Skink extends AbstractCreatureCard {
 
         tribe = CreatureTribe.REPTILE;
 
-        attack = baseAttack = trueBaseAttack = 4;
+        attack = baseAttack = trueBaseAttack = 6;
 
         health = baseHealth = trueBaseHealth = 6;
 

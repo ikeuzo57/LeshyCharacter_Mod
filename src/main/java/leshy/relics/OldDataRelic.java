@@ -41,7 +41,7 @@ import java.util.ArrayList;
 import static leshy.LeshyMod.makeRelicOutlinePath;
 import static leshy.LeshyMod.makeRelicPath;
 
-public class OldDataRelic extends CustomRelic implements OnApplyPowerRelic, ClickableRelic, CustomSavable<OldDataSavable>, CreatureValueRelic, PostBattleSubscriber, OnStartBattleSubscriber {
+public class OldDataRelic extends CustomRelic implements ClickableRelic, CustomSavable<OldDataSavable>, CreatureValueRelic, PostBattleSubscriber, OnStartBattleSubscriber {
 
     public static final String ID = LeshyMod.makeID(OldDataRelic.class.getSimpleName());
 
@@ -153,20 +153,10 @@ public class OldDataRelic extends CustomRelic implements OnApplyPowerRelic, Clic
         canActivate = true;
     }
 
-    @Override
-    public boolean onApplyPower(AbstractPower abstractPower, AbstractCreature abstractCreature, AbstractCreature abstractCreature1){
-
-        if(head && abstractPower instanceof TotemPower)
-            ((TotemPower) abstractPower).maxTribes++;
-
-        return true;
-
-    }
-
 
     @Override
     public void onRightClick() {
-        if(AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT){
+        if(!AbstractDungeon.isScreenUp && AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT){
 
             boolean topAvailable = false;
             boolean sacrificeAvailable = false;

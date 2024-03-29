@@ -38,9 +38,9 @@ public class David extends AbstractCreatureCard {
 
         tribe = CreatureTribe.NONE;
 
-        attack = baseAttack = trueBaseAttack = 8;
+        attack = baseAttack = trueBaseAttack = 10;
 
-        health = baseHealth = trueBaseHealth = 16;
+        health = baseHealth = trueBaseHealth = 18;
 
         innate.add(Sigils.RAMPAGER);
         innate.add(Sigils.SHARP_QUILLS);

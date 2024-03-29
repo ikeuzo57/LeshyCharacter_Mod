@@ -46,7 +46,7 @@ public class RavenEgg extends AbstractCreatureCard {
 
         attack = baseAttack = trueBaseAttack = 0;
 
-        health = baseHealth = trueBaseHealth = 8;
+        health = baseHealth = trueBaseHealth = 10;
 
         innate.add(Sigils.FLEDGLING);
         current.add(Sigils.FLEDGLING);

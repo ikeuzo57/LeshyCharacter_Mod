@@ -4,6 +4,7 @@ import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
 import com.evacipated.cardcrawl.mod.stslib.relics.OnApplyPowerRelic;
 import com.megacrit.cardcrawl.core.AbstractCreature;
+import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import leshy.LeshyMod;
 import leshy.cards.abstracts.AbstractCreatureCard;
@@ -25,6 +26,9 @@ public class InfestationRelic extends CustomRelic implements CreatureSigilRelic 
 
     public InfestationRelic() {
         super(ID, IMG, OUTLINE, RelicTier.SPECIAL, LandingSound.MAGICAL);
+
+        tips.add(new PowerTip("Ant Spawner", "When summoned, add a Worker Ant with Transient to your hand."));
+        tips.add(new PowerTip("Unkillable", "When sacrificed, this is put into your hand instead of your discard pile. No longer gives Bones. Overrides Transient."));
 
     }
 

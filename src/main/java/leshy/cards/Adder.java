@@ -40,9 +40,9 @@ public class Adder extends AbstractCreatureCard {
 
         tribe = CreatureTribe.REPTILE;
 
-        attack = baseAttack = trueBaseAttack = 2;
+        attack = baseAttack = trueBaseAttack = 4;
 
-        health = baseHealth = trueBaseHealth = 10;
+        health = baseHealth = trueBaseHealth = 16;
 
         innate.add(Sigils.TOUCH_OF_DEATH);
         current.add(Sigils.TOUCH_OF_DEATH);

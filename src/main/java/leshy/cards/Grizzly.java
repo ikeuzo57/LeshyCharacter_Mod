@@ -40,9 +40,9 @@ public class Grizzly extends AbstractCreatureCard {
 
         tribe = CreatureTribe.NONE;
 
-        attack = baseAttack = trueBaseAttack = 16;
+        attack = baseAttack = trueBaseAttack = 18;
 
-        health = baseHealth = trueBaseHealth = 24;
+        health = baseHealth = trueBaseHealth = 28;
 
 
         initializeDescription();

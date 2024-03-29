@@ -45,7 +45,7 @@ public class MirrorTentacle extends AbstractCreatureCard {
 
         attack = baseAttack = trueBaseAttack = 0;
 
-        health = baseHealth = trueBaseHealth = 4;
+        health = baseHealth = trueBaseHealth = 6;
 
 
         initializeDescription();

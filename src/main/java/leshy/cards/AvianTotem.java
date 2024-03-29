@@ -31,27 +31,20 @@ public class AvianTotem extends AbstractDynamicCard implements TotemHeadCard {
     private static final CardType TYPE = CardType.POWER;
     public static final CardColor COLOR = CardColor.COLORLESS;
 
-    private static final int COST = 1;
+    private static final int COST = -2;
 
 
     public AvianTotem() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
 
-        upgradeDescription = true;
 
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new TotemHeadAction(this));
-        addToBot(new DrawCardAction(1));
     }
 
-    @Override
-    public void upgrade() {
-        isInnate = true;
-        super.upgrade();
-    }
 
     @Override
     public AbstractCreatureCard.CreatureTribe giveTribe() {

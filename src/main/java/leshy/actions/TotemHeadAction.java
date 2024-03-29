@@ -36,7 +36,7 @@ public class TotemHeadAction extends AbstractGameAction {
         TotemPower totem = new TotemPower(AbstractDungeon.player);
         updateTotem(totem);
         totem.updateDescription();
-        addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, totem));
+        addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, totem));
 
         this.isDone = true;
 

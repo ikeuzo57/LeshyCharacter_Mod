@@ -555,7 +555,7 @@ public abstract class AbstractCreatureCard extends AbstractDynamicCard implement
 
     public void onPassive(){
 
-        if(this.attack > 0 || (LeshyMod.sapling && this.tribe == CreatureTribe.NONE))
+        if(this.attack > 0)
             addToBot(new CreatureAttackAction(this));
 
         if(current.contains(Sigils.STINKY) && !applyStinky){

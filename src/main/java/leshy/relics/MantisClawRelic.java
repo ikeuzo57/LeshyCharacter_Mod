@@ -35,6 +35,8 @@ public class MantisClawRelic extends CustomRelic implements CreatureSigilRelic {
         if(remove != null)
             tips.remove(remove);
 
+        tips.add(new PowerTip("Double Strike", "Attacks the enemy an additional time. Attacks a different enemy if Bifurcated."));
+
     }
 
     @Override

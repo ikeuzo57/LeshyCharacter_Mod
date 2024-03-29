@@ -40,9 +40,9 @@ public class TurkeyVulture extends AbstractCreatureCard {
 
         tribe = CreatureTribe.AVIAN;
 
-        attack = baseAttack = trueBaseAttack = 24;
+        attack = baseAttack = trueBaseAttack = 25;
 
-        health = baseHealth = trueBaseHealth = 12;
+        health = baseHealth = trueBaseHealth = 15;
 
         innate.add(Sigils.AIRBORNE);
         current.add(Sigils.AIRBORNE);

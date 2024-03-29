@@ -44,7 +44,7 @@ public class MoleMan extends AbstractCreatureCard {
 
         attack = baseAttack = trueBaseAttack = 0;
 
-        health = baseHealth = trueBaseHealth = 16;
+        health = baseHealth = trueBaseHealth = 18;
 
         innate.add(Sigils.MIGHTY_LEAP);
         innate.add(Sigils.GUARDIAN);

@@ -44,7 +44,7 @@ public class WolfCub extends AbstractCreatureCard {
         costType = CreatureCostType.BLOOD;
         extraCost = 1;
 
-        attack = baseAttack = trueBaseAttack = 6;
+        attack = baseAttack = trueBaseAttack = 8;
 
         health = baseHealth = trueBaseHealth = 2;
 

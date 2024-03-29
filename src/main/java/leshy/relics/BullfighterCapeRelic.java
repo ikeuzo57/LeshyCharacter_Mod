@@ -33,6 +33,7 @@ public class BullfighterCapeRelic extends CustomRelic implements CreatureSigilRe
         }
         if(remove != null)
             tips.remove(remove);
+        tips.add(new PowerTip("Double Strike", "Attacks the enemy an additional time. Attacks a different enemy if Bifurcated."));
 
     }
 

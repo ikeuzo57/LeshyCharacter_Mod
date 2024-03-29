@@ -40,9 +40,9 @@ public class Magpie extends AbstractCreatureCard {
 
         tribe = CreatureTribe.AVIAN;
 
-        attack = baseAttack = trueBaseAttack = 6;
+        attack = baseAttack = trueBaseAttack = 8;
 
-        health = baseHealth = trueBaseHealth = 6;
+        health = baseHealth = trueBaseHealth = 8;
 
 
         innate.add(Sigils.AIRBORNE);

@@ -53,9 +53,9 @@ public class StuntedWolf extends AbstractCreatureCard implements StartupCard {
 
         tribe = CreatureTribe.CANINE;
 
-        attack = baseAttack = trueBaseAttack = 8;
+        attack = baseAttack = trueBaseAttack = 10;
 
-        health = baseHealth = trueBaseHealth = 8;
+        health = baseHealth = trueBaseHealth = 10;
 
         sigil = null;
 

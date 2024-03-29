@@ -40,9 +40,9 @@ public class Bat extends AbstractCreatureCard {
 
         tribe = CreatureTribe.NONE;
 
-        attack = baseAttack = trueBaseAttack = 10;
+        attack = baseAttack = trueBaseAttack = 12;
 
-        health = baseHealth = trueBaseHealth = 8;
+        health = baseHealth = trueBaseHealth = 10;
 
         innate.add(Sigils.AIRBORNE);
         current.add(Sigils.AIRBORNE);

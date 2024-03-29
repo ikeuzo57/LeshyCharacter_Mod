@@ -42,7 +42,7 @@ public class QuillRelic extends CustomRelic implements ClickableRelic {
     @Override
     public void onRightClick() {
 
-        if(AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT) {
+        if(!AbstractDungeon.isScreenUp && AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT) {
 
             for(AbstractPower ap : p.powers){
 
