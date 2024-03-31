@@ -733,8 +733,8 @@
     "DESCRIPTION": "When drawn, if you have a Squirrel in hand, exhaust a Squirrel and this."
   },
   "leshy:OldDataHead": {
-    "NAME": "Twin Headed",
-    "DESCRIPTION": "Woodcarver Mask adds an additional Totem head."
+    "NAME": "Cerberus",
+    "DESCRIPTION": "Woodcarver Mask adds 3 Totem heads to your totem."
   },
   "leshy:OldDataLeft": {
     "NAME": "Extra Attacks",
@@ -766,7 +766,7 @@
   },
   "leshy:OldDataSacrifice": {
     "NAME": "Blood to Squirrel",
-    "DESCRIPTION": "On right click, sacrifice a Blood cost creature and add Squirrels to hand equal to its Blood cost."
+    "DESCRIPTION": "Twice per turn, you may right click to sacrifice a Blood cost creature and add Squirrels to hand equal to its Blood cost."
   },
   "leshy:OldDataPliers": {
     "NAME": "Pliers",

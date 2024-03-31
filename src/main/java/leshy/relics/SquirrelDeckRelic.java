@@ -54,14 +54,6 @@ public class SquirrelDeckRelic extends CustomRelic implements ClickableRelic {
                     return;
                 }
             }
-            for(AbstractCard c : AbstractDungeon.player.hand.group){
-                if(c instanceof AbstractCreatureCard && ((AbstractCreatureCard) c).tribe == AbstractCreatureCard.CreatureTribe.AMALGAM){
-                    flash();
-                    addToBot(new ExhaustSpecificCardAction(c, AbstractDungeon.player.hand));
-                    addToBot(new DrawCardAction(1));
-                    return;
-                }
-            }
 
         }
     }

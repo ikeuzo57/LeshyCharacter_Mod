@@ -40,9 +40,9 @@ public class Amalgam extends AbstractCreatureCard {
 
         tribe = CreatureTribe.AMALGAM;
 
-        attack = baseAttack = trueBaseAttack = 11;
+        attack = baseAttack = trueBaseAttack = 12;
 
-        health = baseHealth = trueBaseHealth = 11;
+        health = baseHealth = trueBaseHealth = 12;
 
         initializeDescription();
 

@@ -6,7 +6,7 @@
     <groupId>leshy</groupId>
     <artifactId>Leshy</artifactId>
     <name>Leshy</name>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
     <description>A character mod inspired by Leshy from Inscryption.</description>
 
     <properties>

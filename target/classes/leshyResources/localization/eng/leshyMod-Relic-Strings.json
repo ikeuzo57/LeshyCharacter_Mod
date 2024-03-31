@@ -3,13 +3,13 @@
     "NAME": "Woodcarver Mask",
     "FLAVOR": "Carves Totems of Creature and Sigil.",
     "DESCRIPTIONS": [
-      "Once per combat, you may right click to add a basic Totem head to your Totem."
+      "Once per combat, you may right click to add a Totem head to your Totem."
     ]
   },"leshy:SquirrelDeckRelic": {
   "NAME": "Squirrel Deck",
   "FLAVOR": "Cute woodland critters.",
   "DESCRIPTIONS": [
-    "At the start of turn, add a Squirrel to your hand. You may right click to exhaust a Squirrel and draw a card."
+    "At the start of turn, add a Squirrel to your hand. You may right click to exhaust a Squirrel and draw a card. (Amalgams not included)"
   ]
   },
   "leshy:MachineModificationRelic": {
@@ -306,11 +306,11 @@
     "NAME": "OLD_DATA",
     "FLAVOR": "01100100 01100101 01100101 01110000 01100010 01100101 01101110 01100101 01100001 01110100 01101000",
     "DESCRIPTIONS": [
-      "Woodcarver Mask adds an additional Totem head.",
+      "Woodcarver Mask adds 3 Totem heads to your totem.",
       "The creature in the leftmost orb slot triggers end of turn effects an additional time.",
       "Once per shuffle, you may right click to move a card in your deck to the top.",
       "Glitched creatures gain ", " Attack and Health.",
-      "On right click, sacrifice Blood cost creature and add Squirrels to hand equal to its Blood cost.",
+      "Twice per turn, you may right click to sacrifice a Blood cost creature and add Squirrels to hand equal to its Blood cost.",
       "At the start of combat, Glitch ", " random creatures in your deck."
     ]
   },
@@ -356,7 +356,7 @@
     "NAME": "Bullfighter Cape",
     "FLAVOR": "For idiots who want to make bulls mad.",
     "DESCRIPTIONS": [
-      "Wild Bulls gain #yDouble Strike and trigger #yRampager an additional time each turn."
+      "Wild Bulls gain #yDouble #yStrike and trigger #yRampager an additional time each turn."
     ]
   },
   "leshy:GreenShellRelic": {

@@ -49,7 +49,7 @@ public class BloodCreatureAction extends AbstractGameAction {
                 tmp.add(card);
             }
 
-            AbstractDungeon.cardRewardScreen.customCombatOpen(tmp, "Summon a copy with Transiet.", false);
+            AbstractDungeon.cardRewardScreen.customCombatOpen(tmp, "Summon a copy with Transient.", false);
             tickDuration();
 
             return;

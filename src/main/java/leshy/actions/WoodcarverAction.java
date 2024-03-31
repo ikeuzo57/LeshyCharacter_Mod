@@ -34,13 +34,18 @@ public class WoodcarverAction extends AbstractGameAction {
             for(AbstractRelic r : AbstractDungeon.player.relics){
                 if(r instanceof OldDataRelic){
                     if(((OldDataRelic) r).head){
-                        num = 2;
+                        num = 3;
                     }
                     break;
                 }
             }
 
-            AbstractDungeon.gridSelectScreen.open(tmp, num, "Pick a totem head.", false);
+            String msg = "Pick a totem head.";
+            if(num > 1)
+                msg = "Pick " + num + " totem heads.";
+
+
+            AbstractDungeon.gridSelectScreen.open(tmp, num, msg, false);
 
             tickDuration();
             return;

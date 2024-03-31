@@ -8,19 +8,12 @@ import basemod.interfaces.PostBattleSubscriber;
 import basemod.patches.com.megacrit.cardcrawl.cards.AbstractCard.MultiCardPreview;
 import com.badlogic.gdx.graphics.Texture;
 import com.evacipated.cardcrawl.mod.stslib.relics.ClickableRelic;
-import com.evacipated.cardcrawl.mod.stslib.relics.OnApplyPowerRelic;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
-import com.megacrit.cardcrawl.actions.common.GainGoldAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
-import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import leshy.LeshyMod;
@@ -32,7 +25,6 @@ import leshy.cards.abstracts.AbstractCreatureCard;
 import leshy.cards.abstracts.AbstractOldDataCard;
 import leshy.helpers.OldDataSavable;
 import leshy.orbs.CreatureOrb;
-import leshy.powers.TotemPower;
 import leshy.relics.interfaces.CreatureValueRelic;
 import leshy.util.TextureLoader;
 
@@ -52,7 +44,10 @@ public class OldDataRelic extends CustomRelic implements ClickableRelic, CustomS
 
     public static final ArrayList<String> glitchedNames = new ArrayList<>();
 
-    public boolean canActivate = true;
+    public boolean canActivateTop = true;
+    public int bloodUses = 0;
+
+    public static final int BLOOD_MAX_USES = 2;
 
     public boolean head = false;
     public boolean left = false;
@@ -145,14 +140,18 @@ public class OldDataRelic extends CustomRelic implements ClickableRelic, CustomS
 
     @Override
     public void onShuffle() {
-        canActivate = true;
+        canActivateTop = true;
     }
 
     @Override
     public void atBattleStart() {
-        canActivate = true;
+        canActivateTop = true;
     }
 
+    @Override
+    public void atTurnStart() {
+        bloodUses = 0;
+    }
 
     @Override
     public void onRightClick() {
@@ -161,9 +160,9 @@ public class OldDataRelic extends CustomRelic implements ClickableRelic, CustomS
             boolean topAvailable = false;
             boolean sacrificeAvailable = false;
 
-            if(this.top && canActivate && AbstractDungeon.player.drawPile.size() > 1)
+            if(this.top && canActivateTop && AbstractDungeon.player.drawPile.size() > 1)
                 topAvailable = true;
-            if(this.sacrifice){
+            if(this.sacrifice && bloodUses < BLOOD_MAX_USES){
                 for(AbstractOrb o : AbstractDungeon.player.orbs){
                     if(o instanceof CreatureOrb && !(((CreatureOrb) o).creatureCard instanceof Starvation) && ((CreatureOrb) o).creatureCard.costType == AbstractCreatureCard.CreatureCostType.BLOOD){
                         sacrificeAvailable = true;
@@ -180,10 +179,11 @@ public class OldDataRelic extends CustomRelic implements ClickableRelic, CustomS
                 AbstractDungeon.gridSelectScreen.open(tmp, 1, false, "Choose an effect to use.");
             }else if(topAvailable){
                 flash();
-                canActivate = false;
+                canActivateTop = false;
                 addToBot(new SeekTopAction());
             }else if(sacrificeAvailable){
                 flash();
+                bloodUses++;
                 addToBot(new BloodToSquirrelAction());
             }
 
@@ -240,10 +240,11 @@ public class OldDataRelic extends CustomRelic implements ClickableRelic, CustomS
             AbstractCard card = AbstractDungeon.gridSelectScreen.selectedCards.get(0);
             if(card instanceof OldDataTop){
                 flash();
-                canActivate = false;
+                canActivateTop = false;
                 addToBot(new SeekTopAction());
             }else if(card instanceof OldDataSacrifice){
                 flash();
+                bloodUses++;
                 addToBot(new BloodToSquirrelAction());
             }
         }
