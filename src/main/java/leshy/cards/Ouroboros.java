@@ -44,9 +44,9 @@ public class Ouroboros extends AbstractCreatureCard implements SpawnModification
 
         tribe = CreatureTribe.REPTILE;
 
-        attack = baseAttack = trueBaseAttack = 12;
+        attack = baseAttack = trueBaseAttack = 15;
 
-        health = baseHealth = trueBaseHealth = 12;
+        health = baseHealth = trueBaseHealth = 15;
 
         innate.add(Sigils.UNKILLABLE);
         current.add(Sigils.UNKILLABLE);
@@ -79,7 +79,7 @@ public class Ouroboros extends AbstractCreatureCard implements SpawnModification
 
     @Override
     public String extraText() {
-        return "leshy:Ouroboros";
+        return cardStrings.EXTENDED_DESCRIPTION[0];
     }
 
 

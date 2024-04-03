@@ -45,7 +45,7 @@ public class BellTentacle extends AbstractCreatureCard {
 
         tribe = CreatureTribe.NONE;
 
-        attack = baseAttack = trueBaseAttack = 10;
+        attack = baseAttack = trueBaseAttack = 12;
 
         health = baseHealth = trueBaseHealth = 4;
 
@@ -104,7 +104,7 @@ public class BellTentacle extends AbstractCreatureCard {
 
     @Override
     public String extraText() {
-        return "leshy:Bell_Ringer";
+        return cardStrings.EXTENDED_DESCRIPTION[0];
     }
 
     @Override

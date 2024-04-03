@@ -15,7 +15,7 @@ public class Stoat extends AbstractCreatureCard {
 
 
     public static final String ID = LeshyMod.makeID(Stoat.class.getSimpleName());
-    private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
+    public static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 
     public static final String IMG = makeCardPath("Stoat.png");
 
@@ -56,39 +56,39 @@ public class Stoat extends AbstractCreatureCard {
 
         switch (AbstractDungeon.miscRng.random(8)){
             case 0:
-                name = "HERE WE GO";
+                name = cardStrings.EXTENDED_DESCRIPTION[1];
                 titleScale = 1F;
                 break;
             case 1:
-                name = "BACK ON THE BOARD";
+                name = cardStrings.EXTENDED_DESCRIPTION[2];
                 titleScale = 0.7F;
                 break;
             case 2:
-                name = "OK...";
+                name = cardStrings.EXTENDED_DESCRIPTION[3];
                 titleScale = 1F;
                 break;
             case 3:
-                name = "FINE";
+                name = cardStrings.EXTENDED_DESCRIPTION[4];
                 titleScale = 1F;
                 break;
             case 4:
-                name = "BAD PLAY";
+                name = cardStrings.EXTENDED_DESCRIPTION[5];
                 titleScale = 1F;
                 break;
             case 5:
-                name = "YOU SURE?";
+                name = cardStrings.EXTENDED_DESCRIPTION[6];
                 titleScale = 1F;
                 break;
             case 6:
-                name = "TOTAL MISPLAY";
+                name = cardStrings.EXTENDED_DESCRIPTION[7];
                 titleScale = 0.8F;
                 break;
             case 7:
-                name = "KEEP ME ALIVE";
+                name = cardStrings.EXTENDED_DESCRIPTION[8];
                 titleScale = 0.8F;
                 break;
             case 8:
-                name = "YEP";
+                name = cardStrings.EXTENDED_DESCRIPTION[9];
                 titleScale = 1F;
                 break;
         }
@@ -101,19 +101,19 @@ public class Stoat extends AbstractCreatureCard {
 
         switch (AbstractDungeon.miscRng.random(3)){
             case 0:
-                name = "LUCKY DRAW";
+                name = cardStrings.EXTENDED_DESCRIPTION[10];
                 titleScale = 1F;
                 break;
             case 1:
-                name = "NICE TOPDECK";
+                name = cardStrings.EXTENDED_DESCRIPTION[11];
                 titleScale = 0.8F;
                 break;
             case 2:
-                name = "ME AGAIN";
+                name = cardStrings.EXTENDED_DESCRIPTION[12];
                 titleScale = 1F;
                 break;
             case 3:
-                name = "YEP";
+                name = cardStrings.EXTENDED_DESCRIPTION[13];
                 titleScale = 1F;
                 break;
         }
@@ -126,23 +126,23 @@ public class Stoat extends AbstractCreatureCard {
 
         switch (AbstractDungeon.miscRng.random(4)){
             case 0:
-                name = "ACK";
+                name = cardStrings.EXTENDED_DESCRIPTION[14];
                 titleScale = 1F;
                 break;
             case 1:
-                name = "STOP THAT";
+                name = cardStrings.EXTENDED_DESCRIPTION[15];
                 titleScale = 1F;
                 break;
             case 2:
-                name = "OW";
+                name = cardStrings.EXTENDED_DESCRIPTION[16];
                 titleScale = 1F;
                 break;
             case 3:
-                name = "OUCH";
+                name = cardStrings.EXTENDED_DESCRIPTION[17];
                 titleScale = 1F;
                 break;
             case 4:
-                name = "ENOUGH!";
+                name = cardStrings.EXTENDED_DESCRIPTION[18];
                 titleScale = 1F;
                 break;
         }
@@ -151,7 +151,7 @@ public class Stoat extends AbstractCreatureCard {
 
     @Override
     public String extraText() {
-        return "leshy:Pick_Me";
+        return cardStrings.EXTENDED_DESCRIPTION[0];
     }
 
     @Override

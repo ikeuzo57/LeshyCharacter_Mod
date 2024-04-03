@@ -69,7 +69,7 @@ public class MysteriousStonesEvent extends AbstractImageEvent {
                 switch (i) {
                     case 0:
                         selectSacrifice = true;
-                        AbstractDungeon.gridSelectScreen.open(getSacrificeOptions(true), 1, "Select a creature to sacrifice.", false, false, false, false);
+                        AbstractDungeon.gridSelectScreen.open(getSacrificeOptions(true), 1, AbstractCreatureCard.SCREEN_DESCRIPTION[1], false, false, false, false);
                         this.imageEventText.updateBodyText(DESCRIPTIONS[1]);
                         this.imageEventText.updateDialogOption(0, OPTIONS[2]);
                         this.imageEventText.clearRemainingOptions();
@@ -85,7 +85,7 @@ public class MysteriousStonesEvent extends AbstractImageEvent {
 
             case 1:
                 selectRecipient = true;
-                AbstractDungeon.gridSelectScreen.open(getRecipientOptions(sacrifice, true), 1, "Select a creature.", false, false, false, false);
+                AbstractDungeon.gridSelectScreen.open(getRecipientOptions(sacrifice, true), 1, DESCRIPTIONS[4], false, false, false, false);
                 this.imageEventText.updateBodyText(DESCRIPTIONS[2]);
                 this.imageEventText.updateDialogOption(0, OPTIONS[0]);
                 this.imageEventText.clearRemainingOptions();
@@ -135,19 +135,19 @@ public class MysteriousStonesEvent extends AbstractImageEvent {
                 if(copy instanceof Stoat){
                     switch (AbstractDungeon.miscRng.random(3)){
                         case 0:
-                            copy.name = "WHAT AN HONOR";
+                            copy.name = Stoat.cardStrings.EXTENDED_DESCRIPTION[30];
                             ((Stoat) copy).titleScale = 1F;
                             break;
                         case 1:
-                            copy.name = "FINE CHOICE";
+                            copy.name = Stoat.cardStrings.EXTENDED_DESCRIPTION[31];
                             ((Stoat) copy).titleScale = 1F;
                             break;
                         case 2:
-                            copy.name = "YEAH? ALRIGHT";
+                            copy.name = Stoat.cardStrings.EXTENDED_DESCRIPTION[32];
                             ((Stoat) copy).titleScale = 1F;
                             break;
                         case 3:
-                            copy.name = "ANOTHER SIGIL...HOORAY...";
+                            copy.name = Stoat.cardStrings.EXTENDED_DESCRIPTION[33];
                             ((Stoat) copy).titleScale = 0.6F;
                             break;
                     }
@@ -155,11 +155,11 @@ public class MysteriousStonesEvent extends AbstractImageEvent {
                 if (copy instanceof Stinkbug){
                     switch (AbstractDungeon.miscRng.random(1)){
                         case 0:
-                            copy.name = "EMPOWER ME!";
+                            copy.name = Stinkbug.cardStrings.EXTENDED_DESCRIPTION[23];
                             ((Stinkbug) copy).titleScale = 1F;
                             break;
                         case 1:
-                            copy.name = "YES! MORE POWER!";
+                            copy.name = Stinkbug.cardStrings.EXTENDED_DESCRIPTION[24];
                             ((Stinkbug) copy).titleScale = 0.8F;
                             break;
                     }
@@ -167,11 +167,11 @@ public class MysteriousStonesEvent extends AbstractImageEvent {
                 if (copy instanceof StuntedWolf){
                     switch (AbstractDungeon.miscRng.random(1)){
                         case 0:
-                            copy.name = "A TASTE OF MY FORMER GLORY";
+                            copy.name = StuntedWolf.cardStrings.EXTENDED_DESCRIPTION[18];
                             ((StuntedWolf) copy).titleScale = 0.6F;
                             break;
                         case 1:
-                            copy.name = "VERY WELL";
+                            copy.name = StuntedWolf.cardStrings.EXTENDED_DESCRIPTION[19];
                             ((StuntedWolf) copy).titleScale = 1F;
                             break;
                     }
@@ -201,19 +201,19 @@ public class MysteriousStonesEvent extends AbstractImageEvent {
 
                         switch (AbstractDungeon.miscRng.random(3)){
                             case 0:
-                                c.name = "THE CHOICE IS YOURS";
+                                c.name = Stinkbug.cardStrings.EXTENDED_DESCRIPTION[15];
                                 ((Stinkbug) c).titleScale = 0.7F;
                                 break;
                             case 1:
-                                c.name = "DO WHAT YOU MUST";
+                                c.name = Stinkbug.cardStrings.EXTENDED_DESCRIPTION[16];
                                 ((Stinkbug) c).titleScale = 0.7F;
                                 break;
                             case 2:
-                                c.name = "HELLO";
+                                c.name = Stinkbug.cardStrings.EXTENDED_DESCRIPTION[17];
                                 ((Stinkbug) c).titleScale = 1F;
                                 break;
                             case 3:
-                                c.name = "AM I YOUR CHOICE?";
+                                c.name = Stinkbug.cardStrings.EXTENDED_DESCRIPTION[18];
                                 ((Stinkbug) c).titleScale = 0.7F;
                                 break;
                         }
@@ -240,19 +240,19 @@ public class MysteriousStonesEvent extends AbstractImageEvent {
                         if (c instanceof Stoat) {
                             switch (AbstractDungeon.miscRng.random(3)){
                                 case 0:
-                                    c.name = "YOUR CHOICE";
+                                    c.name = Stoat.cardStrings.EXTENDED_DESCRIPTION[26];
                                     ((Stoat) c).titleScale = 1F;
                                     break;
                                 case 1:
-                                    c.name = "I'LL GO";
+                                    c.name = Stoat.cardStrings.EXTENDED_DESCRIPTION[27];
                                     ((Stoat) c).titleScale = 1F;
                                     break;
                                 case 2:
-                                    c.name = "IT'S ME";
+                                    c.name = Stoat.cardStrings.EXTENDED_DESCRIPTION[28];
                                     ((Stoat) c).titleScale = 1F;
                                     break;
                                 case 3:
-                                    c.name = "PICK ME";
+                                    c.name = Stoat.cardStrings.EXTENDED_DESCRIPTION[29];
                                     ((Stoat) c).titleScale = 1F;
                                     break;
                             }
@@ -260,19 +260,19 @@ public class MysteriousStonesEvent extends AbstractImageEvent {
                         if(c instanceof Stinkbug){
                             switch (AbstractDungeon.miscRng.random(3)){
                                 case 0:
-                                    c.name = "THE CHOICE IS YOURS";
+                                    c.name = Stinkbug.cardStrings.EXTENDED_DESCRIPTION[19];
                                     ((Stinkbug) c).titleScale = 0.7F;
                                     break;
                                 case 1:
-                                    c.name = "MARVELOUS";
+                                    c.name = Stinkbug.cardStrings.EXTENDED_DESCRIPTION[20];
                                     ((Stinkbug) c).titleScale = 1F;
                                     break;
                                 case 2:
-                                    c.name = "HELLO";
+                                    c.name = Stinkbug.cardStrings.EXTENDED_DESCRIPTION[21];
                                     ((Stinkbug) c).titleScale = 1F;
                                     break;
                                 case 3:
-                                    c.name = "AM I YOUR CHOICE?";
+                                    c.name = Stinkbug.cardStrings.EXTENDED_DESCRIPTION[22];
                                     ((Stinkbug) c).titleScale = 0.7F;
                                     break;
                             }
@@ -280,23 +280,23 @@ public class MysteriousStonesEvent extends AbstractImageEvent {
                         if(c instanceof StuntedWolf){
                             switch (AbstractDungeon.miscRng.random(4)){
                                 case 0:
-                                    c.name = "AHEM";
+                                    c.name = StuntedWolf.cardStrings.EXTENDED_DESCRIPTION[13];
                                     ((StuntedWolf) c).titleScale = 1F;
                                     break;
                                 case 1:
-                                    c.name = "I AM AT YOUR SERVICE";
+                                    c.name = StuntedWolf.cardStrings.EXTENDED_DESCRIPTION[14];
                                     ((StuntedWolf) c).titleScale = 0.7F;
                                     break;
                                 case 2:
-                                    c.name = "I AM YOURS";
+                                    c.name = StuntedWolf.cardStrings.EXTENDED_DESCRIPTION[15];
                                     ((StuntedWolf) c).titleScale = 1F;
                                     break;
                                 case 3:
-                                    c.name = "...";
+                                    c.name = StuntedWolf.cardStrings.EXTENDED_DESCRIPTION[16];
                                     ((StuntedWolf) c).titleScale = 1F;
                                     break;
                                 case 4:
-                                    c.name = "SELECT WISELY";
+                                    c.name = StuntedWolf.cardStrings.EXTENDED_DESCRIPTION[17];
                                     ((StuntedWolf) c).titleScale = 0.8F;
                                     break;
                             }

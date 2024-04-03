@@ -26,7 +26,9 @@ public class SnorkelRelic extends CustomRelic implements CreatureSigilRelic, Cre
     public SnorkelRelic() {
         super(ID, IMG, OUTLINE, RelicTier.SHOP, LandingSound.CLINK);
 
-        tips.add(new PowerTip("Waterborne", "No longer prevents damage."));
+        PowerTip w = AbstractCreatureCard.getSigilPowertip(AbstractCreatureCard.Sigils.WATERBORNE);
+        if(w != null)
+            tips.add(w);
 
     }
 

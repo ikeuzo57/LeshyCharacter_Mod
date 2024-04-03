@@ -40,9 +40,9 @@ public class Amalgam extends AbstractCreatureCard {
 
         tribe = CreatureTribe.AMALGAM;
 
-        attack = baseAttack = trueBaseAttack = 12;
+        attack = baseAttack = trueBaseAttack = 13;
 
-        health = baseHealth = trueBaseHealth = 12;
+        health = baseHealth = trueBaseHealth = 13;
 
         initializeDescription();
 
@@ -52,8 +52,4 @@ public class Amalgam extends AbstractCreatureCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
     }
 
-    @Override
-    public String extraText() {
-        return "leshy:Amalgam";
-    }
 }

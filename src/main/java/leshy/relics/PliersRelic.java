@@ -33,7 +33,8 @@ public class PliersRelic extends CustomRelic implements ClickableRelic {
     public PliersRelic() {
         super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.FLAT);
 
-        tips.add(new PowerTip("Tooth", "Deal 20 Damage or discard to gain 20 Gold."));
+        ToothPotion tooth = new ToothPotion();
+        tips.add(new PowerTip(tooth.name, tooth.description));
 
     }
 

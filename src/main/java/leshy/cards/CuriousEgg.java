@@ -26,7 +26,7 @@ public class CuriousEgg extends AbstractCreatureCard implements RightClickCard, 
 
 
     public static final String ID = LeshyMod.makeID(CuriousEgg.class.getSimpleName());
-    private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
+    public static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 
     public static final String IMG = makeCardPath("CuriousEgg.png");
 
@@ -74,7 +74,7 @@ public class CuriousEgg extends AbstractCreatureCard implements RightClickCard, 
     @Override
     public List<TooltipInfo> getCustomTooltips() {
 
-        TooltipInfo fullSets = new TooltipInfo("Full Set Tracker", getFullSetTooltip());
+        TooltipInfo fullSets = new TooltipInfo(cardStrings.EXTENDED_DESCRIPTION[4], getFullSetTooltip());
         ArrayList<TooltipInfo> list = new ArrayList<>();
         list.add(fullSets);
 
@@ -85,17 +85,17 @@ public class CuriousEgg extends AbstractCreatureCard implements RightClickCard, 
     public static String getFullSetTooltip(){
 
         if(!LeshyMod.fullSetUpdated)
-            return "Updates on card gain, card removal, battle start, or right clicking this card.";
+            return cardStrings.EXTENDED_DESCRIPTION[2];
 
         String tooltip = "";
 
-        tooltip += "Avian : " + LeshyMod.avian + ", ";
-        tooltip += "Canine : " + LeshyMod.canine + ", ";
-        tooltip += "Hooved : " + LeshyMod.hooved + ", ";
-        tooltip += "Insect : " + LeshyMod.insect + ", ";
-        tooltip += "Reptile : " + LeshyMod.reptile + ", ";
-        tooltip += "Amalgam : " + LeshyMod.amalgam + ", ";
-        tooltip += "Full Sets : " + LeshyMod.fullSets;
+        tooltip += AbstractCreatureCard.tribeText(CreatureTribe.AVIAN) + " : " + LeshyMod.avian + ", ";
+        tooltip += AbstractCreatureCard.tribeText(CreatureTribe.CANINE) + " : " + LeshyMod.canine + ", ";
+        tooltip += AbstractCreatureCard.tribeText(CreatureTribe.HOOVED) + " : " + LeshyMod.hooved + ", ";
+        tooltip += AbstractCreatureCard.tribeText(CreatureTribe.INSECT) + " : " + LeshyMod.insect + ", ";
+        tooltip += AbstractCreatureCard.tribeText(CreatureTribe.REPTILE) + " : " + LeshyMod.reptile + ", ";
+        tooltip += AbstractCreatureCard.tribeText(CreatureTribe.AMALGAM) + " : " + LeshyMod.amalgam + ", ";
+        tooltip += cardStrings.EXTENDED_DESCRIPTION[3] + " : " + LeshyMod.fullSets;
 
         return tooltip;
     }
@@ -116,12 +116,12 @@ public class CuriousEgg extends AbstractCreatureCard implements RightClickCard, 
 
     @Override
     public String elderName() {
-        return "Extra Curious Egg";
+        return cardStrings.EXTENDED_DESCRIPTION[0];
     }
 
     @Override
     public String extraText() {
-        return "leshy:Finical_Hatchling";
+        return cardStrings.EXTENDED_DESCRIPTION[1];
     }
 
 

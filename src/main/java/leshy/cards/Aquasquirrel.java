@@ -37,13 +37,11 @@ public class Aquasquirrel extends AbstractCreatureCard {
 
         health = baseHealth = trueBaseHealth = 3;
 
-
         fleeting = baseFleeting = true;
+        selfRetain = true;
 
         innate.add(Sigils.WATERBORNE);
         current.add(Sigils.WATERBORNE);
-
-        isEthereal = true;
 
         initializeDescription();
     }

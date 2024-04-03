@@ -40,7 +40,7 @@ public class David extends AbstractCreatureCard {
 
         attack = baseAttack = trueBaseAttack = 10;
 
-        health = baseHealth = trueBaseHealth = 18;
+        health = baseHealth = trueBaseHealth = 22;
 
         innate.add(Sigils.RAMPAGER);
         innate.add(Sigils.SHARP_QUILLS);

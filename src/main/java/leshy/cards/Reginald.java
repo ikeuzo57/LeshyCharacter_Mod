@@ -40,7 +40,7 @@ public class Reginald extends AbstractCreatureCard {
 
         attack = baseAttack = trueBaseAttack = 6;
 
-        health = baseHealth = trueBaseHealth = 16;
+        health = baseHealth = trueBaseHealth = 18;
 
         innate.add(Sigils.TOUCH_OF_DEATH);
         current.addAll(innate);

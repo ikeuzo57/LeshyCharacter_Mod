@@ -5,43 +5,25 @@
         },
         "leshy:TotemPower": {
                 "NAME": "Totem",
-                "DESCRIPTIONS": [""]
-        },
-        "leshy:AntPower": {
-                "NAME": "Ant Growth",
-                "DESCRIPTIONS": ["Ants have ", " more Attack and Health."]
+                "DESCRIPTIONS": [
+                        "Canines",
+                        "Avians",
+                        "Hooved",
+                        "Insects",
+                        "Reptiles",
+                        "Squirrels",
+                        "Amalgams",
+                        " and ",
+                        "gain "
+                ]
         },
         "leshy:TargetPower": {
                 "NAME": "Target",
                 "DESCRIPTIONS": ["Creatures prioritize this enemy."]
         },
-        "leshy:BaitPower": {
-                "NAME": "Damage Prevention",
-                "DESCRIPTIONS": ["Prevent ", " more Damage and then sacrifice ", "."]
-        },
-        "leshy:CuriousEggPower": {
-                "NAME": "Curious Egg",
-                "DESCRIPTIONS": ["You've summoned : ", "Beast ", "Avian ", "Reptile ", "Insect ", "Amalgam (Wildcard ", ") "]
-        },
-        "leshy:HydraPower": {
-                "NAME": "Hydra",
-                "DESCRIPTIONS": ["You've summoned : Beast ", " Avian ", " Reptile ", " Insect "]
-        },
-        "leshy:FecundityPower": {
-                "NAME": "Fecundity",
-                "DESCRIPTIONS": ["You have triggered Fecundity ", " out of a max of 10 times this turn."]
-        },
-        "leshy:LeapingTrapPower": {
-                "NAME": "Leaping Trap",
-                "DESCRIPTIONS": ["When attacked sacrifice ", "."]
-        },
         "leshy:StinkyPower": {
                 "NAME": "Stinky",
                 "DESCRIPTIONS": ["Decreases attack damage by ", "."]
-        },
-        "leshy:TrapperPower": {
-                "NAME": "Trapper",
-                "DESCRIPTIONS": ["Pelts have ", " more Health."]
         },
         "leshy:MagpiePower": {
                 "NAME": "Magpie's Eye",
@@ -49,11 +31,15 @@
         },
         "leshy:SacrificePower": {
                 "NAME": "Sacrifice",
-                "DESCRIPTIONS": ["At the start of your turn, put ", " card ", " cards ", "from your draw pile into your hand."]
+                "DESCRIPTIONS": [""]
         },
         "leshy:AlphaPower": {
                 "NAME": "Alpha",
-                "DESCRIPTIONS": ["At the start of your turn, put ", " card ", " cards ", "from your draw pile into your hand."]
+                "DESCRIPTIONS": [""]
+        },
+        "leshy:StuntedWolfPower": {
+                "NAME": "Stunted Wolf",
+                "DESCRIPTIONS": [""]
         },
         "leshy:BrokenEggPower": {
                 "NAME": "Broken Egg",

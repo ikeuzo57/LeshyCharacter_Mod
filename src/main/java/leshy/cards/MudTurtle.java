@@ -52,9 +52,9 @@ public class MudTurtle extends AbstractCreatureCard {
 
         tribe = CreatureTribe.REPTILE;
 
-        attack = baseAttack = trueBaseAttack = 12;
+        attack = baseAttack = trueBaseAttack = 14;
 
-        health = baseHealth = trueBaseHealth = 12;
+        health = baseHealth = trueBaseHealth = 14;
 
         innate.add(Sigils.ARMORED);
         current.add(Sigils.ARMORED);

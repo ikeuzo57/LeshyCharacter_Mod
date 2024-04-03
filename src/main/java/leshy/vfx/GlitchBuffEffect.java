@@ -54,7 +54,7 @@ public class GlitchBuffEffect extends AbstractGameEffect {
             for(AbstractCard c : AbstractDungeon.player.masterDeck.group)
                 if(c instanceof AbstractCreatureCard && !((AbstractCreatureCard) c).isStatic)
                     tmp.addToTop(c);
-            AbstractDungeon.gridSelectScreen.open(tmp, this.count, true, "Choose up to " + this.count + " creatures.");
+            AbstractDungeon.gridSelectScreen.open(tmp, this.count, true, AbstractCreatureCard.SCREEN_DESCRIPTION[10] + this.count + AbstractCreatureCard.SCREEN_DESCRIPTION[11]);
         }
         if (this.duration < 0.0F) {
             this.isDone = true;

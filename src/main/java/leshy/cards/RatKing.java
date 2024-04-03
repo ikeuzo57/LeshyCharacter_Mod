@@ -40,7 +40,7 @@ public class RatKing extends AbstractCreatureCard {
 
         tribe = CreatureTribe.NONE;
 
-        attack = baseAttack = trueBaseAttack = 16;
+        attack = baseAttack = trueBaseAttack = 18;
 
         health = baseHealth = trueBaseHealth = 8;
 

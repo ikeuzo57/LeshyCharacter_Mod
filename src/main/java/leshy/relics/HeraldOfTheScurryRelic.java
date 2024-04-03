@@ -33,9 +33,17 @@ public class HeraldOfTheScurryRelic extends CustomRelic implements CreatureSigil
         if(remove != null)
             tips.remove(remove);
 
-        tips.add(new PowerTip("Double Strike", "Attacks the enemy an additional time. Attacks a different enemy if Bifurcated."));
-        tips.add(new PowerTip("Leader", "Other creatures with the same tribe as this one gain 4 Attack."));
-        tips.add(new PowerTip("Rampager", "At the end of turn, this moves in a direction."));
+        PowerTip ds = AbstractCreatureCard.getSigilPowertip(AbstractCreatureCard.Sigils.DOUBLE_STRIKE);
+        if(ds != null)
+            tips.add(ds);
+
+        PowerTip l = AbstractCreatureCard.getSigilPowertip(AbstractCreatureCard.Sigils.LEADER);
+        if(l != null)
+            tips.add(l);
+
+        PowerTip r = AbstractCreatureCard.getSigilPowertip(AbstractCreatureCard.Sigils.RAMPAGER);
+        if(r != null)
+            tips.add(r);
 
     }
 

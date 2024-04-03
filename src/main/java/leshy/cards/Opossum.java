@@ -50,7 +50,7 @@ public class Opossum extends AbstractCreatureCard {
 
     @Override
     public String elderName() {
-        return "Awesome Opossum";
+        return cardStrings.EXTENDED_DESCRIPTION[0];
     }
 
     @Override

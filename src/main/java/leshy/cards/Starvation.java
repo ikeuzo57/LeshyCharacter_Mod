@@ -52,7 +52,7 @@ public class Starvation extends AbstractCreatureCard {
 
     @Override
     public String extraText() {
-        return "Cannot be sacrificed.";
+        return cardStrings.EXTENDED_DESCRIPTION[0];
     }
 
     @Override

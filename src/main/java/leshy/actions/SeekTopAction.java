@@ -10,6 +10,7 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.UIStrings;
 import leshy.LeshyMod;
+import leshy.cards.abstracts.AbstractCreatureCard;
 
 public class SeekTopAction extends AbstractGameAction {
 
@@ -35,7 +36,7 @@ public class SeekTopAction extends AbstractGameAction {
             }
             LeshyMod.logger.info("Grid Select");
 
-            AbstractDungeon.gridSelectScreen.open(tmp, 1, "Move a card to the top of your draw pile.", false);
+            AbstractDungeon.gridSelectScreen.open(tmp, 1, AbstractCreatureCard.SCREEN_DESCRIPTION[4], false);
 
             tickDuration();
             return;

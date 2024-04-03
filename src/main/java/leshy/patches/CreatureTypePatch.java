@@ -91,31 +91,31 @@ public class CreatureTypePatch {
 
                 switch (((AbstractCreatureCard) __instance).tribe){
                     case AVIAN:
-                        msg = "Avian";
+                        msg = AbstractCreatureCard.TRIBE_DESCRIPTION[1];
                         break;
                     case AMALGAM:
-                        msg = "Amalgam";
+                        msg = AbstractCreatureCard.TRIBE_DESCRIPTION[6];
                         font.getData().setScale(__instance.drawScale * 0.85f);
                         break;
                     case CANINE:
-                        msg = "Canine";
+                        msg = AbstractCreatureCard.TRIBE_DESCRIPTION[2];
                         break;
                     case HOOVED:
-                        msg = "Hooved";
+                        msg = AbstractCreatureCard.TRIBE_DESCRIPTION[3];
                         break;
                     case ANT:
                     case INSECT:
-                        msg = "Insect";
+                        msg = AbstractCreatureCard.TRIBE_DESCRIPTION[4];
                         break;
                     case REPTILE:
-                        msg = "Reptile";
+                        msg = AbstractCreatureCard.TRIBE_DESCRIPTION[5];
                         break;
                     case SQUIRREL:
-                        msg = "Squirrel";
+                        msg = AbstractCreatureCard.TRIBE_DESCRIPTION[7];
                         font.getData().setScale(__instance.drawScale * 0.85f);
                         break;
                     default:
-                        msg = "Creature";
+                        msg = AbstractCreatureCard.TRIBE_DESCRIPTION[0];
                         font.getData().setScale(__instance.drawScale * 0.85f);
                         break;
                 }

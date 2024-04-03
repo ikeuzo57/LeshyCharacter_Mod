@@ -69,8 +69,8 @@ public class LeapingTrap extends AbstractCreatureCard {
     @Override
     public String extraText() {
         if(x_value == -1)
-            return "On death deal 4X to all enemies.";
-        return "On death deal !leshy:SecondMagic! to all enemies.";
+            return cardStrings.EXTENDED_DESCRIPTION[0];
+        return cardStrings.EXTENDED_DESCRIPTION[1];
     }
 
     @Override

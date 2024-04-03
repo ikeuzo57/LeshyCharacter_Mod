@@ -70,26 +70,26 @@ public class TotemPower extends AbstractPower implements CloneablePowerInterface
 
                 switch (tribe){
                     case CANINE:
-                        tribeStrings.add("Canines");
+                        tribeStrings.add(DESCRIPTIONS[0]);
                         break;
                     case AVIAN:
-                        tribeStrings.add("Avians");
+                        tribeStrings.add(DESCRIPTIONS[1]);
                         break;
                     case HOOVED:
-                        tribeStrings.add("Hooved");
+                        tribeStrings.add(DESCRIPTIONS[2]);
                         break;
                     case ANT:
                     case INSECT:
-                        tribeStrings.add("Insects");
+                        tribeStrings.add(DESCRIPTIONS[3]);
                         break;
                     case REPTILE:
-                        tribeStrings.add("Reptiles");
+                        tribeStrings.add(DESCRIPTIONS[4]);
                         break;
                     case SQUIRREL:
-                        tribeStrings.add("Squirrels");
+                        tribeStrings.add(DESCRIPTIONS[5]);
                         break;
                     case AMALGAM:
-                        tribeStrings.add("Amalgams");
+                        tribeStrings.add(DESCRIPTIONS[6]);
                         break;
                 }
             }
@@ -104,7 +104,7 @@ public class TotemPower extends AbstractPower implements CloneablePowerInterface
                 if(tribeStrings.size() >= 2){
                     if(tribeStrings.size() > 2)
                         tribeString += ",";
-                    tribeString += " and " + tribeStrings.get(tribeStrings.size()-1);
+                    tribeString += DESCRIPTIONS[7] + tribeStrings.get(tribeStrings.size()-1);
                 }
                 tribeString += " ";
             }
@@ -112,27 +112,32 @@ public class TotemPower extends AbstractPower implements CloneablePowerInterface
         }
 
 
-        description += tribeString + "gain ";
+        String sigilString = "";
 
         ArrayList<String> keywords = new ArrayList<>();
         for(AbstractCreatureCard.Sigils s : sigils)
-            keywords.add(AbstractCreatureCard.sigilStrings.get(s));
+            keywords.add(AbstractCreatureCard.keywordStrings.get(s));
 
         if(keywords.isEmpty()){
-            description += "___.";
+            sigilString += "___.";
         }else{
-            description += keywords.get(0);
+            sigilString += keywords.get(0);
             for(int i=1; i<keywords.size()-1; i++){
-                description += ", " + keywords.get(i);
+                sigilString += ", " + keywords.get(i);
             }
             if(keywords.size() >= 2){
                 if(keywords.size() > 2){
-                    description += ",";
+                    sigilString += ",";
                 }
-                description += " and " + keywords.get(keywords.size()-1);
+                sigilString += DESCRIPTIONS[7] + keywords.get(keywords.size()-1);
             }
-            description += ".";
+            sigilString += ".";
+
+            sigilString = sigilString.replace("leshy:", "");
+            sigilString = sigilString.replace("_", " ");
         }
+
+        description += tribeString + DESCRIPTIONS[8] + sigilString;
 
     }
 

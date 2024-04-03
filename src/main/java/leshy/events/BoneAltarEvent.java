@@ -67,7 +67,7 @@ public class BoneAltarEvent extends AbstractImageEvent {
                 switch (i) {
                     case 0:
                         selectSacrifice = true;
-                        AbstractDungeon.gridSelectScreen.open(getSacrificeOptions(true), 1, "Select a creature to sacrifice.", false, false, false, false);
+                        AbstractDungeon.gridSelectScreen.open(getSacrificeOptions(true), 1, AbstractCreatureCard.SCREEN_DESCRIPTION[1], false, false, false, false);
                         this.imageEventText.updateDialogOption(0, OPTIONS[0]);
                         this.imageEventText.clearRemainingOptions();
                         screenNum = 1;
@@ -155,31 +155,31 @@ public class BoneAltarEvent extends AbstractImageEvent {
                     if (c instanceof Stoat) {
                         switch (AbstractDungeon.miscRng.random(6)){
                             case 0:
-                                c.name = "HMM...";
+                                c.name = Stoat.cardStrings.EXTENDED_DESCRIPTION[19];
                                 ((Stoat) c).titleScale = 1F;
                                 break;
                             case 1:
-                                c.name = "NOPE";
+                                c.name = Stoat.cardStrings.EXTENDED_DESCRIPTION[20];
                                 ((Stoat) c).titleScale = 1F;
                                 break;
                             case 2:
-                                c.name = "NO WAY";
+                                c.name = Stoat.cardStrings.EXTENDED_DESCRIPTION[21];
                                 ((Stoat) c).titleScale = 1F;
                                 break;
                             case 3:
-                                c.name = "NOPE NOPE NOPE";
+                                c.name = Stoat.cardStrings.EXTENDED_DESCRIPTION[22];
                                 ((Stoat) c).titleScale = 0.8F;
                                 break;
                             case 4:
-                                c.name = "STOP THIS";
+                                c.name = Stoat.cardStrings.EXTENDED_DESCRIPTION[23];
                                 ((Stoat) c).titleScale = 1F;
                                 break;
                             case 5:
-                                c.name = "PICK SOMETHING ELSE";
+                                c.name = Stoat.cardStrings.EXTENDED_DESCRIPTION[24];
                                 ((Stoat) c).titleScale = 0.6F;
                                 break;
                             case 6:
-                                c.name = "PLEASE NO";
+                                c.name = Stoat.cardStrings.EXTENDED_DESCRIPTION[25];
                                 ((Stoat) c).titleScale = 1F;
                                 break;
                         }
@@ -187,19 +187,19 @@ public class BoneAltarEvent extends AbstractImageEvent {
                     if(c instanceof Stinkbug){
                         switch (AbstractDungeon.miscRng.random(3)){
                             case 0:
-                                c.name = "OH...";
+                                c.name = Stinkbug.cardStrings.EXTENDED_DESCRIPTION[11];
                                 ((Stinkbug) c).titleScale = 1F;
                                 break;
                             case 1:
-                                c.name = "UM";
+                                c.name = Stinkbug.cardStrings.EXTENDED_DESCRIPTION[12];
                                 ((Stinkbug) c).titleScale = 1F;
                                 break;
                             case 2:
-                                c.name = "CHOOSE WISELY";
+                                c.name = Stinkbug.cardStrings.EXTENDED_DESCRIPTION[13];
                                 ((Stinkbug) c).titleScale = 0.8F;
                                 break;
                             case 3:
-                                c.name = "DO WHAT YOU MUST!";
+                                c.name = Stinkbug.cardStrings.EXTENDED_DESCRIPTION[14];
                                 ((Stinkbug) c).titleScale = 0.7F;
                                 break;
                         }
@@ -207,15 +207,15 @@ public class BoneAltarEvent extends AbstractImageEvent {
                     if(c instanceof StuntedWolf){
                         switch (AbstractDungeon.miscRng.random(2)){
                             case 0:
-                                c.name = "AHEM";
+                                c.name = StuntedWolf.cardStrings.EXTENDED_DESCRIPTION[10];
                                 ((StuntedWolf) c).titleScale = 1F;
                                 break;
                             case 1:
-                                c.name = "IF YOU MUST";
+                                c.name = StuntedWolf.cardStrings.EXTENDED_DESCRIPTION[11];
                                 ((StuntedWolf) c).titleScale = 1F;
                                 break;
                             case 2:
-                                c.name = "IT IS YOUR CHOICE";
+                                c.name = StuntedWolf.cardStrings.EXTENDED_DESCRIPTION[12];
                                 ((StuntedWolf) c).titleScale = 0.7F;
                                 break;
                         }

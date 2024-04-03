@@ -5,12 +5,13 @@ import com.badlogic.gdx.graphics.Texture;
 import leshy.LeshyMod;
 import leshy.cards.abstracts.AbstractCreatureCard;
 import leshy.relics.interfaces.CreatureValueRelic;
+import leshy.relics.interfaces.OnSacrificeRelic;
 import leshy.util.TextureLoader;
 
 import static leshy.LeshyMod.makeRelicOutlinePath;
 import static leshy.LeshyMod.makeRelicPath;
 
-public class BloodstoneRelic extends CustomRelic implements CreatureValueRelic {
+public class BloodstoneRelic extends CustomRelic implements CreatureValueRelic, OnSacrificeRelic {
 
     public static final String ID = LeshyMod.makeID(BloodstoneRelic.class.getSimpleName());
 
@@ -57,5 +58,11 @@ public class BloodstoneRelic extends CustomRelic implements CreatureValueRelic {
         if(c.tribe == AbstractCreatureCard.CreatureTribe.SQUIRREL || c.tribe == AbstractCreatureCard.CreatureTribe.AMALGAM)
             return this.counter * BUFF;
         return 0;
+    }
+
+    @Override
+    public void onSacrifice(AbstractCreatureCard c, boolean diedToDamage) {
+        if((c.tribe == AbstractCreatureCard.CreatureTribe.SQUIRREL || c.tribe == AbstractCreatureCard.CreatureTribe.AMALGAM) && diedToDamage)
+            squirrelDeath();
     }
 }

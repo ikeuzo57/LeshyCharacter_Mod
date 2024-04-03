@@ -62,7 +62,7 @@ public class GoobertEvent extends AbstractImageEvent {
 
                 if(!getPaintOptions().isEmpty()){
                     selectPaint = true;
-                    AbstractDungeon.gridSelectScreen.open(getPaintOptions(), 1, "Select a creature to paint.", false, false, false, false);
+                    AbstractDungeon.gridSelectScreen.open(getPaintOptions(), 1, DESCRIPTIONS[2], false, false, false, false);
                     this.imageEventText.updateBodyText(DESCRIPTIONS[1]);
                     this.imageEventText.updateDialogOption(0, OPTIONS[1]);
                     this.imageEventText.clearRemainingOptions();

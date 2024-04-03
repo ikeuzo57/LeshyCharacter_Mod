@@ -37,7 +37,7 @@ public class Dam extends AbstractCreatureCard {
         tribe = CreatureTribe.NONE;
 
 
-        health = baseHealth = trueBaseHealth = 6;
+        health = baseHealth = trueBaseHealth = 8;
 
         fleeting = baseFleeting = true;
         bloodless = true;
@@ -48,7 +48,7 @@ public class Dam extends AbstractCreatureCard {
 
     @Override
     public String elderName() {
-        return "God Dam";
+        return cardStrings.EXTENDED_DESCRIPTION[0];
     }
 
 

@@ -5,6 +5,7 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import leshy.cards.TrialOfBlood;
 import leshy.cards.abstracts.AbstractCreatureCard;
 import leshy.orbs.CreatureOrb;
 
@@ -49,7 +50,7 @@ public class BloodCreatureAction extends AbstractGameAction {
                 tmp.add(card);
             }
 
-            AbstractDungeon.cardRewardScreen.customCombatOpen(tmp, "Summon a copy with Transient.", false);
+            AbstractDungeon.cardRewardScreen.customCombatOpen(tmp, TrialOfBlood.cardStrings.EXTENDED_DESCRIPTION[1], false);
             tickDuration();
 
             return;

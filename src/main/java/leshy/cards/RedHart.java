@@ -48,7 +48,7 @@ public class RedHart extends AbstractCreatureCard {
 
         attack = baseAttack = trueBaseAttack = 0;
 
-        health = baseHealth = trueBaseHealth = 12;
+        health = baseHealth = trueBaseHealth = 16;
 
         innate.add(Sigils.RAMPAGER);
         current.add(Sigils.RAMPAGER);
@@ -76,7 +76,7 @@ public class RedHart extends AbstractCreatureCard {
 
     @Override
     public String extraText() {
-        return "leshy:Spilled_Blood";
+        return cardStrings.EXTENDED_DESCRIPTION[0];
     }
 
     @Override

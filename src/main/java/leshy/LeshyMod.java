@@ -17,6 +17,7 @@ import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.CardHelper;
@@ -927,6 +928,41 @@ public class LeshyMod implements
         UnlockTracker.unlockCard(Oct19.ID);
         UnlockTracker.unlockCard(Sean.ID);
         UnlockTracker.unlockCard(Tamara.ID);
+        UnlockTracker.unlockCard(WisdomAirborne.ID);
+        UnlockTracker.unlockCard(WisdomAmorphous.ID);
+        UnlockTracker.unlockCard(WisdomAntSpawner.ID);
+        UnlockTracker.unlockCard(WisdomArmored.ID);
+        UnlockTracker.unlockCard(WisdomBeesWithin.ID);
+        UnlockTracker.unlockCard(WisdomBifurcated.ID);
+        UnlockTracker.unlockCard(WisdomBoneKing.ID);
+        UnlockTracker.unlockCard(WisdomBoneDigger.ID);
+        UnlockTracker.unlockCard(WisdomBroodParasite.ID);
+        UnlockTracker.unlockCard(WisdomDoubleStrike.ID);
+        UnlockTracker.unlockCard(WisdomFecundity.ID);
+        UnlockTracker.unlockCard(WisdomFledgling.ID);
+        UnlockTracker.unlockCard(WisdomGuardian.ID);
+        UnlockTracker.unlockCard(WisdomHoarder.ID);
+        UnlockTracker.unlockCard(WisdomLeader.ID);
+        UnlockTracker.unlockCard(WisdomManyLives.ID);
+        UnlockTracker.unlockCard(WisdomMightyLeap.ID);
+        UnlockTracker.unlockCard(WisdomRabbitHole.ID);
+        UnlockTracker.unlockCard(WisdomRampager.ID);
+        UnlockTracker.unlockCard(WisdomSharpQuills.ID);
+        UnlockTracker.unlockCard(WisdomStinky.ID);
+        UnlockTracker.unlockCard(WisdomTouchOfDeath.ID);
+        UnlockTracker.unlockCard(WisdomTrifurcated.ID);
+        UnlockTracker.unlockCard(WisdomTrinketBearer.ID);
+        UnlockTracker.unlockCard(WisdomUnkillable.ID);
+        UnlockTracker.unlockCard(WisdomWaterborne.ID);
+        UnlockTracker.unlockCard(WisdomWorthySacrifice.ID);
+        UnlockTracker.unlockCard(WisdomDamBuilder.ID);
+        UnlockTracker.unlockCard(BoonOfTheAmbidextrous.ID);
+        UnlockTracker.unlockCard(BoonOfTheMagpiesEye.ID);
+        UnlockTracker.unlockCard(BoonOfTheBoneLord.ID);
+        UnlockTracker.unlockCard(BoonOfGoatsBlood.ID);
+        UnlockTracker.unlockCard(BoonOfTheForest.ID);
+
+
 
         
         logger.info("Done adding cards!");

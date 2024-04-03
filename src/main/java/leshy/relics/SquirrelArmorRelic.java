@@ -23,7 +23,9 @@ public class SquirrelArmorRelic extends CustomRelic implements CreatureSigilReli
     public SquirrelArmorRelic() {
         super(ID, IMG, OUTLINE, RelicTier.BOSS, LandingSound.HEAVY);
 
-        tips.add(new PowerTip("Armored", "Prevents the first time this takes damage."));
+        PowerTip a = AbstractCreatureCard.getSigilPowertip(AbstractCreatureCard.Sigils.ARMORED);
+        if(a != null)
+            tips.add(a);
 
     }
 

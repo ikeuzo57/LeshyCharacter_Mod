@@ -231,7 +231,7 @@ public class Leshy extends CustomPlayer{
     //Which card should be obtainable from the Match and Keep event?
     @Override
     public AbstractCard getStartCardForEvent() {
-        return new StrikeLeshy();
+        return new Stoat();
     }
 
     // The class name as it appears next to your player name in-game

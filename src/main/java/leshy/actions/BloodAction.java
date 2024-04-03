@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import leshy.LeshyMod;
+import leshy.cards.TrialOfBlood;
 import leshy.cards.abstracts.AbstractCreatureCard;
 
 import java.util.ArrayList;
@@ -41,7 +42,7 @@ public class BloodAction extends AbstractGameAction {
                 return;
             }
 
-            AbstractDungeon.gridSelectScreen.open(tmp, 0, true, "Revealed Cards.");
+            AbstractDungeon.gridSelectScreen.open(tmp, 0, true, TrialOfBlood.cardStrings.EXTENDED_DESCRIPTION[0]);
 
             int totalBloodCost = 0;
             for(AbstractCard c : tmp.group){

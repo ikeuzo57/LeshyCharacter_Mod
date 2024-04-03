@@ -23,7 +23,7 @@ public class StuntedWolf extends AbstractCreatureCard implements StartupCard {
 
 
     public static final String ID = LeshyMod.makeID(StuntedWolf.class.getSimpleName());
-    private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
+    public static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 
     public static final String IMG = makeCardPath("StuntedWolf.png");
 
@@ -70,7 +70,7 @@ public class StuntedWolf extends AbstractCreatureCard implements StartupCard {
         if(sigil != null)
             keyword = AbstractCreatureCard.keywordStrings.get(sigil);
 
-        return "All creatures gain " + keyword + ". Changes randomly when drawn.";
+        return cardStrings.EXTENDED_DESCRIPTION[20] + keyword + cardStrings.EXTENDED_DESCRIPTION[21];
     }
 
     @Override
@@ -105,19 +105,19 @@ public class StuntedWolf extends AbstractCreatureCard implements StartupCard {
 
         switch (AbstractDungeon.miscRng.random(3)){
             case 0:
-                name = "HERE WE ARE";
+                name = cardStrings.EXTENDED_DESCRIPTION[0];
                 titleScale = 1F;
                 break;
             case 1:
-                name = "ARE YOU SURE?";
+                name = cardStrings.EXTENDED_DESCRIPTION[1];
                 titleScale = 0.9F;
                 break;
             case 2:
-                name = "I MUST TRUST YOU";
+                name = cardStrings.EXTENDED_DESCRIPTION[2];
                 titleScale = 0.7F;
                 break;
             case 3:
-                name = "USE ME WISELY";
+                name = cardStrings.EXTENDED_DESCRIPTION[3];
                 titleScale = 0.7F;
                 break;
         }
@@ -130,15 +130,15 @@ public class StuntedWolf extends AbstractCreatureCard implements StartupCard {
 
         switch (AbstractDungeon.miscRng.random(2)){
             case 0:
-                name = "CAREFUL NOW";
+                name = cardStrings.EXTENDED_DESCRIPTION[4];
                 titleScale = 0.9F;
                 break;
             case 1:
-                name = "OOF";
+                name = cardStrings.EXTENDED_DESCRIPTION[5];
                 titleScale = 1F;
                 break;
             case 2:
-                name = "GOOD LORD!";
+                name = cardStrings.EXTENDED_DESCRIPTION[6];
                 titleScale = 1F;
                 break;
         }
@@ -168,15 +168,15 @@ public class StuntedWolf extends AbstractCreatureCard implements StartupCard {
 
         switch (AbstractDungeon.miscRng.random(2)){
             case 0:
-                name = "WE MEET AGAIN";
+                name = cardStrings.EXTENDED_DESCRIPTION[7];
                 titleScale = 0.8F;
                 break;
             case 1:
-                name = "GREETINGS";
+                name = cardStrings.EXTENDED_DESCRIPTION[8];
                 titleScale = 1F;
                 break;
             case 2:
-                name = "HELLO AGAIN";
+                name = cardStrings.EXTENDED_DESCRIPTION[9];
                 titleScale = 0.9F;
                 break;
         }

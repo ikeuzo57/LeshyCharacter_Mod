@@ -99,6 +99,6 @@ public abstract class AbstractPeltCard extends AbstractCreatureCard implements R
 
     @Override
     public String extraText() {
-        return "leshy:Pelt !leshy:SecondMagic!";
+        return AbstractCreatureCard.MISC_DESCRIPTION[6];
     }
 }

@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.vfx.ThoughtBubble;
+import leshy.cards.FilmRoll;
 import leshy.cards.abstracts.AbstractCreatureCard;
 
 import java.util.ArrayList;
@@ -34,7 +35,7 @@ public class FilmRollAction extends AbstractGameAction {
                 }
             }
             if (list.size() < 3) {
-                AbstractDungeon.effectList.add(new ThoughtBubble(AbstractDungeon.player.dialogX, AbstractDungeon.player.dialogY, 3.0F, "Needs 3 Creatures in master deck", true));
+                AbstractDungeon.effectList.add(new ThoughtBubble(AbstractDungeon.player.dialogX, AbstractDungeon.player.dialogY, 3.0F, FilmRoll.cardStrings.EXTENDED_DESCRIPTION[0], true));
                 this.isDone = true;
                 return;
             }
@@ -53,7 +54,7 @@ public class FilmRollAction extends AbstractGameAction {
             }
 
 
-            AbstractDungeon.gridSelectScreen.open(temp, 1, "Select the Cost", false);
+            AbstractDungeon.gridSelectScreen.open(temp, 1, FilmRoll.cardStrings.EXTENDED_DESCRIPTION[1], false);
 
             tickDuration();
 

@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import leshy.cards.Starvation;
+import leshy.cards.StruckGold;
 import leshy.cards.abstracts.AbstractCreatureCard;
 import leshy.cards.GoldNugget;
 import leshy.orbs.CreatureOrb;
@@ -50,7 +51,7 @@ public class StruckGoldAction extends AbstractGameAction {
                 return;
             }
 
-            AbstractDungeon.gridSelectScreen.open(tmp, 4, true, "Where be da gold?");
+            AbstractDungeon.gridSelectScreen.open(tmp, 4, true, StruckGold.cardStrings.EXTENDED_DESCRIPTION[0]);
             tickDuration();
 
             return;

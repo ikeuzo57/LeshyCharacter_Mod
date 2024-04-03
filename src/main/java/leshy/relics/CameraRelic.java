@@ -7,13 +7,14 @@ import leshy.LeshyMod;
 import leshy.actions.CameraAction;
 import leshy.cards.abstracts.AbstractCreatureCard;
 import leshy.cards.Amalgam;
+import leshy.relics.interfaces.OnSacrificeRelic;
 import leshy.util.TextureLoader;
 
 import java.util.ArrayList;
 
 import static leshy.LeshyMod.*;
 
-public class CameraRelic extends CustomRelic{
+public class CameraRelic extends CustomRelic implements OnSacrificeRelic {
 
     public static final String ID = LeshyMod.makeID(CameraRelic.class.getSimpleName());
 
@@ -83,15 +84,15 @@ public class CameraRelic extends CustomRelic{
         description = DESCRIPTIONS[0];
         if(cost != null){
             if(cost == AbstractCreatureCard.CreatureCostType.BLOOD)
-                description += " Cost : Blood ";
+                description += DESCRIPTIONS[1];
             else if (cost == AbstractCreatureCard.CreatureCostType.BONE)
-                description += " Cost : Bone ";
+                description += DESCRIPTIONS[2];
             else
-                description += " Cost : ";
+                description += DESCRIPTIONS[3];
             description += extraCost;
         }
         if(baseAttack >= 0 && baseHealth >= 0)
-            description += " Attack : " + baseAttack + " Health : " + baseHealth;
+            description += DESCRIPTIONS[4] + baseAttack + DESCRIPTIONS[5] + baseHealth;
 
         tips.clear();
         tips.add(new PowerTip(name, description));
@@ -117,5 +118,11 @@ public class CameraRelic extends CustomRelic{
 
         return DESCRIPTIONS[0];
 
+    }
+
+    @Override
+    public void onSacrifice(AbstractCreatureCard c, boolean diedToDamage) {
+        if(diedToDamage)
+            nextCreature(c);
     }
 }

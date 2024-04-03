@@ -38,9 +38,9 @@ public class Oct19 extends AbstractCreatureCard {
 
         tribe = CreatureTribe.NONE;
 
-        attack = baseAttack = trueBaseAttack = 14;
+        attack = baseAttack = trueBaseAttack = 19;
 
-        health = baseHealth = trueBaseHealth = 8;
+        health = baseHealth = trueBaseHealth = 10;
 
         innate.add(Sigils.TOUCH_OF_DEATH);
         current.addAll(innate);

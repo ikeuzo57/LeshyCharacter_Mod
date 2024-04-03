@@ -9,6 +9,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import leshy.LeshyMod;
 import leshy.cards.*;
+import leshy.cards.abstracts.AbstractCreatureCard;
 import leshy.cards.abstracts.TotemHeadCard;
 import leshy.relics.OldDataRelic;
 
@@ -40,9 +41,9 @@ public class WoodcarverAction extends AbstractGameAction {
                 }
             }
 
-            String msg = "Pick a totem head.";
+            String msg = AbstractCreatureCard.SCREEN_DESCRIPTION[5];
             if(num > 1)
-                msg = "Pick " + num + " totem heads.";
+                msg = AbstractCreatureCard.SCREEN_DESCRIPTION[6] + num + AbstractCreatureCard.SCREEN_DESCRIPTION[7];
 
 
             AbstractDungeon.gridSelectScreen.open(tmp, num, msg, false);

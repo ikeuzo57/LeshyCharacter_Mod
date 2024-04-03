@@ -49,7 +49,7 @@ public class BaitBucket extends AbstractCreatureCard {
 
     @Override
     public String extraText() {
-        return "On death, summon a Great White.";
+        return cardStrings.EXTENDED_DESCRIPTION[0];
     }
 
 

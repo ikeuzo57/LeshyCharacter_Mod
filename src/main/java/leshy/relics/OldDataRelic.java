@@ -94,15 +94,15 @@ public class OldDataRelic extends CustomRelic implements ClickableRelic, CustomS
         this.description = getUpdatedDescription();
         this.tips.clear();
         this.tips.add(new PowerTip(this.name, this.description));
-        this.tips.add(new PowerTip("Glitched Cards", glitchedCardsText()));
+        this.tips.add(new PowerTip(DESCRIPTIONS[8], glitchedCardsText()));
     }
 
-    public static String glitchedCardsText(){
+    public String glitchedCardsText(){
         String text = "";
         for(String s : glitchedNames)
             text += s + ", ";
         if(text.isEmpty())
-            text = "Cards Glitched at start of combat will be listed here.";
+            text = DESCRIPTIONS[9];
         else
             text = text.substring(0, text.length()-2);
         return text;
@@ -176,7 +176,7 @@ public class OldDataRelic extends CustomRelic implements ClickableRelic, CustomS
                 CardGroup tmp = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
                 tmp.addToTop(new OldDataTop());
                 tmp.addToTop(new OldDataSacrifice());
-                AbstractDungeon.gridSelectScreen.open(tmp, 1, false, "Choose an effect to use.");
+                AbstractDungeon.gridSelectScreen.open(tmp, 1, false, DESCRIPTIONS[10]);
             }else if(topAvailable){
                 flash();
                 canActivateTop = false;
@@ -218,7 +218,7 @@ public class OldDataRelic extends CustomRelic implements ClickableRelic, CustomS
         tmp.addToTop(new OldDataStatic());
 
         selectingEffect = true;
-        AbstractDungeon.gridSelectScreen.open(tmp, 1, false, "Choose an effect to add to OLD_DATA.");
+        AbstractDungeon.gridSelectScreen.open(tmp, 1, false, odr.DESCRIPTIONS[11]);
     }
 
     @Override

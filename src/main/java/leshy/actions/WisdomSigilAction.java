@@ -106,7 +106,7 @@ public class WisdomSigilAction extends AbstractGameAction {
                 return;
             }
 
-            AbstractDungeon.gridSelectScreen.open(tmp, 1, "Pick a sigil.", false);
+            AbstractDungeon.gridSelectScreen.open(tmp, 1, TrialOfWisdom.cardStrings.EXTENDED_DESCRIPTION[1], false);
             tickDuration();
 
             return;

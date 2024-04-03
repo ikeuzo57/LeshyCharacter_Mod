@@ -55,7 +55,7 @@ public class GreatWhite extends AbstractCreatureCard {
 
     @Override
     public String elderName() {
-        return "Greater White";
+        return cardStrings.EXTENDED_DESCRIPTION[0];
     }
 
     @Override

@@ -5,9 +5,11 @@ import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import leshy.LeshyMod;
+import leshy.actions.ChimeraStatueAction;
 import leshy.cards.abstracts.AbstractCreatureCard;
 import leshy.orbs.CreatureOrb;
 import leshy.relics.interfaces.CreatureValueRelic;
+import leshy.relics.interfaces.OnSacrificeRelic;
 import leshy.relics.interfaces.OnSummonRelic;
 import leshy.util.TextureLoader;
 
@@ -16,7 +18,7 @@ import java.util.HashSet;
 import static leshy.LeshyMod.makeRelicOutlinePath;
 import static leshy.LeshyMod.makeRelicPath;
 
-public class ChimeraStatueRelic extends CustomRelic implements CreatureValueRelic, OnSummonRelic {
+public class ChimeraStatueRelic extends CustomRelic implements CreatureValueRelic, OnSummonRelic, OnSacrificeRelic {
 
     public static final String ID = LeshyMod.makeID(ChimeraStatueRelic.class.getSimpleName());
 
@@ -87,5 +89,10 @@ public class ChimeraStatueRelic extends CustomRelic implements CreatureValueReli
     @Override
     public void onSummon(AbstractCreatureCard c) {
         updateTribeCount();
+    }
+
+    @Override
+    public void onSacrifice(AbstractCreatureCard c, boolean diedToDamage) {
+        addToBot(new ChimeraStatueAction(this));
     }
 }

@@ -63,7 +63,7 @@ public class WoodcarverEvent extends AbstractImageEvent {
                 switch (i) {
                     case 0:
                         selectTotem = true;
-                        AbstractDungeon.gridSelectScreen.open(getTotemOptions(), 1, false, "Take a carving.");
+                        AbstractDungeon.gridSelectScreen.open(getTotemOptions(), 1, false, DESCRIPTIONS[2]);
                         this.imageEventText.updateBodyText(DESCRIPTIONS[1]);
                         this.imageEventText.updateDialogOption(0, OPTIONS[0]);
                         this.imageEventText.clearRemainingOptions();

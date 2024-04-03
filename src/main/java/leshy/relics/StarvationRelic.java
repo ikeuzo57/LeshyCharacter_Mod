@@ -9,6 +9,7 @@ import leshy.LeshyMod;
 import leshy.actions.SummonCreatureAction;
 import leshy.cards.Boulder;
 import leshy.cards.Starvation;
+import leshy.cards.abstracts.AbstractCreatureCard;
 import leshy.orbs.CreatureOrb;
 import leshy.util.TextureLoader;
 
@@ -25,8 +26,9 @@ public class StarvationRelic extends CustomRelic{
     public StarvationRelic() {
         super(ID, IMG, OUTLINE, RelicTier.SPECIAL, LandingSound.SOLID);
 
-        tips.add(new PowerTip("Starvation", "0/1 with #yWaterborne and cannot be sacrificed."));
-        tips.add(new PowerTip("Waterborne", "No longer prevents damage."));
+        PowerTip w = AbstractCreatureCard.getSigilPowertip(AbstractCreatureCard.Sigils.WATERBORNE);
+        if(w != null)
+            tips.add(w);
 
     }
 

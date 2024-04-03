@@ -51,7 +51,7 @@ public class SkeletonCrew extends AbstractCreatureCard {
 
     @Override
     public String extraText() {
-        return "leshy:Brittle";
+        return cardStrings.EXTENDED_DESCRIPTION[0];
     }
 
     @Override

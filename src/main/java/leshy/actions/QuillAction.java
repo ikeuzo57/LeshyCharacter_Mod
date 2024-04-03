@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndAddToHandEffect;
+import leshy.LeshyMod;
 import leshy.cards.abstracts.AbstractCreatureCard;
 
 import java.util.ArrayList;
@@ -49,7 +50,7 @@ public class QuillAction extends AbstractGameAction {
                 tmp.add(card);
             }
 
-            AbstractDungeon.cardRewardScreen.customCombatOpen(tmp, "Add one to hand.", false);
+            AbstractDungeon.cardRewardScreen.customCombatOpen(tmp, AbstractCreatureCard.SCREEN_DESCRIPTION[3], false);
 
             tickDuration();
             return;

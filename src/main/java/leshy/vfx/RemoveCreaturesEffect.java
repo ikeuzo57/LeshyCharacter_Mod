@@ -51,7 +51,7 @@ public class RemoveCreaturesEffect extends AbstractGameEffect {
             for(AbstractCard c : AbstractDungeon.player.masterDeck.group)
                 if(c instanceof AbstractCreatureCard)
                     tmp.addToTop(c);
-            AbstractDungeon.gridSelectScreen.open(tmp, count, true, "Choose up to " + count + " creatures to remove.");
+            AbstractDungeon.gridSelectScreen.open(tmp, count, true, AbstractCreatureCard.SCREEN_DESCRIPTION[10] + this.count + AbstractCreatureCard.SCREEN_DESCRIPTION[11]);
         }
         if (this.duration < 0.0F) {
             this.isDone = true;

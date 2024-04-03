@@ -24,8 +24,13 @@ public class DrownedRelic extends CustomRelic implements CreatureSigilRelic {
     public DrownedRelic() {
         super(ID, IMG, OUTLINE, RelicTier.SPECIAL, LandingSound.MAGICAL);
 
-        tips.add(new PowerTip("Guardian", "Summoned in the front."));
-        tips.add(new PowerTip("Waterborne", "No longer prevents damage."));
+        PowerTip g = AbstractCreatureCard.getSigilPowertip(AbstractCreatureCard.Sigils.GUARDIAN);
+        if(g != null)
+            tips.add(g);
+
+        PowerTip w = AbstractCreatureCard.getSigilPowertip(AbstractCreatureCard.Sigils.WATERBORNE);
+        if(w != null)
+            tips.add(w);
 
     }
 

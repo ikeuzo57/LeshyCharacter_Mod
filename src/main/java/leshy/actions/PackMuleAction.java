@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndAddToHandEffect;
 import leshy.LeshyMod;
+import leshy.cards.PackMule;
 import leshy.cards.abstracts.AbstractCreatureCard;
 
 import java.util.ArrayList;
@@ -32,7 +33,7 @@ public class PackMuleAction extends AbstractGameAction {
 
         if (this.duration == Settings.ACTION_DUR_FAST) {
 
-            AbstractDungeon.cardRewardScreen.customCombatOpen(getOptions(), "Add one to hand.", true);
+            AbstractDungeon.cardRewardScreen.customCombatOpen(getOptions(), AbstractCreatureCard.SCREEN_DESCRIPTION[3], true);
 
             tickDuration();
             return;

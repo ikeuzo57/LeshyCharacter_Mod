@@ -59,7 +59,7 @@ public class RingWorm extends AbstractCreatureCard {
 
     @Override
     public String extraText() {
-        return "leshy:Kills_Survivors";
+        return cardStrings.EXTENDED_DESCRIPTION[0];
     }
 
 

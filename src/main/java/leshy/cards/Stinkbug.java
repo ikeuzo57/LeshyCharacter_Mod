@@ -15,7 +15,7 @@ public class Stinkbug extends AbstractCreatureCard {
 
 
     public static final String ID = LeshyMod.makeID(Stinkbug.class.getSimpleName());
-    private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
+    public static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 
     public static final String IMG = makeCardPath("Stinkbug.png");
 
@@ -58,15 +58,15 @@ public class Stinkbug extends AbstractCreatureCard {
 
         switch (AbstractDungeon.miscRng.random(2)){
             case 0:
-                name = "SALUTATIONS";
+                name = cardStrings.EXTENDED_DESCRIPTION[0];
                 titleScale = 0.9F;
                 break;
             case 1:
-                name = "A LUCKY DRAW";
+                name = cardStrings.EXTENDED_DESCRIPTION[1];
                 titleScale = 0.9F;
                 break;
             case 2:
-                name = "GREAT DRAW";
+                name = cardStrings.EXTENDED_DESCRIPTION[2];
                 titleScale = 1F;
                 break;
         }
@@ -78,15 +78,15 @@ public class Stinkbug extends AbstractCreatureCard {
 
         switch (AbstractDungeon.miscRng.random(2)){
             case 0:
-                name = "DEATH TAKE ME!";
+                name = cardStrings.EXTENDED_DESCRIPTION[3];
                 titleScale = 0.8F;
                 break;
             case 1:
-                name = "THAT STINGS!";
+                name = cardStrings.EXTENDED_DESCRIPTION[4];
                 titleScale = 0.9F;
                 break;
             case 2:
-                name = "MY FLESH...";
+                name = cardStrings.EXTENDED_DESCRIPTION[5];
                 titleScale = 0.9F;
                 break;
         }
@@ -98,23 +98,23 @@ public class Stinkbug extends AbstractCreatureCard {
 
         switch (AbstractDungeon.miscRng.random(4)){
             case 0:
-                name = "BACK IN THE GAME";
+                name = cardStrings.EXTENDED_DESCRIPTION[6];
                 titleScale = 0.7F;
                 break;
             case 1:
-                name = "MASTERFUL";
+                name = cardStrings.EXTENDED_DESCRIPTION[7];
                 titleScale = 1F;
                 break;
             case 2:
-                name = "SHALL WE?";
+                name = cardStrings.EXTENDED_DESCRIPTION[8];
                 titleScale = 1F;
                 break;
             case 3:
-                name = "CRACKING!";
+                name = cardStrings.EXTENDED_DESCRIPTION[9];
                 titleScale = 1F;
                 break;
             case 4:
-                name = "GOOD PLAY";
+                name = cardStrings.EXTENDED_DESCRIPTION[10];
                 titleScale = 1F;
                 break;
         }

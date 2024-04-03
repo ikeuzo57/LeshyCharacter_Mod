@@ -27,7 +27,9 @@ public class WolfSkullRelic extends CustomRelic implements CreatureSigilRelic {
     public WolfSkullRelic() {
         super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.CLINK);
 
-        tips.add(new PowerTip("Leader", "Other creatures with the same tribe as this one gain 4 Attack."));
+        PowerTip l = AbstractCreatureCard.getSigilPowertip(AbstractCreatureCard.Sigils.LEADER);
+        if(l != null)
+            tips.add(l);
 
     }
 

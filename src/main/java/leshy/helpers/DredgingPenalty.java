@@ -41,20 +41,20 @@ public class DredgingPenalty {
     public static HashMap<Penalty, String> makePenaltyMap(){
         HashMap<Penalty, String> map = new HashMap<>();
         //Curses
-        map.put(Penalty.NORMALITY, "#rBecome #rCursed #r- #r2 #rNormality.");
-        map.put(Penalty.PAIN, "#rBecome #rCursed #r- #r2 #rPain.");
-        map.put(Penalty.ROADKILL, "#rBecome #rCursed #r- #r2 #rRoadkill.");
+        map.put(Penalty.NORMALITY, DredgingRoomEvent.DESCRIPTIONS[8]);
+        map.put(Penalty.PAIN, DredgingRoomEvent.DESCRIPTIONS[9]);
+        map.put(Penalty.ROADKILL, DredgingRoomEvent.DESCRIPTIONS[10]);
         //Blights
-        map.put(Penalty.INFESTATION, "#rGain #rInfestation.");
-        map.put(Penalty.DISCRIMINATION, "#rGain #rDiscrimination.");
-        map.put(Penalty.SCAVENGER, "#rGain #rScavenger.");
-        map.put(Penalty.BEAR_TRAP, "#rGain #rBear #rTrap.");
-        map.put(Penalty.GRUDGE, "#rGain #rGrudge.");
-        map.put(Penalty.DROWNED, "#rGain #rDrowned.");
-        map.put(Penalty.STARVATION, "#rGain #rStarvation.");
+        map.put(Penalty.INFESTATION, DredgingRoomEvent.DESCRIPTIONS[11]);
+        map.put(Penalty.DISCRIMINATION, DredgingRoomEvent.DESCRIPTIONS[12]);
+        map.put(Penalty.SCAVENGER, DredgingRoomEvent.DESCRIPTIONS[13]);
+        map.put(Penalty.BEAR_TRAP, DredgingRoomEvent.DESCRIPTIONS[14]);
+        map.put(Penalty.GRUDGE, DredgingRoomEvent.DESCRIPTIONS[15]);
+        map.put(Penalty.DROWNED, DredgingRoomEvent.DESCRIPTIONS[16]);
+        map.put(Penalty.STARVATION, DredgingRoomEvent.DESCRIPTIONS[17]);
         //Misc
-        map.put(Penalty.HALF_MAX_HP, "#rLose #r!HP! #rMax #rHP.");
-        map.put(Penalty.GLITCH, "#rGlitch #ran #radditional #rcreature.");
+        map.put(Penalty.HALF_MAX_HP, DredgingRoomEvent.DESCRIPTIONS[18]);
+        map.put(Penalty.GLITCH, DredgingRoomEvent.DESCRIPTIONS[19]);
         map.put(Penalty.NONE, "");
         return map;
     }

@@ -18,7 +18,7 @@ public class ToothPotion extends AbstractPotion implements OnDestroyPotion {
 
 
     public static final String POTION_ID = LeshyMod.makeID(ToothPotion.class.getSimpleName());
-    private static final PotionStrings potionStrings = CardCrawlGame.languagePack.getPotionString(POTION_ID);
+    public static final PotionStrings potionStrings = CardCrawlGame.languagePack.getPotionString(POTION_ID);
 
     public static final String NAME = potionStrings.NAME;
     public static final String[] DESCRIPTIONS = potionStrings.DESCRIPTIONS;

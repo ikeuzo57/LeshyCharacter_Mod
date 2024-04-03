@@ -97,7 +97,7 @@ public class MycologistsEvent extends AbstractImageEvent {
             //Has Duplicates screens
             case 1:
                 selectBase = true;
-                AbstractDungeon.gridSelectScreen.open(getOptions(), 1, "Select a creature.", false, false, false, false);
+                AbstractDungeon.gridSelectScreen.open(getOptions(), 1, DESCRIPTIONS[8], false, false, false, false);
                 this.imageEventText.updateBodyText(DESCRIPTIONS[2]);
                 this.imageEventText.updateDialogOption(0, OPTIONS[3]);
                 this.imageEventText.clearRemainingOptions();
@@ -106,7 +106,7 @@ public class MycologistsEvent extends AbstractImageEvent {
 
             case 2:
                 selectDuplicate = true;
-                AbstractDungeon.gridSelectScreen.open(getDuplicates(base), 1, "Select a duplicate. (Transfer " + LeshyEventPatch.toPercentage(statRatio) + " of stats)", false, false, false, false);
+                AbstractDungeon.gridSelectScreen.open(getDuplicates(base), 1, DESCRIPTIONS[9] + LeshyEventPatch.toPercentage(statRatio) + DESCRIPTIONS[10], false, false, false, false);
                 this.imageEventText.updateBodyText(DESCRIPTIONS[3] + base.name + DESCRIPTIONS[4]);
                 this.imageEventText.updateDialogOption(0, OPTIONS[1]);
                 this.imageEventText.clearRemainingOptions();
@@ -116,7 +116,7 @@ public class MycologistsEvent extends AbstractImageEvent {
             //No Duplicates screen
             case 3:
                 selectFreeCopy = true;
-                AbstractDungeon.gridSelectScreen.open(getFreeCopyOptions(), 1, "Select a creature to gain.", false, false, false, false);
+                AbstractDungeon.gridSelectScreen.open(getFreeCopyOptions(), 1, DESCRIPTIONS[11], false, false, false, false);
                 this.imageEventText.updateBodyText(DESCRIPTIONS[6]);
                 this.imageEventText.updateDialogOption(0, OPTIONS[1]);
                 this.imageEventText.clearRemainingOptions();

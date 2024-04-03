@@ -15,7 +15,7 @@ public class PackMule extends AbstractCreatureCard {
 
 
     public static final String ID = LeshyMod.makeID(PackMule.class.getSimpleName());
-    private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
+    public static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 
     public static final String IMG = makeCardPath("PackMule.png");
 
@@ -58,7 +58,7 @@ public class PackMule extends AbstractCreatureCard {
 
     @Override
     public String extraText() {
-        return "On death, pick a Creature from a leshy:Pack to add to hand.";
+        return cardStrings.EXTENDED_DESCRIPTION[0];
     }
 
     @Override

@@ -41,29 +41,29 @@ public class DredgingReward {
     public static HashMap<Reward, String> makeRewardMap(){
         HashMap<Reward, String> map = new HashMap<>();
         //Relics
-        map.put(Reward.THREE_COMMON, "#gGain #g3 #gCommon #gRelics.");
-        map.put(Reward.TWO_UNCOMMON, "#gGain #g2 #gUncommon #gRelics.");
-        map.put(Reward.CHOICE_RARE, "#gGain #g1 #gof #g3 #gRare #gRelics.");
-        map.put(Reward.ONE_BOSS, "#gGain #ga #gBoss #gRelic.");
+        map.put(Reward.THREE_COMMON, DredgingRoomEvent.DESCRIPTIONS[20]);
+        map.put(Reward.TWO_UNCOMMON, DredgingRoomEvent.DESCRIPTIONS[21]);
+        map.put(Reward.CHOICE_RARE, DredgingRoomEvent.DESCRIPTIONS[22]);
+        map.put(Reward.ONE_BOSS, DredgingRoomEvent.DESCRIPTIONS[23]);
         //Events
-        map.put(Reward.EVENTS, "#gChoose #gan #gEvent. #rObtain #ra #rCurse.");
-        map.put(Reward.MYSTERIOUS_STONES, "#gMysterious #gStones.");
-        map.put(Reward.MYCOLOGISTS, "#gMycologists.");
-        map.put(Reward.GOOBERT, "#gGoobert.");
-        map.put(Reward.BONE_ALTAR, "#gBone #gAltar.");
-        map.put(Reward.WOODCARVER, "#gWoodcarver.");
-        map.put(Reward.TRAPPER, "#gTrapper.");
-        map.put(Reward.PACK, "#gPack.");
+        map.put(Reward.EVENTS, DredgingRoomEvent.DESCRIPTIONS[24]);
+        map.put(Reward.MYSTERIOUS_STONES, DredgingRoomEvent.DESCRIPTIONS[25]);
+        map.put(Reward.MYCOLOGISTS, DredgingRoomEvent.DESCRIPTIONS[26]);
+        map.put(Reward.GOOBERT, DredgingRoomEvent.DESCRIPTIONS[27]);
+        map.put(Reward.BONE_ALTAR, DredgingRoomEvent.DESCRIPTIONS[28]);
+        map.put(Reward.WOODCARVER, DredgingRoomEvent.DESCRIPTIONS[29]);
+        map.put(Reward.TRAPPER, DredgingRoomEvent.DESCRIPTIONS[30]);
+        map.put(Reward.PACK, DredgingRoomEvent.DESCRIPTIONS[31]);
         //Misc
-        map.put(Reward.REMOVE_THREE_CREATURES, "#gRemove #gthree #gcreatures.");
-        map.put(Reward.CHANGE_TRIBE, "#gPick #ga #gcreature #gto #gbecome #ga #g!TRIBE!.");
-        map.put(Reward.SQUIRREL_MORPH, "#gReplace #gtwo #gcreatures #gwith #gSquirrels.");
-        map.put(Reward.GLITCH_BUFF, "#gGlitch #gtwo #gcreatures. #gUpgrade #gthem #gthrice.");
-        map.put(Reward.DUPLICATE_DECK, "#gDuplicate #geach #gcreature #gin #gyour #gdeck.");
-        map.put(Reward.BLOOD_TO_BONE, "#gChange #ga #gcreature's #gcost #gto #gBone.");
-        map.put(Reward.THREE_COLORLESS, "#gAdd #gthree #gColorless #gcards #gto #gyour #gdeck.");
-        map.put(Reward.SKIN, "#gReplace #gtwo #gcreatures #gwith #gPelts.");
-        map.put(Reward.DEATHCARD, "#gAdd #ga #gDeathcard #gto #gyour #gdeck.");
+        map.put(Reward.REMOVE_THREE_CREATURES, DredgingRoomEvent.DESCRIPTIONS[32]);
+        map.put(Reward.CHANGE_TRIBE, DredgingRoomEvent.DESCRIPTIONS[33]);
+        map.put(Reward.SQUIRREL_MORPH, DredgingRoomEvent.DESCRIPTIONS[34]);
+        map.put(Reward.GLITCH_BUFF, DredgingRoomEvent.DESCRIPTIONS[35]);
+        map.put(Reward.DUPLICATE_DECK, DredgingRoomEvent.DESCRIPTIONS[36]);
+        map.put(Reward.BLOOD_TO_BONE, DredgingRoomEvent.DESCRIPTIONS[37]);
+        map.put(Reward.THREE_COLORLESS, DredgingRoomEvent.DESCRIPTIONS[38]);
+        map.put(Reward.SKIN, DredgingRoomEvent.DESCRIPTIONS[39]);
+        map.put(Reward.DEATHCARD, DredgingRoomEvent.DESCRIPTIONS[40]);
         return map;
     }
 

@@ -1,15 +1,131 @@
 {
-  "leshy:StrikeLeshy": {
-    "NAME": "Strike",
-    "DESCRIPTION": "Deal !D! Damage."
+  "leshy:Sigils": {
+    "NAME": "Sigils",
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "leshy:Airborne",
+      "leshy:Amorphous",
+      "leshy:Ant_Spawner",
+      "leshy:Armored",
+      "leshy:Bees_Within",
+      "leshy:Bifurcated",
+      "leshy:Bone_King",
+      "leshy:Bone_Digger",
+      "leshy:Brood_Parasite",
+      "leshy:Dam_Builder",
+      "leshy:Double_Strike",
+      "leshy:Fecundity",
+      "leshy:Fledgling",
+      "leshy:Guardian",
+      "leshy:Hoarder",
+      "leshy:Leader",
+      "leshy:Loose_Tail",
+      "leshy:Many_Lives",
+      "leshy:Mighty_Leap",
+      "leshy:Rabbit_Hole",
+      "leshy:Rampager", "Left", "Right",
+      "leshy:Sharp_Quills",
+      "leshy:Stinky",
+      "leshy:Touch_of_Death",
+      "leshy:Trifurcated",
+      "leshy:Trinket_Bearer",
+      "leshy:Unkillable",
+      "leshy:Waterborne",
+      "leshy:Worthy_Sacrifice"
+    ]
   },
-  "leshy:DefendLeshy": {
-    "NAME": "Defend",
-    "DESCRIPTION": "Gain !B! Block."
+  "leshy:Tribes": {
+    "NAME": "",
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "Creature",
+      "Avian",
+      "Canine",
+      "Hooved",
+      "Insect",
+      "Reptile",
+      "Amalgam",
+      "Squirrel",
+      "leshy:Ant",
+      "leshy:Amalgam"
+    ]
+  },
+  "leshy:Misc": {
+    "NAME": "",
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "leshy:Bloodless",
+      "leshy:Transient",
+      "Ethereal",
+      "Retain",
+      "Frail",
+      "Elder",
+      "leshy:Pelt !leshy:SecondMagic!",
+      "No empty orb slot",
+      "Glitch",
+      "Attack ",
+      "Health ",
+      "Blood ",
+      "Bone ",
+      "leshy:Consolation_Squirrel",
+      "leshy:Target"
+    ]
+  },
+  "leshy:Screens": {
+    "NAME": "",
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "Blood Cost Remaining ",
+      "Choose a creature to sacrifice.",
+      "Take the Amalgam?",
+      "Add one to hand.",
+      "Move a card to the top of your draw pile.",
+      "Pick a totem head.",
+      "Pick ", " totem heads.",
+      "Change a creature's cost to Bone.",
+      "Pick a creature to become a ",
+      "Choose up to ", " creatures."
+    ]
   },
   "leshy:Stoat": {
     "NAME": "Stoat",
-    "DESCRIPTION": ""
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "leshy:Pick_Me",
+      "HERE WE GO",
+      "BACK ON THE BOARD",
+      "OK...",
+      "FINE",
+      "BAD PLAY",
+      "YOU SURE?",
+      "TOTAL MISPLAY",
+      "KEEP ME ALIVE",
+      "YEP",
+      "LUCKY DRAW",
+      "NICE TOPDECK",
+      "ME AGAIN",
+      "YEP",
+      "ACK",
+      "STOP THAT",
+      "OW",
+      "OUCH",
+      "ENOUGH!",
+      "HMM...",
+      "NOPE",
+      "NO WAY",
+      "NOPE NOPE NOPE",
+      "STOP THIS",
+      "PICK SOMETHING ELSE",
+      "PLEASE NO",
+      "YOUR CHOICE",
+      "I'LL GO",
+      "IT'S ME",
+      "PICK ME",
+      "WHAT AN HONOR",
+      "FINE CHOICE",
+      "YEAH? ALRIGHT",
+      "ANOTHER SIGIL...HOORAY..."
+    ]
   },
   "leshy:Squirrel": {
     "NAME": "Squirrel",
@@ -25,7 +141,10 @@
   },
   "leshy:CagedWolf": {
     "NAME": "Caged Wolf",
-    "DESCRIPTION": ""
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "On death, replace this with a Wolf permanently."
+    ]
   },
   "leshy:Urayuli": {
     "NAME": "Urayuli",
@@ -37,7 +156,34 @@
   },
   "leshy:Stinkbug": {
     "NAME": "Stinkbug",
-    "DESCRIPTION": ""
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "SALUTATIONS",
+      "A LUCKY DRAW",
+      "GREAT DRAW",
+      "DEATH TAKE ME!",
+      "THAT STINGS!",
+      "MY FLESH...",
+      "BACK IN THE GAME",
+      "MASTERFUL",
+      "SHALL WE?",
+      "CRACKING!",
+      "GOOD PLAY",
+      "OH...",
+      "UM",
+      "CHOOSE WISELY",
+      "DO WHAT YOU MUST!",
+      "THE CHOICE IS YOURS",
+      "DO WHAT YOU MUST",
+      "HELLO",
+      "AM I YOUR CHOICE?",
+      "THE CHOICE IS YOURS",
+      "MARVELOUS",
+      "HELLO",
+      "AM I YOUR CHOICE?",
+      "EMPOWER ME!",
+      "YES! MORE POWER!"
+    ]
   },
   "leshy:Cat": {
     "NAME": "Cat",
@@ -105,11 +251,6 @@
     "NAME": "Reptile Totem",
     "DESCRIPTION": "Add the Reptile head to your leshy:Totem."
   },
-  "leshy:SquirrelTotem": {
-    "NAME": "Squirrel Totem",
-    "DESCRIPTION": "Add the Squirrel head to your leshy:Totem. NL Draw a card.",
-    "UPGRADE_DESCRIPTION": "Innate NL Add the Squirrel head to your leshy:Totem. NL Draw a card."
-  },
   "leshy:FledglingTotem": {
     "NAME": "Fledgling Totem",
     "DESCRIPTION": "Add the leshy:Fledgling base to your leshy:Totem. NL Draw a card.",
@@ -160,11 +301,6 @@
     "DESCRIPTION": "Add the leshy:Touch_of_Death base to your leshy:Totem. NL Draw a card.",
     "UPGRADE_DESCRIPTION": "Innate NL Add the leshy:Touch_of_Death base to your leshy:Totem. NL Draw a card."
   },
-  "leshy:ManyLivesTotem": {
-    "NAME": "Many Lives Totem",
-    "DESCRIPTION": "Add the leshy:Many_Lives base to your leshy:Totem. NL Draw a card.",
-    "UPGRADE_DESCRIPTION": "Innate NL Add the leshy:Many_Lives base to your leshy:Totem. NL Draw a card."
-  },
   "leshy:MightyLeapTotem": {
     "NAME": "Mighty Leap Totem",
     "DESCRIPTION": "Add the leshy:Mighty_Leap base to your leshy:Totem. NL Draw a card.",
@@ -194,7 +330,10 @@
   },
   "leshy:Ouroboros": {
     "NAME": "Ouroboros",
-    "DESCRIPTION": ""
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "leshy:Ouroboros"
+    ]
   },
   "leshy:Mantis": {
     "NAME": "Mantis",
@@ -234,7 +373,10 @@
   },
   "leshy:Lammergeier": {
     "NAME": "Lammergeier",
-    "DESCRIPTION": ""
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "leshy:Double_Bones"
+    ]
   },
   "leshy:Coyote": {
     "NAME": "Coyote",
@@ -248,24 +390,12 @@
     "NAME": "Mole Man",
     "DESCRIPTION": ""
   },
-  "leshy:BallOfSquirrels": {
-    "NAME": "Squirrel Ball",
-    "DESCRIPTION": ""
-  },
   "leshy:FlyingAnt": {
     "NAME": "Flying Ant",
     "DESCRIPTION": ""
   },
-  "leshy:MealWorm": {
-    "NAME": "Meal Worm",
-    "DESCRIPTION": ""
-  },
   "leshy:Skink": {
     "NAME": "Skink",
-    "DESCRIPTION": ""
-  },
-  "leshy:LooseTail": {
-    "NAME": "Loose Tail",
     "DESCRIPTION": ""
   },
   "leshy:RiverSnapper": {
@@ -282,20 +412,22 @@
   },
   "leshy:GreatWhite": {
     "NAME": "Great White",
-    "DESCRIPTION": ""
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "Greater White"
+    ]
   },
   "leshy:BaitBucket": {
     "NAME": "Bait Bucket",
-    "DESCRIPTION": ""
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "On death, summon a Great White."
+    ]
   },
   "leshy:TooFastTooSoon": {
     "NAME": "Too Fast Too Soon",
     "DESCRIPTION": "Unplayable above half HP. NL Sacrifice all your creatures. NL Summon a Grizzly with leshy:Mighty_Leap and leshy:Transient for each orb slot. NL Exhaust",
     "UPGRADE_DESCRIPTION": "Unplayable above half HP. NL Sacrifice all your creatures. NL Summon a Grizzly with leshy:Mighty_Leap, leshy:Transient, and 4 more Attack and Health for each orb slot. NL Exhaust"
-  },
-  "leshy:CorpseMaggots": {
-    "NAME": "Corpse Maggots",
-    "DESCRIPTION": ""
   },
   "leshy:Bullfrog": {
     "NAME": "Bullfrog",
@@ -327,7 +459,10 @@
   },
   "leshy:RingWorm": {
     "NAME": "Ring Worm",
-    "DESCRIPTION": ""
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "leshy:Kills_Survivors"
+    ]
   },
   "leshy:PeltLice": {
     "NAME": "Pelt Lice",
@@ -340,19 +475,28 @@
   "leshy:StruckGold": {
     "NAME": "Struck Gold",
     "DESCRIPTION": "Sacrifice any number of creatures. Summon a Gold Nugget with their current Health. NL Exhaust",
-    "UPGRADE_DESCRIPTION": "Sacrifice any number of creatures. Summon a Gold Nugget with their current Health."
+    "UPGRADE_DESCRIPTION": "Sacrifice any number of creatures. Summon a Gold Nugget with their current Health.",
+    "EXTENDED_DESCRIPTION": [
+      "Where be da gold?"
+    ]
   },
   "leshy:Hydra": {
     "NAME": "Hydra",
-    "DESCRIPTION": ""
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "Gains !M! Attack and Heath for each set of each tribe in your master deck."
+    ]
   },
   "leshy:CuriousEgg": {
     "NAME": "Curious Egg",
-    "DESCRIPTION": ""
-  },
-  "leshy:BrokenEgg": {
-    "NAME": "Broken Egg",
-    "DESCRIPTION": ""
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "Extra Curious Egg",
+      "leshy:Finical_Hatchling",
+      "Updates on card gain, card removal, battle start, or right clicking this card.",
+      "Full Sets",
+      "Full Set Tracker"
+    ]
   },
   "leshy:Cuckoo": {
     "NAME": "Cuckoo",
@@ -360,7 +504,10 @@
   },
   "leshy:Mothman": {
     "NAME": "Mothman",
-    "DESCRIPTION": ""
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "Final Form"
+    ]
   },
   "leshy:StrangeLarva": {
     "NAME": "Strange Larva",
@@ -373,11 +520,17 @@
   "leshy:GoFish": {
     "NAME": "Go Fish",
     "DESCRIPTION": "Return a creature to hand.",
-    "UPGRADE_DESCRIPTION": "Retain NL Return a creature to hand."
+    "UPGRADE_DESCRIPTION": "Retain NL Return a creature to hand.",
+    "EXTENDED_DESCRIPTION": [
+      "Where be da fish?"
+    ]
   },
   "leshy:Alpha": {
     "NAME": "Alpha",
-    "DESCRIPTION": ""
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "Omega"
+    ]
   },
   "leshy:Smoke": {
     "NAME": "Smoke",
@@ -389,14 +542,6 @@
   },
   "leshy:PackRat": {
     "NAME": "Pack Rat",
-    "DESCRIPTION": ""
-  },
-  "leshy:Chime": {
-    "NAME": "Chime",
-    "DESCRIPTION": ""
-  },
-  "leshy:TheDaus": {
-    "NAME": "The Daus",
     "DESCRIPTION": ""
   },
   "leshy:Skunk": {
@@ -413,19 +558,51 @@
   },
   "leshy:MirrorTentacle": {
     "NAME": "Mirror Tentacle",
-    "DESCRIPTION": ""
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "leshy:M!rror_r0rriM"
+    ]
   },
   "leshy:SkeletonCrew": {
     "NAME": "Skeleton Crew",
-    "DESCRIPTION": ""
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "leshy:Brittle"
+    ]
   },
   "leshy:TheMoon": {
     "NAME": "The Moon",
-    "DESCRIPTION": ""
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "Attacks all enemies. Attacks execute under !leshy:SecondMagic! health. NL On death, Die."
+    ]
   },
   "leshy:StuntedWolf": {
     "NAME": "Stunted Wolf",
-    "DESCRIPTION": ""
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "HERE WE ARE",
+      "ARE YOU SURE?",
+      "I MUST TRUST YOU",
+      "USE ME WISELY",
+      "CAREFUL NOW",
+      "OOF",
+      "GOOD LORD!",
+      "WE MEET AGAIN",
+      "GREETINGS",
+      "HELLO AGAIN",
+      "AHEM",
+      "IF YOU MUST",
+      "IT IS YOUR CHOICE",
+      "AHEM",
+      "I AM AT YOUR SERVICE",
+      "I AM YOURS",
+      "...",
+      "SELECT WISELY",
+      "A TASTE OF MY FORMER GLORY",
+      "VERY WELL",
+      "All creatures gain ", ". Changes randomly when drawn."
+    ]
   },
   "leshy:DeathCard": {
     "NAME": "Deathcard",
@@ -433,27 +610,43 @@
   },
   "leshy:FilmRoll": {
     "NAME": "Film Roll",
-    "DESCRIPTION": "Craft a Deathcard using your master deck. NL Exhaust"
+    "DESCRIPTION": "Craft a Deathcard using your master deck. NL Exhaust",
+    "EXTENDED_DESCRIPTION": [
+      "Needs 3 Creatures in master deck",
+      "Select the Cost",
+      "Select the Sigils",
+      "Select the Stats"
+    ]
   },
   "leshy:Opossum": {
     "NAME": "Opossum",
-    "DESCRIPTION": ""
-  },
-  "leshy:FrozenOpossum": {
-    "NAME": "Frozen Opossum",
-    "DESCRIPTION": ""
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "Awesome Opossum"
+    ]
   },
   "leshy:StrangeFrog": {
     "NAME": "Strange Frog",
-    "DESCRIPTION": ""
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "On death summon a Leaping Trap in front.",
+      "Has 3X Health. "
+    ]
   },
   "leshy:LeapingTrap": {
     "NAME": "Leaping Trap",
-    "DESCRIPTION": ""
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "On death deal 4X to all enemies.",
+      "On death deal !leshy:SecondMagic! to all enemies."
+    ]
   },
   "leshy:Starvation": {
     "NAME": "Starvation",
-    "DESCRIPTION": ""
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "Cannot be sacrificed."
+    ]
   },
   "leshy:DireWolfPup": {
     "NAME": "Dire Wolf Pup",
@@ -469,15 +662,25 @@
   },
   "leshy:GrandFir": {
     "NAME": "Grand Fir",
-    "DESCRIPTION": ""
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "At end of turn gain !leshy:SecondMagic! Health."
+    ]
   },
   "leshy:PackMule": {
     "NAME": "Pack Mule",
-    "DESCRIPTION": ""
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "On death, pick a creature from a leshy:Pack to add to hand."
+    ]
   },
   "leshy:LongElk": {
     "NAME": "Long Elk",
-    "DESCRIPTION": ""
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "Longer Elk",
+      "At end of turn, add a Vertebrae to hand."
+    ]
   },
   "leshy:Vertebrae": {
     "NAME": "Vertebrae",
@@ -488,13 +691,12 @@
     "DESCRIPTION": "Summon !M! Strange Frogs. NL Exhaust",
     "UPGRADE_DESCRIPTION": "Summon !M! Strange Frogs."
   },
-  "leshy:FirstAid": {
-    "NAME": "First Aid",
-    "DESCRIPTION": "Fully heal a creature. Exhaust"
-  },
   "leshy:RedHart": {
     "NAME": "Red Hart",
-    "DESCRIPTION": ""
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "leshy:Spilled_Blood"
+    ]
   },
   "leshy:WisdomBifurcated": {
     "NAME": "Bifurcated",
@@ -615,7 +817,11 @@
   "leshy:TrialOfWisdom": {
     "NAME": "Trial of Wisdom",
     "DESCRIPTION": "Reveal the top 3 cards of your deck. Select a Sigil from among them to give to a creature. NL Exhaust",
-    "UPGRADE_DESCRIPTION": "Reveal the top 3 cards of your deck. Select a Sigil from among them to give to a creature."
+    "UPGRADE_DESCRIPTION": "Reveal the top 3 cards of your deck. Select a Sigil from among them to give to a creature.",
+    "EXTENDED_DESCRIPTION": [
+      "Choose a creature to the give the sigil.",
+      "Pick a sigil."
+    ]
   },
   "leshy:TrialOfKin": {
     "NAME": "Trial of Kin",
@@ -625,11 +831,14 @@
   "leshy:TrialOfRarity": {
     "NAME": "Trial of Rarity",
     "DESCRIPTION": "Reveal the top 3 cards of your deck. If there is a Rare card, select 1 of 3 random Boons. NL Exhaust",
-    "UPGRADE_DESCRIPTION": "Innate NL Reveal the top 3 cards of your deck. If there is a Rare card, select 1 of 3 random Boons. NL Exhaust"
+    "UPGRADE_DESCRIPTION": "Innate NL Reveal the top 3 cards of your deck. If there is a Rare card, select 1 of 3 random Boons. NL Exhaust",
+    "EXTENDED_DESCRIPTION": [
+      "Pick a boon."
+    ]
   },
   "leshy:BoonOfGoatsBlood": {
     "NAME": "Goat's Blood",
-    "DESCRIPTION": "leshy:Summon a Black Goat."
+    "DESCRIPTION": "Summon a Black Goat."
   },
   "leshy:BoonOfTheAmbidextrous": {
     "NAME": "Ambidextrous",
@@ -637,11 +846,11 @@
   },
   "leshy:BoonOfTheBoneLord": {
     "NAME": "Bone Lord",
-    "DESCRIPTION": "Gain 8 leshy:Bones."
+    "DESCRIPTION": "Gain 8 Bones."
   },
   "leshy:BoonOfTheForest": {
     "NAME": "Forest",
-    "DESCRIPTION": "leshy:Summon a Grand Fir for each empty orb slot."
+    "DESCRIPTION": "Summon a Grand Fir for each empty orb slot."
   },
   "leshy:BoonOfTheMagpiesEye": {
     "NAME": "Magpie's Eye",
@@ -650,11 +859,18 @@
   "leshy:TrialOfBlood": {
     "NAME": "Trial of Blood",
     "DESCRIPTION": "Reveal the top 3 cards of your deck. If their total Blood cost is 4 or more, select 1 of 3 leshy:Powerful creatures to summon. NL Exhaust",
-    "UPGRADE_DESCRIPTION": "Reveal the top 3 cards of your deck. If their total Blood cost is 4 or more, select 1 of 3 leshy:Powerful creatures to summon."
+    "UPGRADE_DESCRIPTION": "Reveal the top 3 cards of your deck. If their total Blood cost is 4 or more, select 1 of 3 leshy:Powerful creatures to summon.",
+    "EXTENDED_DESCRIPTION": [
+      "Revealed Cards.",
+      "Summon a copy with Transient."
+    ]
   },
   "leshy:HandTentacle": {
     "NAME": "Hand Tentacle",
-    "DESCRIPTION": ""
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "leshy:Card_Counter"
+    ]
   },
   "leshy:Boulder": {
     "NAME": "Boulder",
@@ -690,11 +906,10 @@
   },
   "leshy:BellTentacle": {
     "NAME": "Bell Tentacle",
-    "DESCRIPTION": ""
-  },
-  "leshy:ZombieParrot": {
-    "NAME": "Zombie Parrot",
-    "DESCRIPTION": ""
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "leshy:Bell_Ringer"
+    ]
   },
   "leshy:Warren": {
     "NAME": "Warren",
@@ -708,17 +923,16 @@
     "NAME": "Amoeba",
     "DESCRIPTION": ""
   },
-  "leshy:Voucher": {
-    "NAME": "Voucher",
-    "DESCRIPTION": "Choose a creature to replace this with permanently. NL Exhaust"
-  },
   "leshy:Beaver": {
     "NAME": "Beaver",
     "DESCRIPTION": ""
   },
   "leshy:Dam": {
     "NAME": "Dam",
-    "DESCRIPTION": ""
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "God Dam"
+    ]
   },
   "leshy:Glitch": {
     "NAME": "Glitch",
@@ -744,22 +958,6 @@
     "NAME": "Stack the Deck",
     "DESCRIPTION": "Once per shuffle, you may right click to move a card in your deck to the top."
   },
-  "leshy:OldDataSquirrel": {
-    "NAME": "Squirrel Deck+",
-    "DESCRIPTION": "Squirrel Deck may be activated any number of times."
-  },
-  "leshy:OldDataUpgrade": {
-    "NAME": "Upgrades",
-    "DESCRIPTION": "The first non leshy:Transient creature you summon each turn is upgraded !M! time. (Stacks)"
-  },
-  "leshy:OldDataBlood": {
-    "NAME": "Life to Blood",
-    "DESCRIPTION": "You may play creatures costing Blood you cannot afford and lose !M! HP per missing Blood."
-  },
-  "leshy:OldDataBear": {
-    "NAME": "Bear",
-    "DESCRIPTION": "At the start of turn, add a Grizzly with Ethereal and leshy:Transient to your hand."
-  },
   "leshy:OldDataStatic": {
     "NAME": "Glitched Cards",
     "DESCRIPTION": "leshy:Glitched creatures gain !M! Attack and Health. (Stacks)"
@@ -767,10 +965,6 @@
   "leshy:OldDataSacrifice": {
     "NAME": "Blood to Squirrel",
     "DESCRIPTION": "Twice per turn, you may right click to sacrifice a Blood cost creature and add Squirrels to hand equal to its Blood cost."
-  },
-  "leshy:OldDataPliers": {
-    "NAME": "Pliers",
-    "DESCRIPTION": "When you lose HP, gain !M! Gold and deal !M! Damage to all enemies. (Stacks)"
   },
   "leshy:Cody": {
     "NAME": "Cody",

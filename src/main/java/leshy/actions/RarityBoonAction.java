@@ -40,7 +40,7 @@ public class RarityBoonAction extends AbstractGameAction {
                 tmp.remove(AbstractDungeon.miscRng.random(tmp.size()-1));
             }
 
-            AbstractDungeon.cardRewardScreen.customCombatOpen(tmp, "Pick a boon.", false);
+            AbstractDungeon.cardRewardScreen.customCombatOpen(tmp, TrialOfRarity.cardStrings.EXTENDED_DESCRIPTION[0], false);
             tickDuration();
 
             return;

@@ -24,7 +24,7 @@ public class DredgingRoomEvent extends AbstractImageEvent {
     private static final EventStrings eventStrings = CardCrawlGame.languagePack.getEventString(ID);
 
     private static final String NAME = eventStrings.NAME;
-    private static final String[] DESCRIPTIONS = eventStrings.DESCRIPTIONS;
+    public static final String[] DESCRIPTIONS = eventStrings.DESCRIPTIONS;
     private static final String[] OPTIONS = eventStrings.OPTIONS;
     public static final String IMG = makeEventPath("DredgingRoomEvent.png");
 
@@ -37,11 +37,11 @@ public class DredgingRoomEvent extends AbstractImageEvent {
 
     private static ArrayList<String> makeBodyText(){
         ArrayList<String> list = new ArrayList<>();
-        list.add(addSquiggles("01001000 01101111 01110111 00100000 01110100 01101000 01100101 00100000 01110100 01100001 01100010 01101100 01100101 01110011 00100000 01110100 01110101 01110010 01101110 00101110"));
-        list.add(addSquiggles("01001110 01100101 01101111 01110111 00100000 01101001 01110011 00100000 01101001 01101110 00100000 01100011 01101000 01100001 01110010 01100111 01100101 00101110"));
-        list.add(addSquiggles("01011001 01101111 01110101 00100000 01100001 01110010 01100101 00100000 01110100 01101000 01100101 00100000 01110000 01101100 01100001 01111001 01100101 01110010 00101110"));
-        list.add(addSquiggles("01001000 01101111 01110111 00100000 01100100 01101111 01100101 01110011 00100000 01101001 01110100 00100000 01100110 01100101 01100101 01101100 00111111"));
-        list.add(addSquiggles("01010100 01101000 01100101 00100000 01100011 01111001 01100011 01101100 01100101 00100000 01101110 01100101 01110110 01100101 01110010 00100000 01100101 01101110 01100100 01110011 00101110"));
+        list.add(addSquiggles(DESCRIPTIONS[3]));
+        list.add(addSquiggles(DESCRIPTIONS[4]));
+        list.add(addSquiggles(DESCRIPTIONS[5]));
+        list.add(addSquiggles(DESCRIPTIONS[6]));
+        list.add(addSquiggles(DESCRIPTIONS[7]));
         return list;
     }
 

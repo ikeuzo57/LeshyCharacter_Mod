@@ -56,7 +56,7 @@ public class TheMoon extends AbstractCreatureCard {
 
     @Override
     public String extraText() {
-        return "Attacks all enemies. Attacks execute under !leshy:SecondMagic! health. NL On death, Die.";
+        return cardStrings.EXTENDED_DESCRIPTION[0];
     }
 
 

@@ -45,7 +45,7 @@ public class Lammergeier extends AbstractCreatureCard {
 
         attack = baseAttack = trueBaseAttack = 0;
 
-        health = baseHealth = trueBaseHealth = 24;
+        health = baseHealth = trueBaseHealth = 30;
 
 
         magicNumber = baseMagicNumber = 2;
@@ -98,7 +98,7 @@ public class Lammergeier extends AbstractCreatureCard {
 
     @Override
     public String extraText() {
-        return "leshy:Double_Bones";
+        return cardStrings.EXTENDED_DESCRIPTION[0];
     }
 
     @Override

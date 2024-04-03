@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import leshy.LeshyMod;
 import leshy.actions.TargetAction;
+import leshy.cards.abstracts.AbstractCreatureCard;
 import leshy.relics.interfaces.ClickMonsterRelic;
 import leshy.util.TextureLoader;
 
@@ -25,7 +26,9 @@ public class WhistleRelic extends CustomRelic implements ClickMonsterRelic {
     public WhistleRelic() {
         super(ID, IMG, OUTLINE, RelicTier.STARTER, LandingSound.CLINK);
 
-        tips.add(new PowerTip("Target", "Creatures prioritize targeted Monsters."));
+        PowerTip t = AbstractCreatureCard.getPowerTip(AbstractCreatureCard.MISC_DESCRIPTION[14]);
+        if(t != null)
+            tips.add(t);
 
     }
 

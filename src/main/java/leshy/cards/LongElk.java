@@ -41,7 +41,7 @@ public class LongElk extends AbstractCreatureCard {
 
         attack = baseAttack = trueBaseAttack = 6;
 
-        health = baseHealth = trueBaseHealth = 14;
+        health = baseHealth = trueBaseHealth = 18;
 
         innate.add(Sigils.RAMPAGER);
         innate.add(Sigils.TOUCH_OF_DEATH);
@@ -55,7 +55,7 @@ public class LongElk extends AbstractCreatureCard {
 
     @Override
     public String elderName() {
-        return "Longer Elk";
+        return cardStrings.EXTENDED_DESCRIPTION[0];
     }
 
     @Override
@@ -70,6 +70,6 @@ public class LongElk extends AbstractCreatureCard {
 
     @Override
     public String extraText() {
-        return "At end of turn, add a Vertebrae to hand.";
+        return cardStrings.EXTENDED_DESCRIPTION[1];
     }
 }

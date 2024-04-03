@@ -102,7 +102,7 @@ public class Hydra extends AbstractCreatureCard {
     @Override
     public List<TooltipInfo> getCustomTooltips() {
 
-        TooltipInfo fullSets = new TooltipInfo("Full Set Tracker", CuriousEgg.getFullSetTooltip());
+        TooltipInfo fullSets = new TooltipInfo(CuriousEgg.cardStrings.EXTENDED_DESCRIPTION[4], CuriousEgg.getFullSetTooltip());
         ArrayList<TooltipInfo> list = new ArrayList<>();
         list.add(fullSets);
 
@@ -112,7 +112,7 @@ public class Hydra extends AbstractCreatureCard {
 
     @Override
     public String extraText() {
-        return "Gains !M! Attack and Heath for each set of each tribe in your master deck.";
+        return cardStrings.EXTENDED_DESCRIPTION[0];
     }
 
     @Override

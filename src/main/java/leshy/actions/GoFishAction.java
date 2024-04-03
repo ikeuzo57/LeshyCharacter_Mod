@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
+import leshy.cards.GoFish;
 import leshy.cards.abstracts.AbstractCreatureCard;
 import leshy.orbs.CreatureOrb;
 
@@ -47,7 +48,7 @@ public class GoFishAction extends AbstractGameAction {
                 return;
             }
 
-            AbstractDungeon.gridSelectScreen.open(tmp, 1, "Where be da fish?", false);
+            AbstractDungeon.gridSelectScreen.open(tmp, 1, GoFish.cardStrings.EXTENDED_DESCRIPTION[0], false);
             tickDuration();
 
             return;

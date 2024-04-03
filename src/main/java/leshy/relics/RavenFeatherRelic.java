@@ -24,7 +24,9 @@ public class RavenFeatherRelic extends CustomRelic implements CreatureSigilRelic
     public RavenFeatherRelic() {
         super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.CLINK);
 
-        tips.add(new PowerTip("Hoarder", "When summoned, put a card in your draw pile into your hand."));
+        PowerTip h = AbstractCreatureCard.getSigilPowertip(AbstractCreatureCard.Sigils.HOARDER);
+        if(h != null)
+            tips.add(h);
 
     }
 

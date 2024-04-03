@@ -56,7 +56,7 @@ public class GrandFir extends AbstractCreatureCard {
 
     @Override
     public String extraText() {
-        return "At end of turn gain !leshy:SecondMagic! Health.";
+        return cardStrings.EXTENDED_DESCRIPTION[0];
     }
 
 

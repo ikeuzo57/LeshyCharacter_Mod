@@ -29,10 +29,12 @@ public class KinCreatureAction extends AbstractGameAction {
             ArrayList<AbstractCard> deck = AbstractDungeon.player.drawPile.group;
 
             int avian = 0;
-            int beast = 0;
+            int canine = 0;
+            int hooved = 0;
             int reptile = 0;
             int insect = 0;
             int amalgam = 0;
+            int squirrel = 0;
 
             int i = deck.size()-1;
             while(i>=0 && i>deck.size()-4){
@@ -43,17 +45,23 @@ public class KinCreatureAction extends AbstractGameAction {
                             avian++;
                             break;
                         case CANINE:
-                            beast++;
+                            canine++;
                             break;
-                        case REPTILE:
-                            reptile++;
+                        case HOOVED:
+                            hooved++;
                             break;
                         case ANT:
                         case INSECT:
                             insect++;
                             break;
+                        case REPTILE:
+                            reptile++;
+                            break;
                         case AMALGAM:
                             amalgam++;
+                            break;
+                        case SQUIRREL:
+                            squirrel++;
                             break;
                         case NONE:
                             if(LeshyMod.cawCaw)
@@ -63,6 +71,14 @@ public class KinCreatureAction extends AbstractGameAction {
                 }
                 i--;
             }
+
+            LeshyMod.logger.info("Avian : " + avian);
+            LeshyMod.logger.info("Canine : " + canine);
+            LeshyMod.logger.info("Hooved : " + hooved);
+            LeshyMod.logger.info("Insect : " + insect);
+            LeshyMod.logger.info("Reptile : " + reptile);
+            LeshyMod.logger.info("Squirrel : " + squirrel);
+            LeshyMod.logger.info("Amalgam : " + amalgam);
 
             ArrayList<AbstractCard> tmp = new ArrayList<>();
             i = deck.size()-1;
@@ -78,11 +94,11 @@ public class KinCreatureAction extends AbstractGameAction {
                                 tmp.add(c);
                             break;
                         case CANINE:
-                            if(beast+amalgam >= 2)
+                            if(canine+amalgam >= 2)
                                 tmp.add(c);
                             break;
-                        case REPTILE:
-                            if(reptile+amalgam >= 2)
+                        case HOOVED:
+                            if(hooved+amalgam >= 2)
                                 tmp.add(c);
                             break;
                         case ANT:
@@ -90,8 +106,16 @@ public class KinCreatureAction extends AbstractGameAction {
                             if(insect+amalgam >= 2)
                                 tmp.add(c);
                             break;
+                        case REPTILE:
+                            if(reptile+amalgam >= 2)
+                                tmp.add(c);
+                            break;
+                        case SQUIRREL:
+                            if(squirrel+amalgam >= 2)
+                                tmp.add(c);
+                            break;
                         case AMALGAM:
-                            if(avian+beast+reptile+insect+amalgam >= 2)
+                            if(avian+canine+hooved+insect+reptile+squirrel+amalgam >= 2)
                                 tmp.add(c);
                             break;
                     }

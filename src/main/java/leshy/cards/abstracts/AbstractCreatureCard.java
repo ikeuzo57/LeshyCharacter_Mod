@@ -12,8 +12,13 @@ import com.megacrit.cardcrawl.actions.defect.SeekAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.helpers.GameDictionary;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
+import com.megacrit.cardcrawl.helpers.PowerTip;
+import com.megacrit.cardcrawl.helpers.TipHelper;
+import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import com.megacrit.cardcrawl.orbs.EmptyOrbSlot;
@@ -33,6 +38,7 @@ import leshy.powers.interfaces.CreatureValuePower;
 import leshy.relics.*;
 import leshy.relics.interfaces.CreatureSigilRelic;
 import leshy.relics.interfaces.CreatureValueRelic;
+import leshy.relics.interfaces.OnSacrificeRelic;
 import leshy.relics.interfaces.OnSummonRelic;
 
 import java.lang.reflect.Type;
@@ -52,6 +58,18 @@ public abstract class AbstractCreatureCard extends AbstractDynamicCard implement
         NONE, CANINE, AVIAN, INSECT, ANT, REPTILE, HOOVED, AMALGAM, SQUIRREL
     }
 
+    public static final String TRIBE_ID = LeshyMod.makeID("Tribes");
+    private static final CardStrings tribeCardStrings = CardCrawlGame.languagePack.getCardStrings(TRIBE_ID);
+    public static final String[] TRIBE_DESCRIPTION = tribeCardStrings.EXTENDED_DESCRIPTION;
+
+    public static final String MISC_ID = LeshyMod.makeID("Misc");
+    private static final CardStrings miscCardStrings = CardCrawlGame.languagePack.getCardStrings(MISC_ID);
+    public static final String[] MISC_DESCRIPTION = miscCardStrings.EXTENDED_DESCRIPTION;
+
+    public static final String SCREEN_ID = LeshyMod.makeID("Screens");
+    public static final CardStrings screenStrings = CardCrawlGame.languagePack.getCardStrings(SCREEN_ID);
+    public static final String[] SCREEN_DESCRIPTION = screenStrings.EXTENDED_DESCRIPTION;
+
     /*
     When adding new Sigils, update:
     makeSigilMap()
@@ -65,75 +83,60 @@ public abstract class AbstractCreatureCard extends AbstractDynamicCard implement
         TRIFURCATED, TRINKET_BEARER, UNKILLABLE, WATERBORNE, WORTHY_SACRIFICE
     }
 
-    public static final HashMap<Sigils, String> sigilStrings = makeSigilMap();
-    public static final HashMap<Sigils, String> keywordStrings = makeKeywordMap();
+    public static final String SIGIL_ID = LeshyMod.makeID("Sigils");
+    public static final CardStrings sigilCardStrings = CardCrawlGame.languagePack.getCardStrings(SIGIL_ID);
+    public static final String[] SIGIL_DESCRIPTION = sigilCardStrings.EXTENDED_DESCRIPTION;
 
-    public static HashMap<Sigils, String> makeSigilMap(){
-        HashMap<Sigils, String> map = new HashMap<>();
-        map.put(Sigils.AIRBORNE, "Airborne");
-        map.put(Sigils.AMORPHOUS, "Amorphous");
-        map.put(Sigils.ANT_SPAWNER, "Ant Spawner");
-        map.put(Sigils.ARMORED, "Armored");
-        map.put(Sigils.BEES_WITHIN, "Bees Within");
-        map.put(Sigils.BIFURCATED, "Bifurcated");
-        map.put(Sigils.BONE_KING, "Bone King");
-        map.put(Sigils.BONE_DIGGER, "Bone Digger");
-        map.put(Sigils.BROOD_PARASITE, "Brood Parasite");
-        map.put(Sigils.DAM_BUILDER, "Dam Builder");
-        map.put(Sigils.DOUBLE_STRIKE, "Double Strike");
-        map.put(Sigils.FECUNDITY, "Fecundity");
-        map.put(Sigils.FLEDGLING, "Fledgling");
-        map.put(Sigils.GUARDIAN, "Guardian");
-        map.put(Sigils.HOARDER, "Hoarder");
-        map.put(Sigils.LEADER, "Leader");
-        map.put(Sigils.LOOSE_TAIL, "Loose Tail");
-        map.put(Sigils.MANY_LIVES, "Many Lives");
-        map.put(Sigils.MIGHTY_LEAP, "Mighty Leap");
-        map.put(Sigils.RABBIT_HOLE, "Rabbit Hole");
-        map.put(Sigils.RAMPAGER, "Rampager");
-        map.put(Sigils.SHARP_QUILLS, "Sharp Quills");
-        map.put(Sigils.STINKY, "Stinky");
-        map.put(Sigils.TOUCH_OF_DEATH, "Touch of Death");
-        map.put(Sigils.TRIFURCATED, "Trifurcated");
-        map.put(Sigils.TRINKET_BEARER, "Trinket Bearer");
-        map.put(Sigils.UNKILLABLE, "Unkillable");
-        map.put(Sigils.WATERBORNE, "Waterborne");
-        map.put(Sigils.WORTHY_SACRIFICE, "Worthy Sacrifice");
-        return map;
-    }
+    public static final HashMap<Sigils, String> keywordStrings = makeKeywordMap();
 
     public static HashMap<Sigils, String> makeKeywordMap(){
         HashMap<Sigils, String> map = new HashMap<>();
-        map.put(Sigils.AIRBORNE, "leshy:Airborne");
-        map.put(Sigils.AMORPHOUS, "leshy:Amorphous");
-        map.put(Sigils.ANT_SPAWNER, "leshy:Ant_Spawner");
-        map.put(Sigils.ARMORED, "leshy:Armored");
-        map.put(Sigils.BEES_WITHIN, "leshy:Bees_Within");
-        map.put(Sigils.BIFURCATED, "leshy:Bifurcated");
-        map.put(Sigils.BONE_KING, "leshy:Bone_King");
-        map.put(Sigils.BONE_DIGGER, "leshy:Bone_Digger");
-        map.put(Sigils.BROOD_PARASITE, "leshy:Brood_Parasite");
-        map.put(Sigils.DAM_BUILDER, "leshy:Dam_Builder");
-        map.put(Sigils.DOUBLE_STRIKE, "leshy:Double_Strike");
-        map.put(Sigils.FECUNDITY, "leshy:Fecundity");
-        map.put(Sigils.FLEDGLING, "leshy:Fledgling");
-        map.put(Sigils.GUARDIAN, "leshy:Guardian");
-        map.put(Sigils.HOARDER, "leshy:Hoarder");
-        map.put(Sigils.LEADER, "leshy:Leader");
-        map.put(Sigils.LOOSE_TAIL, "leshy:Loose_Tail");
-        map.put(Sigils.MANY_LIVES, "leshy:Many_Lives");
-        map.put(Sigils.MIGHTY_LEAP, "leshy:Mighty_Leap");
-        map.put(Sigils.RABBIT_HOLE, "leshy:Rabbit_Hole");
-        map.put(Sigils.RAMPAGER, "leshy:Rampager");
-        map.put(Sigils.SHARP_QUILLS, "leshy:Sharp_Quills");
-        map.put(Sigils.STINKY, "leshy:Stinky");
-        map.put(Sigils.TOUCH_OF_DEATH, "leshy:Touch_of_Death");
-        map.put(Sigils.TRIFURCATED, "leshy:Trifurcated");
-        map.put(Sigils.TRINKET_BEARER, "leshy:Trinket_Bearer");
-        map.put(Sigils.UNKILLABLE, "leshy:Unkillable");
-        map.put(Sigils.WATERBORNE, "leshy:Waterborne");
-        map.put(Sigils.WORTHY_SACRIFICE, "leshy:Worthy_Sacrifice");
+        map.put(Sigils.AIRBORNE, SIGIL_DESCRIPTION[0]);
+        map.put(Sigils.AMORPHOUS, SIGIL_DESCRIPTION[1]);
+        map.put(Sigils.ANT_SPAWNER, SIGIL_DESCRIPTION[2]);
+        map.put(Sigils.ARMORED, SIGIL_DESCRIPTION[3]);
+        map.put(Sigils.BEES_WITHIN, SIGIL_DESCRIPTION[4]);
+        map.put(Sigils.BIFURCATED, SIGIL_DESCRIPTION[5]);
+        map.put(Sigils.BONE_KING, SIGIL_DESCRIPTION[6]);
+        map.put(Sigils.BONE_DIGGER, SIGIL_DESCRIPTION[7]);
+        map.put(Sigils.BROOD_PARASITE, SIGIL_DESCRIPTION[8]);
+        map.put(Sigils.DAM_BUILDER, SIGIL_DESCRIPTION[9]);
+        map.put(Sigils.DOUBLE_STRIKE, SIGIL_DESCRIPTION[10]);
+        map.put(Sigils.FECUNDITY, SIGIL_DESCRIPTION[11]);
+        map.put(Sigils.FLEDGLING, SIGIL_DESCRIPTION[12]);
+        map.put(Sigils.GUARDIAN, SIGIL_DESCRIPTION[13]);
+        map.put(Sigils.HOARDER, SIGIL_DESCRIPTION[14]);
+        map.put(Sigils.LEADER, SIGIL_DESCRIPTION[15]);
+        map.put(Sigils.LOOSE_TAIL, SIGIL_DESCRIPTION[16]);
+        map.put(Sigils.MANY_LIVES, SIGIL_DESCRIPTION[17]);
+        map.put(Sigils.MIGHTY_LEAP, SIGIL_DESCRIPTION[18]);
+        map.put(Sigils.RABBIT_HOLE, SIGIL_DESCRIPTION[19]);
+        map.put(Sigils.RAMPAGER, SIGIL_DESCRIPTION[20]);
+        map.put(Sigils.SHARP_QUILLS, SIGIL_DESCRIPTION[23]);
+        map.put(Sigils.STINKY, SIGIL_DESCRIPTION[24]);
+        map.put(Sigils.TOUCH_OF_DEATH, SIGIL_DESCRIPTION[25]);
+        map.put(Sigils.TRIFURCATED, SIGIL_DESCRIPTION[26]);
+        map.put(Sigils.TRINKET_BEARER, SIGIL_DESCRIPTION[27]);
+        map.put(Sigils.UNKILLABLE, SIGIL_DESCRIPTION[28]);
+        map.put(Sigils.WATERBORNE, SIGIL_DESCRIPTION[29]);
+        map.put(Sigils.WORTHY_SACRIFICE, SIGIL_DESCRIPTION[30]);
         return map;
+    }
+
+    public static PowerTip getSigilPowertip(Sigils s){
+
+        return getPowerTip(keywordStrings.get(s));
+
+    }
+
+    public static PowerTip getPowerTip(String keyword){
+        String s = keyword.trim();
+        s = s.toLowerCase();
+        if(GameDictionary.keywords.containsKey(s)){
+            s = GameDictionary.parentWord.get(s);
+            return new PowerTip(TipHelper.capitalize(s), GameDictionary.keywords.get(s));
+        }
+        return null;
     }
 
     public HashSet<Sigils> innate = new HashSet<>();
@@ -444,21 +447,28 @@ public abstract class AbstractCreatureCard extends AbstractDynamicCard implement
     public void initializeDescription() {
         this.rawDescription = extraText();
 
-        if(tribe == CreatureTribe.ANT)
-            this.rawDescription = "leshy:Ant";
+        if(tribe == CreatureTribe.ANT){
+            if(!this.rawDescription.isEmpty())
+                this.rawDescription += " ";
+            this.rawDescription += TRIBE_DESCRIPTION[8];
+        }else if(tribe == CreatureTribe.AMALGAM){
+            if(!this.rawDescription.isEmpty())
+                this.rawDescription += " ";
+            this.rawDescription += TRIBE_DESCRIPTION[9];
+        }
 
         String keywords = "";
 
         if(isEthereal)
-            keywords += "Ethereal ";
+            keywords += MISC_DESCRIPTION[2] + " ";
         if(selfRetain)
-            keywords += "Retain ";
+            keywords += MISC_DESCRIPTION[3] + " ";
         if(isFrail || tempFrail)
-            keywords += "Frail ";
+            keywords += MISC_DESCRIPTION[4] + " ";
         if(bloodless && !current.contains(Sigils.WORTHY_SACRIFICE))
-            keywords += "leshy:Bloodless ";
+            keywords += MISC_DESCRIPTION[0] + " ";
         if(fleeting && !current.contains(Sigils.UNKILLABLE))
-            keywords += "leshy:Transient ";
+            keywords += MISC_DESCRIPTION[1] + " ";
 
         if(!keywords.isEmpty()){
             keywords = keywords.substring(0, keywords.length() - 1);
@@ -472,7 +482,7 @@ public abstract class AbstractCreatureCard extends AbstractDynamicCard implement
         if(!sigils.isEmpty()){
             if(!this.rawDescription.isEmpty())
                 this.rawDescription += " NL ";
-            this.rawDescription += "Sigils : " + sigils;
+            this.rawDescription += sigilCardStrings.NAME + " : " + sigils;
         }
 
 
@@ -509,9 +519,9 @@ public abstract class AbstractCreatureCard extends AbstractDynamicCard implement
                     keywords += (9 - this.livesLost) + " ";
                 } else if (s == Sigils.RAMPAGER){
                     if (rampageRight)
-                        keywords += "Right ";
+                        keywords += SIGIL_DESCRIPTION[22] + " ";
                     else
-                        keywords += "Left ";
+                        keywords += SIGIL_DESCRIPTION[21] + " ";
                 }
 
             }
@@ -523,29 +533,25 @@ public abstract class AbstractCreatureCard extends AbstractDynamicCard implement
     }
 
 
-
-
-
     public static String tribeText(CreatureTribe tribe){
         switch (tribe){
             case CANINE:
-                return "Canine";
+                return TRIBE_DESCRIPTION[2];
             case AVIAN:
-                return "Avian";
+                return TRIBE_DESCRIPTION[1];
             case INSECT:
-                return "Insect";
             case ANT:
-                return "Insect leshy:Ant";
+                return TRIBE_DESCRIPTION[4];
             case REPTILE:
-                return "Reptile";
+                return TRIBE_DESCRIPTION[5];
             case HOOVED:
-                return "Hooved";
+                return TRIBE_DESCRIPTION[3];
             case AMALGAM:
-                return "leshy:Amalgam";
+                return TRIBE_DESCRIPTION[6];
             case SQUIRREL:
-                return "Squirrel";
+                return TRIBE_DESCRIPTION[7];
             default:
-                return "something went wrong";
+                return TRIBE_DESCRIPTION[0];
         }
     }
 
@@ -800,13 +806,9 @@ public abstract class AbstractCreatureCard extends AbstractDynamicCard implement
 
         initializeDescription();
 
-        for(AbstractRelic r : AbstractDungeon.player.relics){
-            if(r instanceof ChimeraStatueRelic)
-                ((ChimeraStatueRelic) r).updateTribeCount();
-            if(r instanceof CameraRelic && diedToDamage)
-                ((CameraRelic) r).nextCreature(this);
-            if(r instanceof BloodstoneRelic && diedToDamage && (this.tribe == CreatureTribe.SQUIRREL || this.tribe == CreatureTribe.AMALGAM))
-                ((BloodstoneRelic) r).squirrelDeath();
+        for(AbstractRelic r : AbstractDungeon.player.relics) {
+            if(r instanceof OnSacrificeRelic)
+                ((OnSacrificeRelic) r).onSacrifice(this, diedToDamage);
         }
 
     }
@@ -1112,7 +1114,7 @@ public abstract class AbstractCreatureCard extends AbstractDynamicCard implement
     }
 
     public String elderName(){
-        return "Elder " + languagePack.getCardStrings(id).NAME;
+        return MISC_DESCRIPTION[5] + " " + languagePack.getCardStrings(id).NAME;
     }
 
     @Override

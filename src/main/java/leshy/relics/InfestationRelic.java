@@ -27,8 +27,13 @@ public class InfestationRelic extends CustomRelic implements CreatureSigilRelic 
     public InfestationRelic() {
         super(ID, IMG, OUTLINE, RelicTier.SPECIAL, LandingSound.MAGICAL);
 
-        tips.add(new PowerTip("Ant Spawner", "When summoned, add a Worker Ant with Transient to your hand."));
-        tips.add(new PowerTip("Unkillable", "When sacrificed, this is put into your hand instead of your discard pile. No longer gives Bones. Overrides Transient."));
+        PowerTip as = AbstractCreatureCard.getSigilPowertip(AbstractCreatureCard.Sigils.ANT_SPAWNER);
+        if(as != null)
+            tips.add(as);
+
+        PowerTip u = AbstractCreatureCard.getSigilPowertip(AbstractCreatureCard.Sigils.UNKILLABLE);
+        if(u != null)
+            tips.add(u);
 
     }
 

@@ -6,7 +6,9 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndAddToHandEffect;
+import leshy.LeshyMod;
 import leshy.cards.Amalgam;
+import leshy.cards.abstracts.AbstractCreatureCard;
 
 import java.util.ArrayList;
 
@@ -35,7 +37,7 @@ public class CameraAction extends AbstractGameAction {
 
             ArrayList<AbstractCard> list = new ArrayList<>();
             list.add(this.card);
-            AbstractDungeon.cardRewardScreen.customCombatOpen(list, "Take the Amalgam?", true);
+            AbstractDungeon.cardRewardScreen.customCombatOpen(list, AbstractCreatureCard.SCREEN_DESCRIPTION[2], true);
 
             tickDuration();
             return;

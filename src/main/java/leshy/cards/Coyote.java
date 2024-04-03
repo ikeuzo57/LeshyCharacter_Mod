@@ -40,9 +40,9 @@ public class Coyote extends AbstractCreatureCard {
 
         tribe = CreatureTribe.CANINE;
 
-        attack = baseAttack = trueBaseAttack = 16;
+        attack = baseAttack = trueBaseAttack = 18;
 
-        health = baseHealth = trueBaseHealth = 4;
+        health = baseHealth = trueBaseHealth = 2;
 
 
         initializeDescription();

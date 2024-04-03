@@ -49,7 +49,7 @@ public class ChangeTribeEffect extends AbstractGameEffect {
             for(AbstractCard c : AbstractDungeon.player.masterDeck.group)
                 if(c instanceof AbstractCreatureCard)
                     tmp.addToTop(c);
-            AbstractDungeon.gridSelectScreen.open(tmp, 1, "Pick a creature to become a " + AbstractCreatureCard.tribeText(this.tribe), false, false, false, false);
+            AbstractDungeon.gridSelectScreen.open(tmp, 1, AbstractCreatureCard.SCREEN_DESCRIPTION[9] + AbstractCreatureCard.tribeText(this.tribe), false, false, false, false);
         }
         if (this.duration < 0.0F) {
             this.isDone = true;

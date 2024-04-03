@@ -121,39 +121,42 @@ public class CreatureOrb extends AbstractOrb{
 
         if(this.creatureCard.isStatic){
 
-            this.name = "Glitch";
-            description = "Glitch Attack " + this.creatureCard.attack + " Health " + this.creatureCard.health;
+            this.name = AbstractCreatureCard.MISC_DESCRIPTION[8];
+            description = AbstractCreatureCard.MISC_DESCRIPTION[8] + " " + AbstractCreatureCard.MISC_DESCRIPTION[9] + this.creatureCard.attack + " " + AbstractCreatureCard.MISC_DESCRIPTION[10] + this.creatureCard.health;
 
         }else{
 
             this.name = this.creatureCard.name;
-            description = this.creatureCard.name + " " + this.creatureCard.extraText() + " ";
+            description = this.creatureCard.name + " ";
+            String extra = this.creatureCard.extraText();
+            if(!extra.isEmpty())
+                description += extra + " ";
 
             if (this.creatureCard.isEthereal)
-                description += "Ethereal ";
+                description += AbstractCreatureCard.MISC_DESCRIPTION[2] + " ";
             if (this.creatureCard.selfRetain)
-                description += "Retain ";
+                description += AbstractCreatureCard.MISC_DESCRIPTION[3] + " ";
             if (this.creatureCard.isFrail || this.creatureCard.tempFrail)
-                description += "Frail ";
-            if (this.creatureCard.bloodless)
-                description += "leshy:Bloodless ";
-            if (this.creatureCard.fleeting)
-                description += "leshy:Transient ";
+                description += AbstractCreatureCard.MISC_DESCRIPTION[4] + " ";
+            if (this.creatureCard.bloodless && !this.creatureCard.current.contains(AbstractCreatureCard.Sigils.WORTHY_SACRIFICE))
+                description += AbstractCreatureCard.MISC_DESCRIPTION[0] + " ";
+            if (this.creatureCard.fleeting && !this.creatureCard.current.contains(AbstractCreatureCard.Sigils.UNKILLABLE))
+                description += AbstractCreatureCard.MISC_DESCRIPTION[1] + " ";
 
             if (this.creatureCard.tribe != AbstractCreatureCard.CreatureTribe.NONE)
-                description += this.creatureCard.tribeText(this.creatureCard.tribe) + " ";
+                description += AbstractCreatureCard.tribeText(this.creatureCard.tribe) + " ";
             if (this.creatureCard.costType != AbstractCreatureCard.CreatureCostType.NONE && this.creatureCard.extraCost > 0) {
                 if (this.creatureCard.costType == AbstractCreatureCard.CreatureCostType.BLOOD) {
-                    description += "Blood " + this.creatureCard.extraCost + " ";
+                    description += AbstractCreatureCard.MISC_DESCRIPTION[11] + this.creatureCard.extraCost + " ";
                 } else {
-                    description += "Bone " + this.creatureCard.extraCost + " ";
+                    description += AbstractCreatureCard.MISC_DESCRIPTION[12] + this.creatureCard.extraCost + " ";
                 }
             }
-            description += "Attack " + this.creatureCard.attack + " Health " + this.creatureCard.health + " ";
+            description += AbstractCreatureCard.MISC_DESCRIPTION[9] + this.creatureCard.attack + " " + AbstractCreatureCard.MISC_DESCRIPTION[10] + this.creatureCard.health + " ";
 
             String keywords = this.creatureCard.getSigils();
             if (!keywords.isEmpty())
-                description += "Sigils : " + keywords + " ";
+                description += AbstractCreatureCard.sigilCardStrings.NAME + " : " + keywords + " ";
 
         }
 

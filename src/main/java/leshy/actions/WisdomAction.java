@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import leshy.cards.TrialOfBlood;
 
 import java.util.ArrayList;
 
@@ -39,7 +40,7 @@ public class WisdomAction extends AbstractGameAction {
                 return;
             }
 
-            AbstractDungeon.gridSelectScreen.open(tmp, 0, true, "Revealed Cards.");
+            AbstractDungeon.gridSelectScreen.open(tmp, 0, true, TrialOfBlood.cardStrings.EXTENDED_DESCRIPTION[0]);
 
             addToBot(new WisdomSigilAction());
 

@@ -40,9 +40,9 @@ public class AntQueen extends AbstractCreatureCard {
 
         tribe = CreatureTribe.ANT;
 
-        attack = baseAttack = trueBaseAttack = 4;
+        attack = baseAttack = trueBaseAttack = 2;
 
-        health = baseHealth = trueBaseHealth = 18;
+        health = baseHealth = trueBaseHealth = 22;
 
         innate.add(Sigils.ANT_SPAWNER);
         current.add(Sigils.ANT_SPAWNER);

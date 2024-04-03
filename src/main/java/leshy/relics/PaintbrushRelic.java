@@ -23,7 +23,9 @@ public class PaintbrushRelic extends CustomRelic {
     public PaintbrushRelic() {
         super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.FLAT);
 
-        tips.add(new PowerTip("Amorphous", "At start of combat, replace this Sigil with a random new Sigil."));
+        PowerTip a = AbstractCreatureCard.getSigilPowertip(AbstractCreatureCard.Sigils.AMORPHOUS);
+        if(a != null)
+            tips.add(a);
 
     }
 

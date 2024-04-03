@@ -93,7 +93,7 @@ public class HandTentacle extends AbstractCreatureCard {
 
     @Override
     public String extraText() {
-        return "leshy:Card_Counter";
+        return cardStrings.EXTENDED_DESCRIPTION[0];
     }
 
     @Override

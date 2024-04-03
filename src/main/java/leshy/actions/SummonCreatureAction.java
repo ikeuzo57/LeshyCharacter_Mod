@@ -46,7 +46,7 @@ public class SummonCreatureAction extends AbstractGameAction {
             addToBot(new OnSummonAction(orb));
             addToBot(new UpdatePositionsAction());
         }else{
-            AbstractDungeon.effectList.add(new ThoughtBubble(AbstractDungeon.player.dialogX, AbstractDungeon.player.dialogY, 3.0F, "No empty orb slot", true));
+            AbstractDungeon.effectList.add(new ThoughtBubble(AbstractDungeon.player.dialogX, AbstractDungeon.player.dialogY, 3.0F, AbstractCreatureCard.MISC_DESCRIPTION[7], true));
             CardGroup tmp = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
             tmp.addToTop(orb.creatureCard);
             orb.creatureCard.orb = null;

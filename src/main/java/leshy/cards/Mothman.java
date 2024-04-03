@@ -41,9 +41,9 @@ public class Mothman extends AbstractCreatureCard {
 
         tribe = CreatureTribe.INSECT;
 
-        attack = baseAttack = trueBaseAttack = 40;
+        attack = baseAttack = trueBaseAttack = 50;
 
-        health = baseHealth = trueBaseHealth = 4;
+        health = baseHealth = trueBaseHealth = 5;
 
         innate.add(Sigils.AIRBORNE);
         current.add(Sigils.AIRBORNE);
@@ -54,7 +54,7 @@ public class Mothman extends AbstractCreatureCard {
 
     @Override
     public String elderName() {
-        return "Final Form";
+        return cardStrings.EXTENDED_DESCRIPTION[0];
     }
 
     @Override

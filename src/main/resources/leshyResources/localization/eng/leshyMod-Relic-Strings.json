@@ -257,7 +257,12 @@
     "NAME": "Camera",
     "FLAVOR": "The secret to immortality.",
     "DESCRIPTIONS": [
-      "For every 3 creatures that die to damage, you may craft an Amalgam with their cost, stats, and Sigils."
+      "For every 3 creatures that die to damage, you may craft an Amalgam with their cost, stats, and Sigils.",
+      " Cost : Blood ",
+      " Cost : Bone ",
+      " Cost : ",
+      " Attack : ",
+      " Health : "
     ]
   },
   "leshy:LimoncelloRelic": {
@@ -311,7 +316,11 @@
       "Once per shuffle, you may right click to move a card in your deck to the top.",
       "Glitched creatures gain ", " Attack and Health.",
       "Twice per turn, you may right click to sacrifice a Blood cost creature and add Squirrels to hand equal to its Blood cost.",
-      "At the start of combat, Glitch ", " random creatures in your deck."
+      "At the start of combat, Glitch ", " random creatures in your deck.",
+      "Glitched Cards",
+      "Cards Glitched at start of combat will be listed here.",
+      "Choose an effect to use.",
+      "Choose an effect to add to OLD_DATA."
     ]
   },
   "leshy:ExoticPetFoodRelic": {
@@ -349,7 +358,7 @@
     "NAME": "Wolf Skull",
     "FLAVOR": "Wolves together strong.",
     "DESCRIPTIONS": [
-      "Wolves gain Leader at double effectiveness."
+      "Wolves gain #yLeader at double effectiveness."
     ]
   },
   "leshy:BullfighterCapeRelic": {
@@ -436,13 +445,6 @@
       "You no longer gain Bones."
     ]
   },
-  "leshy:SlowStartRelic": {
-    "NAME": "Slow Start",
-    "FLAVOR": "If only Coffee Dripper helped.",
-    "DESCRIPTIONS": [
-      "At the start of combat, lose all [E] ."
-    ]
-  },
   "leshy:BearTrapRelic": {
     "NAME": "Bear Trap",
     "FLAVOR": "Ouch.",
@@ -468,7 +470,7 @@
     "NAME": "Starvation",
     "FLAVOR": "Repulsive.",
     "DESCRIPTIONS": [
-      "At the start of your turn, if you don't have a Starvation, summon a Starvation."
+      "At the start of your turn, if you don't have a Starvation, summon a Starvation. (0/1 with #yWaterborne and cannot be sacrificed)"
     ]
   },
   "leshy:BoneLordsHornRelic": {

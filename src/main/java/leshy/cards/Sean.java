@@ -40,7 +40,7 @@ public class Sean extends AbstractCreatureCard {
 
         attack = baseAttack = trueBaseAttack = 4;
 
-        health = baseHealth = trueBaseHealth = 22;
+        health = baseHealth = trueBaseHealth = 24;
 
         innate.add(Sigils.TOUCH_OF_DEATH);
         innate.add(Sigils.MIGHTY_LEAP);

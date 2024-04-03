@@ -1,38 +1,6 @@
 [
   {
     "NAMES": [
-      "Creature",
-      "creature",
-      "Creatures",
-      "creatures"
-    ],
-    "DESCRIPTION": "A card that summons a creature into an empty orb slot. Will enter discard pile when sacrificed."
-  },
-  {
-    "NAMES": [
-      "Blood",
-      "blood"
-    ],
-    "DESCRIPTION": "Cost that is paid by sacrificing a number of creatures."
-  },
-  {
-    "NAMES": [
-      "Bones",
-      "bones",
-      "Bone",
-      "bone"
-    ],
-    "DESCRIPTION": "Cost that is paid with Bones. 1 Bone is obtained when a creature is sacrificed or exhausted."
-  },
-  {
-    "NAMES": [
-      "Tribe",
-      "tribe"
-    ],
-    "DESCRIPTION": "A subtype of creature. Certain cards can provide effects for specific Tribes."
-  },
-  {
-    "NAMES": [
       "Ant",
       "ant"
     ],
@@ -160,40 +128,10 @@
   },
   {
     "NAMES": [
-      "Added",
-      "added"
-    ],
-    "DESCRIPTION": "Sigils added to a creature card through outside sources."
-  },
-  {
-    "NAMES": [
-      "Summon",
-      "summon"
-    ],
-    "DESCRIPTION": "Non sigil effects that trigger on summon."
-  },
-  {
-    "NAMES": [
-      "Sacrifice",
-      "sacrifice",
-      "Sacrifices",
-      "sacrifices"
-    ],
-    "DESCRIPTION": "Non sigil effects that trigger on sacrifice."
-  },
-  {
-    "NAMES": [
-      "Passive",
-      "passive"
-    ],
-    "DESCRIPTION": "Non sigil effects that trigger at end of turn."
-  },
-  {
-    "NAMES": [
       "Guardian",
       "guardian"
     ],
-    "DESCRIPTION": "Summoned in the front."
+    "DESCRIPTION": "Summoned in the front when played from hand."
   },
   {
     "PROPER_NAME": "Waterborne",
@@ -250,27 +188,6 @@
       "pelt"
     ],
     "DESCRIPTION": "While in a shop, you may right click to sell for gold."
-  },
-  {
-    "NAMES": [
-      "Splice",
-      "splice"
-    ],
-    "DESCRIPTION": "Combine two creature cards by adding their stats and sigils onto one card."
-  },
-  {
-    "NAMES": [
-      "Transform",
-      "transform"
-    ],
-    "DESCRIPTION": "Replace a creature with the second gaining the sigils of the first."
-  },
-  {
-    "NAMES": [
-      "Prevent",
-      "prevent"
-    ],
-    "DESCRIPTION": "Prevent a certain amount of life loss. After the amount is prevented sacrifice this creature."
   },
   {
     "PROPER_NAME": "Full Set",
@@ -459,13 +376,6 @@
     "DESCRIPTION": "When Smithed, remove this from your deck and gain Dead Survivors, a relic that double upgrade stat gain."
   },
   {
-    "NAMES": [
-      "Deaths",
-      "deaths"
-    ],
-    "DESCRIPTION": "Each time a creature dies, its Attack and Defense are reduced by 20%."
-  },
-  {
     "PROPER_NAME": "Mighty Leap",
     "NAMES": [
       "Mighty Leap",
@@ -534,6 +444,16 @@
       "pick_me"
     ],
     "DESCRIPTION": "Can always receive Sigils from Mysterious Stones events."
+  },
+  {
+    "PROPER_NAME": "Consolation Squirrel",
+    "NAMES": [
+      "Consolation Squirrel",
+      "consolation squirrel",
+      "Consolation_Squirrel",
+      "consolation_squirrel"
+    ],
+    "DESCRIPTION": "Gain an extra Squirrel at start of combat per max [E] above baseline."
   }
 ]
 

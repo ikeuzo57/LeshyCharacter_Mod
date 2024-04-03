@@ -70,9 +70,9 @@ public class StrangeFrog extends AbstractCreatureCard {
     @Override
     public String extraText() {
 
-        String text = "On death summon a Leaping Trap in front.";
+        String text = cardStrings.EXTENDED_DESCRIPTION[0];
         if(x_value == -1)
-            text = "Has 3X Health. " + text;
+            text = cardStrings.EXTENDED_DESCRIPTION[1] + text;
 
         return text;
 

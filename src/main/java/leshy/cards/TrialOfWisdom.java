@@ -17,7 +17,7 @@ public class TrialOfWisdom extends AbstractDynamicCard {
 
 
     public static final String ID = LeshyMod.makeID(TrialOfWisdom.class.getSimpleName());
-    private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
+    public static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 
     public static final String IMG = makeCardPath("TrialOfWisdom.png");
 

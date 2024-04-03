@@ -43,7 +43,7 @@ public class Alpha extends AbstractCreatureCard {
 
         attack = baseAttack = trueBaseAttack = 8;
 
-        health = baseHealth = trueBaseHealth = 10;
+        health = baseHealth = trueBaseHealth = 14;
 
         innate.add(Sigils.LEADER);
         current.add(Sigils.LEADER);
@@ -54,7 +54,7 @@ public class Alpha extends AbstractCreatureCard {
 
     @Override
     public String elderName() {
-        return "Omega";
+        return cardStrings.EXTENDED_DESCRIPTION[0];
     }
 
     @Override

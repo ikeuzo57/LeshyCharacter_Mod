@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.relics.FusionHammer;
+import leshy.cards.abstracts.AbstractCreatureCard;
 import leshy.characters.Leshy;
 
 import java.util.HashSet;
@@ -31,18 +32,13 @@ public class EnergyRelicPatch {
         return set;
     }
 
-    public static PowerTip consolationSquirrelTip(){
-        String name = "Consolation Squirrel";
-        String body = "Gain an extra Squirrel at start of combat per max [E] above baseline.";
-        return new PowerTip(name, body);
-    }
-
-
     @SpirePrefixPatch
     public static void Prefix(AbstractRelic obj) {
 
         if(AbstractDungeon.player instanceof Leshy && ENERGY_RELICS.contains(obj.relicId)){
-            obj.tips.add(consolationSquirrelTip());
+            PowerTip cons = AbstractCreatureCard.getPowerTip(AbstractCreatureCard.MISC_DESCRIPTION[13]);
+            if(cons != null)
+                obj.tips.add(cons);
         }
 
     }

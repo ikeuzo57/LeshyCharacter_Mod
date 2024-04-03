@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.vfx.ThoughtBubble;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndAddToHandEffect;
+import leshy.cards.FilmRoll;
 import leshy.cards.abstracts.AbstractCreatureCard;
 import leshy.cards.DeathCard;
 
@@ -45,7 +46,7 @@ public class FilmRollSigilsAction extends AbstractGameAction {
                 temp.removeTopCard();
             }
 
-            AbstractDungeon.gridSelectScreen.open(temp, 1, "Select the Sigils", false);
+            AbstractDungeon.gridSelectScreen.open(temp, 1, FilmRoll.cardStrings.EXTENDED_DESCRIPTION[2], false);
             tickDuration();
 
             return;

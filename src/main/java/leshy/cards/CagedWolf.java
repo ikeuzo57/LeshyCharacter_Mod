@@ -59,7 +59,7 @@ public class CagedWolf extends AbstractCreatureCard {
 
     @Override
     public String extraText() {
-        return "On death, replace this with a Wolf permanently.";
+        return cardStrings.EXTENDED_DESCRIPTION[0];
     }
 
 

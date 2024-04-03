@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
+import leshy.cards.TrialOfWisdom;
 import leshy.cards.abstracts.AbstractCreatureCard;
 import leshy.cards.abstracts.AbstractWisdomCard;
 import leshy.orbs.CreatureOrb;
@@ -39,7 +40,7 @@ public class WisdomCreatureAction extends AbstractGameAction {
                 }
             }
 
-            AbstractDungeon.gridSelectScreen.open(tmp, 1, "Choose a creature to the give the sigil.", false);
+            AbstractDungeon.gridSelectScreen.open(tmp, 1, TrialOfWisdom.cardStrings.EXTENDED_DESCRIPTION[0], false);
             tickDuration();
 
             return;

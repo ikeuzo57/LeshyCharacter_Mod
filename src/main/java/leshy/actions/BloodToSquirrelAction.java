@@ -51,7 +51,7 @@ public class BloodToSquirrelAction extends AbstractGameAction {
                 return;
             }
 
-            AbstractDungeon.gridSelectScreen.open(tmp, 1, false, "Choose a creature to sacrifice.");
+            AbstractDungeon.gridSelectScreen.open(tmp, 1, false, AbstractCreatureCard.SCREEN_DESCRIPTION[1]);
             tickDuration();
 
             return;

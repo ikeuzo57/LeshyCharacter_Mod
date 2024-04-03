@@ -48,7 +48,7 @@ public class BloodToBoneEffect extends AbstractGameEffect {
             for(AbstractCard c : AbstractDungeon.player.masterDeck.group)
                 if(c instanceof AbstractCreatureCard && ((AbstractCreatureCard) c).costType == AbstractCreatureCard.CreatureCostType.BLOOD)
                     tmp.addToTop(c);
-            AbstractDungeon.gridSelectScreen.open(tmp, 1, "Change a creature's cost to Bone.", false, false, false, false);
+            AbstractDungeon.gridSelectScreen.open(tmp, 1, AbstractCreatureCard.SCREEN_DESCRIPTION[8], false, false, false, false);
         }
         if (this.duration < 0.0F) {
             this.isDone = true;

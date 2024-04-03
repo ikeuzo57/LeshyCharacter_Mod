@@ -5,6 +5,7 @@ import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import leshy.cards.FilmRoll;
 import leshy.cards.abstracts.AbstractCreatureCard;
 
 import java.util.ArrayList;
@@ -42,7 +43,7 @@ public class FilmRollStatAction extends AbstractGameAction {
                 temp.removeTopCard();
             }
 
-            AbstractDungeon.gridSelectScreen.open(temp, 1, "Select the Stats", false);
+            AbstractDungeon.gridSelectScreen.open(temp, 1, FilmRoll.cardStrings.EXTENDED_DESCRIPTION[3], false);
             tickDuration();
 
             return;

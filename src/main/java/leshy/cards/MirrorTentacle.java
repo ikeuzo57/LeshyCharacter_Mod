@@ -45,7 +45,7 @@ public class MirrorTentacle extends AbstractCreatureCard {
 
         attack = baseAttack = trueBaseAttack = 0;
 
-        health = baseHealth = trueBaseHealth = 6;
+        health = baseHealth = trueBaseHealth = 10;
 
 
         initializeDescription();
@@ -54,7 +54,7 @@ public class MirrorTentacle extends AbstractCreatureCard {
 
     @Override
     public String extraText() {
-        return "leshy:M!rror_r0rriM";
+        return cardStrings.EXTENDED_DESCRIPTION[0];
     }
 
 

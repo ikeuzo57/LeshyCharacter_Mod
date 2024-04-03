@@ -117,7 +117,7 @@ public class BloodCostAction extends AbstractGameAction {
                 return;
             }
 
-            AbstractDungeon.gridSelectScreen.open(tmp, 1, "Blood Cost Remaining " + cost, false);
+            AbstractDungeon.gridSelectScreen.open(tmp, 1, AbstractCreatureCard.SCREEN_DESCRIPTION[0] + cost, false);
             tickDuration();
 
             return;

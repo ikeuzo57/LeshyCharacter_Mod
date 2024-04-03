@@ -1,23 +1,4 @@
 {
-  "leshy:IdentityCrisisEvent": {
-    "NAME": "Identity Crisis",
-    "DESCRIPTIONS": [
-      "As you move through ~The~ ~City~ you come across a #pPurple #pMirror. NL You look at it, but you see no reflection.",
-      "You see no one but #g~You~ #g~wish~ #g~to~ #g~become~ #g~someone.~",
-      "#r@YOU@ #r@EXIST@ #r@AND@ #r@ARE@ #r@VALID!@",
-      "#yYou #yare #yat #ypeace #ywith #yyour #ypresence.",
-      "You have no hands."
-    ],
-    "OPTIONS": [
-      "[Inspiration] #gGain #ga #gRandom #gStarting #gRelic.",
-      "[Denial] #rLose #r",
-      " #rMax #rHP. #gRemove #ga #gCard #gfrom #gyour #gdeck.",
-      "[Acceptance] #gGain #gApotheosis.",
-      "[TOUCH THE MIRROR] TOUCH TOUCH TO#C# TOUCH TO UCH TOUCH #rTOUCH TOUCH",
-      "[Leave]",
-      "Select card to remove."
-    ]
-  },
   "leshy:MycologistsEvent": {
     "NAME": "Mycologists",
     "DESCRIPTIONS": [
@@ -31,7 +12,11 @@
       "\"D- Did you bring us... #y2 #yof #ythe #ysame?\" NL ~\"We~ ~would~ ~like~ ~to~ ~experiment.\"~ NL \"O- Oh dear... Y- You don't.\" NL ~\"You~ ~have~ ~no~ ~duplicate~ ~cards.\"~",
       "\"T- Take one of ours?\" NL ~\"We~ ~will~ ~use~ ~it~ ~next~ ~time.\"~",
 
-      "Something went wrong."
+      "Something went wrong.",
+
+      "Select a creature.",
+      "Select a duplicate. (Transfer ", " of stats)",
+      "Select a creature to gain."
     ],
     "OPTIONS": [
       "[Approach]",
@@ -48,7 +33,9 @@
       "Which creature will inherit its ~power?~",
       "You hope this was worth it.",
 
-      "Something went wrong."
+      "Something went wrong.",
+
+      "Select a recipient."
     ],
     "OPTIONS": [
       "[Leave]",
@@ -76,7 +63,8 @@
     "NAME": "Woodcarver",
     "DESCRIPTIONS": [
       "You came upon the old #yWoodcarver who fixed her intense gaze upon you. NL After an overlong moment of silence, she moved to offer her carvings.",
-      "The grey-haired woman silently collected her carvings and left."
+      "The grey-haired woman silently collected her carvings and left.",
+      "Take a carving."
     ],
     "OPTIONS": [
       "[Leave]",
@@ -115,7 +103,8 @@
     "NAME": "Goobert",
     "DESCRIPTIONS": [
       "#g\"I #gwill #g~paint!~ #gJust #glike #gthe #gmaster! NL #gNot #gas #ggood #gas #gthe #gmaster, #gno. NL #gI #gmay #gmake #gsome #g~errors.~ NL #gWhat #gshall #gI #gpaint #gfor #gyou?\"",
-      "#g\"W-What #gdo #gyou #gthink? NL #gWould #gthe #gmaster #gbe #gproud? NL #rPlease #rsay #ryes!\""
+      "#g\"W-What #gdo #gyou #gthink? NL #gWould #gthe #gmaster #gbe #gproud? NL #rPlease #rsay #ryes!\"",
+      "Select a creature to paint."
     ],
     "OPTIONS": [
       "[Goobert] #gChoose #ga #gcreature #gfor #gGoobert #gto #gpaint.",
@@ -123,31 +112,50 @@
       "[Goobert] You do not have any valid creatures, somehow."
     ]
   },
-  "leshy:RecruitmentEvent": {
-    "NAME": "Recruitment",
-    "DESCRIPTIONS": [
-      "Denizens of the forest approach tentatively. NL Only #y1 may grace your paltry deck.",
-      "Another creature joins your caravan."
-    ],
-    "OPTIONS": [
-      "[1 Blood] #gSearch #gfor #g1 #gBlood #gcost #gcreatures.",
-      "[2 Blood] #gSearch #gfor #g2 #gBlood #gcost #gcreatures.",
-      "[Bone] #gSearch #gfor #gBone #gcost #gcreatures.",
-      "[Tribal] #gPick #ga #gTribe #gto #gsearch #gfor.",
-      "[Avian] #gSearch #gfor #gAvian #gcreatures.",
-      "[Canine] #gSearch #gfor #gCanine #gcreatures.",
-      "[Hooved] #gSearch #gfor #gHooved #gcreatures.",
-      "[Insect] #gSearch #gfor #gInsect #gcreatures.",
-      "[Reptile] #gSearch #gfor #gReptile #gcreatures.",
-      "[Leave]"
-    ]
-  },
   "leshy:DredgingRoomEvent": {
     "NAME": "Dredging Room",
     "DESCRIPTIONS": [
       "You find yourself deep within a #yfactory in what appears to be a #ydredging #yroom. A lone robot silently operates a claw machine, pulling scrap from the black water onto a conveyor belt.",
       "You feel the world ~shudder~ as the claw pulls #rsomething from ~01100100~ ~01100101~ ~01100101~ ~01110000~ ~01100010~ ~01100101~ ~01101110~ ~01100101~ ~01100001~ ~01110100~ ~01101000~ NL With this you could #yshape #ythe #yworld, but perhaps some secrets are better left forgotten.",
-      "You wonder if you'll be back for more."
+      "You wonder if you'll be back for more.",
+      "01001000 01101111 01110111 00100000 01110100 01101000 01100101 00100000 01110100 01100001 01100010 01101100 01100101 01110011 00100000 01110100 01110101 01110010 01101110 00101110",
+      "01001110 01100101 01101111 01110111 00100000 01101001 01110011 00100000 01101001 01101110 00100000 01100011 01101000 01100001 01110010 01100111 01100101 00101110",
+      "01011001 01101111 01110101 00100000 01100001 01110010 01100101 00100000 01110100 01101000 01100101 00100000 01110000 01101100 01100001 01111001 01100101 01110010 00101110",
+      "01001000 01101111 01110111 00100000 01100100 01101111 01100101 01110011 00100000 01101001 01110100 00100000 01100110 01100101 01100101 01101100 00111111",
+      "01010100 01101000 01100101 00100000 01100011 01111001 01100011 01101100 01100101 00100000 01101110 01100101 01110110 01100101 01110010 00100000 01100101 01101110 01100100 01110011 00101110",
+      "#rBecome #rCursed #r- #r2 #rNormality.",
+      "#rBecome #rCursed #r- #r2 #rPain.",
+      "#rBecome #rCursed #r- #r2 #rRoadkill.",
+      "#rGain #rInfestation.",
+      "#rGain #rDiscrimination.",
+      "#rGain #rScavenger.",
+      "#rGain #rBear #rTrap.",
+      "#rGain #rGrudge.",
+      "#rGain #rDrowned.",
+      "#rGain #rStarvation.",
+      "#rLose #r!HP! #rMax #rHP.",
+      "#rGlitch #ran #radditional #rcreature.",
+      "#gGain #g3 #gCommon #gRelics.",
+      "#gGain #g2 #gUncommon #gRelics.",
+      "#gGain #g1 #gof #g3 #gRare #gRelics.",
+      "#gGain #ga #gBoss #gRelic.",
+      "#gChoose #gan #gEvent. #rObtain #ra #rCurse.",
+      "#gMysterious #gStones.",
+      "#gMycologists.",
+      "#gGoobert.",
+      "#gBone #gAltar.",
+      "#gWoodcarver.",
+      "#gTrapper.",
+      "#gPack.",
+      "#gRemove #gthree #gcreatures.",
+      "#gPick #ga #gcreature #gto #gbecome #ga #g!TRIBE!.",
+      "#gReplace #gtwo #gcreatures #gwith #gSquirrels.",
+      "#gGlitch #gtwo #gcreatures. #gUpgrade #gthem #gthrice.",
+      "#gDuplicate #geach #gcreature #gin #gyour #gdeck.",
+      "#gChange #ga #gcreature's #gcost #gto #gBone.",
+      "#gAdd #gthree #gColorless #gcards #gto #gyour #gdeck.",
+      "#gReplace #gtwo #gcreatures #gwith #gPelts.",
+      "#gAdd #ga #gDeathcard #gto #gyour #gdeck."
     ],
     "OPTIONS": [
       "[Approach]",
@@ -155,6 +163,16 @@
       "[Leave]",
       "#r[DEEPER]",
       "[Resist]"
+    ]
+  },
+  "leshy:NeowExtension": {
+    "NAME": "Neow",
+    "DESCRIPTIONS": [
+      "~Denizens~ ~of~ ~the~ ~forest~ ~approach.~"
+    ],
+    "OPTIONS": [
+      "#gAdd #g4 #gCreatures #gto #gyour #gdeck.",
+      "Add 4 Creatures to your deck."
     ]
   }
 }

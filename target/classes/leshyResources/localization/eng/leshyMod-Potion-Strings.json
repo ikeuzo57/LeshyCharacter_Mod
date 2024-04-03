@@ -1,8 +1,4 @@
 {
-        "leshy:BottledSquirrelPotion": {
-                "NAME": "Bottled Squirrel",
-                "DESCRIPTIONS": ["Put ", "a Squirrel ", " Squirrels ", "into your hand."]
-        },
         "leshy:HoggyBankPotion": {
                 "NAME": "Hoggy Bank",
                 "DESCRIPTIONS": ["Gain ", " Bones."]
