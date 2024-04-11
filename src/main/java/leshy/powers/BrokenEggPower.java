@@ -29,13 +29,16 @@ public class BrokenEggPower extends AbstractPower implements CloneablePowerInter
     private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("broken_egg_power84.png"));
     private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("broken_egg_power32.png"));
 
-    public BrokenEggPower(final AbstractCreature owner, final AbstractCreature source, final int amount) {
+    private static final int PERCENT = 50;
+    private static final float REDUCTION = 0.5f;
+
+    public BrokenEggPower(final AbstractCreature owner, final AbstractCreature source) {
         name = NAME;
         ID = POWER_ID;
 
         this.owner = owner;
         this.source = source;
-        this.amount = amount;
+        this.amount = -1;
 
         this.type = PowerType.DEBUFF;
 
@@ -48,8 +51,7 @@ public class BrokenEggPower extends AbstractPower implements CloneablePowerInter
 
     public float atDamageGive(float damage, DamageInfo.DamageType type) {
         if (type == DamageInfo.DamageType.NORMAL) {
-            float multi = 1.0f - 0.2f*this.amount;
-            return damage * multi;
+            return damage * REDUCTION;
         }
         return damage;
     }
@@ -63,28 +65,16 @@ public class BrokenEggPower extends AbstractPower implements CloneablePowerInter
     }
 
     @Override
-    public void stackPower(int stackAmount) {
-        super.stackPower(stackAmount);
-        if(this.amount >= 4)
-            this.amount = 4;
-    }
-
-    @Override
     public void updateDescription() {
 
-        int percent = 20 * this.amount;
-
-        if(this.amount == 1)
-            description = DESCRIPTIONS[0] + percent + DESCRIPTIONS[1] + DESCRIPTIONS[2] + DESCRIPTIONS[4];
-        else
-            description = DESCRIPTIONS[0] + percent + DESCRIPTIONS[1] + this.amount + DESCRIPTIONS[3] + DESCRIPTIONS[4];
+        description = DESCRIPTIONS[0] + PERCENT + DESCRIPTIONS[1];
 
     }
 
 
     @Override
     public AbstractPower makeCopy() {
-        return new BrokenEggPower(owner, source, amount);
+        return new BrokenEggPower(owner, source);
     }
 
 }

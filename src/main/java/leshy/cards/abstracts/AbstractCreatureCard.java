@@ -29,10 +29,7 @@ import leshy.actions.*;
 import leshy.cards.*;
 import leshy.helpers.CreatureSavable;
 import leshy.orbs.CreatureOrb;
-import leshy.powers.AlphaPower;
-import leshy.powers.BonePower;
-import leshy.powers.BrokenEggPower;
-import leshy.powers.StinkyPower;
+import leshy.powers.*;
 import leshy.powers.interfaces.CreatureSigilsPower;
 import leshy.powers.interfaces.CreatureValuePower;
 import leshy.relics.*;
@@ -660,9 +657,14 @@ public abstract class AbstractCreatureCard extends AbstractDynamicCard implement
             addToBot(new MakeTempCardInHandAction(rabbit));
         }
         if(current.contains(Sigils.BROOD_PARASITE)){
-            for(AbstractMonster m : AbstractDungeon.getCurrRoom().monsters.monsters)
-                if(m.currentHealth > 0 && !m.isDeadOrEscaped())
-                    addToBot(new ApplyPowerAction(m, AbstractDungeon.player, new BrokenEggPower(m, AbstractDungeon.player, 1), 1));
+
+            AbstractMonster m = CreatureAttackAction.getRandomMonsters().get(0);
+            for(AbstractPower ap : m.powers)
+                if(ap instanceof TargetPower){
+                    addToBot(new ApplyPowerAction(m, AbstractDungeon.player, new BrokenEggPower(m, AbstractDungeon.player)));
+                    break;
+                }
+
         }
         if(current.contains(Sigils.MIGHTY_LEAP)){
             applyMightyLeap = true;

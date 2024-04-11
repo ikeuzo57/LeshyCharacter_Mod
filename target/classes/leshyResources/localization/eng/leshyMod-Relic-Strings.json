@@ -3,7 +3,7 @@
     "NAME": "Woodcarver Mask",
     "FLAVOR": "Carves Totems of Creature and Sigil.",
     "DESCRIPTIONS": [
-      "Once per combat, you may right click to add a Totem head to your Totem."
+      "Once per combat, you may right click to choose a Totem head to add to your Totem."
     ]
   },"leshy:SquirrelDeckRelic": {
   "NAME": "Squirrel Deck",
@@ -513,6 +513,20 @@
     "FLAVOR": "Loud and commanding.",
     "DESCRIPTIONS": [
       "You may right click an enemy to #yTarget them."
+    ]
+  },
+  "leshy:HammerRelic": {
+    "NAME": "Hammer",
+    "FLAVOR": "Bang bang.",
+    "DESCRIPTIONS": [
+      "Once per turn, you may right click to sacrifice a creature and draw a card."
+    ]
+  },
+  "leshy:HoneycombRelic": {
+    "NAME": "Honeycomb",
+    "FLAVOR": "Bees! For everyone!",
+    "DESCRIPTIONS": [
+      "When you lose HP, if there is room, summon a Bee."
     ]
   }
 

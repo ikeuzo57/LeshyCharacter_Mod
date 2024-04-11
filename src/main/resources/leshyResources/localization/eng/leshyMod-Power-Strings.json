@@ -43,6 +43,6 @@
         },
         "leshy:BrokenEggPower": {
                 "NAME": "Broken Egg",
-                "DESCRIPTIONS": ["Deals ", "% less attack damage and prevents the next ", "time ", " times ", "this takes damage. Max 4 stacks."]
+                "DESCRIPTIONS": ["Deals ", "% less attack damage and prevents the next time this takes damage."]
         }
 }

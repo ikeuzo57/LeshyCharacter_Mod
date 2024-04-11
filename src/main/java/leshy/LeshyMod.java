@@ -453,6 +453,7 @@ public class LeshyMod implements
         BaseMod.addRelicToCustomPool(new SugarCubesRelic(), Leshy.Enums.LESHY_BROWN);
         BaseMod.addRelicToCustomPool(new BearMedallionRelic(), Leshy.Enums.LESHY_BROWN);
         BaseMod.addRelicToCustomPool(new PliersRelic(), Leshy.Enums.LESHY_BROWN);
+        BaseMod.addRelicToCustomPool(new HammerRelic(), Leshy.Enums.LESHY_BROWN);
 
         //Rare
         BaseMod.addRelicToCustomPool(new AnglerMaskRelic(), Leshy.Enums.LESHY_BROWN);
@@ -482,6 +483,7 @@ public class LeshyMod implements
         BaseMod.addRelicToCustomPool(new BallOfSquirrelsRelic(), Leshy.Enums.LESHY_BROWN);
         BaseMod.addRelicToCustomPool(new LimoncelloRelic(), Leshy.Enums.LESHY_BROWN);
         BaseMod.addRelicToCustomPool(new QuillRelic(), Leshy.Enums.LESHY_BROWN);
+        BaseMod.addRelicToCustomPool(new HoneycombRelic(), Leshy.Enums.LESHY_BROWN);
 
         //Event
         BaseMod.addRelicToCustomPool(new MagicEyeRelic(), Leshy.Enums.LESHY_BROWN);
@@ -566,6 +568,8 @@ public class LeshyMod implements
         UnlockTracker.markRelicAsSeen(SugarCubesRelic.ID);
         UnlockTracker.markRelicAsSeen(BearMedallionRelic.ID);
         UnlockTracker.markRelicAsSeen(PliersRelic.ID);
+        UnlockTracker.markRelicAsSeen(HammerRelic.ID);
+        UnlockTracker.markRelicAsSeen(HoneycombRelic.ID);
 
         logger.info("Done adding relics!");
     }

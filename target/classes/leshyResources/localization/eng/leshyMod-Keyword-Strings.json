@@ -228,7 +228,7 @@
       "Brood_Parasite",
       "brood_parasite"
     ],
-    "DESCRIPTION": "When summoned, apply Broken Egg to all enemies. They deal 20% less damage and prevent the next time they take damage."
+    "DESCRIPTION": "When summoned, apply Broken Egg to the #yTargeted enemy. They deal 50% less damage and prevent the next time they take damage."
   },
   {
     "PROPER_NAME": "Loose Tail",

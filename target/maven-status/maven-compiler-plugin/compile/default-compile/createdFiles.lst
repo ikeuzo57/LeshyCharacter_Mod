@@ -106,6 +106,7 @@ leshy\cards\abstracts\RightClickCard.class
 leshy\actions\DaggerAction.class
 leshy\actions\BloodCreatureAction.class
 leshy\orbs\CreatureOrb$1.class
+leshy\actions\HoneycombAction.class
 leshy\cards\Stinkbug.class
 leshy\relics\ChickenEggRelic.class
 leshy\relics\PaintbrushRelic.class
@@ -302,6 +303,7 @@ leshy\cards\TrialOfRarity.class
 leshy\relics\SugarCubesRelic.class
 leshy\events\WoodcarverEvent.class
 leshy\relics\CawCawFaceRelic.class
+leshy\actions\HammerAction.class
 leshy\cards\BifurcatedTotem.class
 leshy\events\MycologistsEvent.class
 leshy\powers\MagpiePower.class
@@ -405,10 +407,12 @@ leshy\cards\Rabbit.class
 leshy\patches\OrbDamagePatch$ShopCreatureCards.class
 leshy\cards\abstracts\AbstractOldDataCard.class
 leshy\cards\BoonOfTheMagpiesEye.class
+leshy\relics\HoneycombRelic.class
 leshy\potions\NanoArmorGeneratorPotion.class
 leshy\cards\GoFish.class
 leshy\cards\Tadpole.class
 leshy\cards\TrialOfWisdom.class
+leshy\relics\HammerRelic.class
 leshy\cards\Opossum.class
 leshy\patches\PeltPatch$Locator.class
 leshy\cards\abstracts\AbstractPeltCard.class
