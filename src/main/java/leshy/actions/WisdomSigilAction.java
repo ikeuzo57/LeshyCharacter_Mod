@@ -35,6 +35,7 @@ public class WisdomSigilAction extends AbstractGameAction {
             int i = deck.size()-1;
             while(i>=0 && i>deck.size()-4){
                 AbstractCard c = deck.get(i);
+                c.applyPowers();
                 if(c instanceof AbstractCreatureCard)
                     sigils.addAll(((AbstractCreatureCard) c).current);
                 i--;

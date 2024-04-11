@@ -106,7 +106,6 @@ leshy\cards\abstracts\RightClickCard.class
 leshy\actions\DaggerAction.class
 leshy\actions\BloodCreatureAction.class
 leshy\orbs\CreatureOrb$1.class
-leshy\actions\HoneycombAction.class
 leshy\cards\Stinkbug.class
 leshy\relics\ChickenEggRelic.class
 leshy\relics\PaintbrushRelic.class

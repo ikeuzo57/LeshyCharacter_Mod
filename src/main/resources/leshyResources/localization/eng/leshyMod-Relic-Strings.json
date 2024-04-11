@@ -526,7 +526,7 @@
     "NAME": "Honeycomb",
     "FLAVOR": "Bees! For everyone!",
     "DESCRIPTIONS": [
-      "When you lose HP, if there is room, summon a Bee."
+      "The first time you lose HP each turn, add a Bee to your hand."
     ]
   }
 

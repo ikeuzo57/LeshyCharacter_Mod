@@ -33,7 +33,9 @@ public class BloodAction extends AbstractGameAction {
 
             int i = deck.size()-1;
             while(i>=0 && i>deck.size()-4){
-                tmp.addToTop(deck.get(i).makeSameInstanceOf());
+                AbstractCard c = deck.get(i).makeSameInstanceOf();
+                c.applyPowers();
+                tmp.addToTop(c);
                 i--;
             }
 
