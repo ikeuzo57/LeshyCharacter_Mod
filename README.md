@@ -30,6 +30,3 @@ Hello everyone! This is the first character mod I'm confident enough in to publi
 This mod has a lot of moving parts. Like holy hell, we have a lot going on. There are 29 different Sigils. 29!! And you can combine them in a variety of ways. Point being, there will be bugs. I will be **shocked** if me and my playtesters found all the bugs. If you find any, or have balance suggestions of any kind, please let me know!
 
 Shoutouts to my friends and playtesters: ZVisionless, Meh Squirrel, and Muffin.
-
-If you have any specific questions on mechanics or interactions, check out the documentation I threw together.
-https://docs.google.com/document/d/1N9_IniThfsOTpFCUfUeR5VkTyiOiaMYg_JUdDDfQZIs/edit?pli=1
